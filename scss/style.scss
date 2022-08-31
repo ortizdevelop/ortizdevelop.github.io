@@ -4,9 +4,20 @@
 /*Импорт*/
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 
+/*Шаблоны*/
+$border1: 2px solid red;
+$border1: 2px solid blue;
+$border1: 2px solid pink;
+
+$color1: #EE6C4D;
+$color2: #FFFFFF;
+$color3: #C4C4C4;
+$color4: #191F28;
+
 /*Основные параметры сайта*/
 body{
     font-family: 'Almarai', sans-serif;
+    background-color: $color4;
 
     .main{}
 

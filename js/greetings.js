@@ -1,3 +1,3 @@
 greetings = 'Добро пожаловать, на сайт "ORTIZ DEVELOP"!';
 
-alert(greetings);
+console.log(greetings);

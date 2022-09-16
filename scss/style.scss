@@ -6,8 +6,8 @@
 
 /*Шаблоны*/
 $border1: 2px solid red;
-$border1: 2px solid blue;
-$border1: 2px solid pink;
+$border2: 2px solid blue;
+$border3: 2px solid pink;
 
 $color1: #EE6C4D;
 $color2: #FFFFFF;
@@ -25,6 +25,89 @@ body{
 
     .contacts{}
 }
+
+/*header*/
+
+.header {
+    .container {
+    }
+
+    &__links {
+        display: flex;
+        text-align: center;
+        position: absolute;
+        width: 1236px;
+        height: 74.68px;
+        left: 112px;
+        top: 60.83px;
+
+        span{
+            color: $color3;
+            font-size: 20px;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            text-align: center;
+            border-radius: 5px;
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom: 8px;
+            padding-top: 8px;
+
+            &:hover{
+                color: $color1;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    &__link-about {
+        margin-right: 39px;
+        padding-top: 20px;
+    }
+
+    &__link-projects {
+        margin-right: 462px;
+        padding-top: 20px;
+    }
+
+    &__logo {
+        margin-right: 464px;
+        border-radius: 20px;
+        width: 100px;
+        height: 90px;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 10px;
+        text-align: center;
+        transform: translateY(-10px);
+
+        &:hover{
+            transition: 0.4s;
+            border: 2px solid $color1;
+        }
+    }
+
+    &__contact {
+        padding-top: 20px;
+        
+        span{
+            &:hover{
+                transition: 0.4s;
+                color: $color3;
+                border: 1px solid $color1;
+            }
+
+            &:active{
+                transition: 0.4s;
+                background-color: $color1;
+                color: $color4;
+            }
+        }
+    }
+}
+
+/*footer*/
+
 /*main.html*/
 
 /*projects.html*/

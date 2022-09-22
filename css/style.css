@@ -58,6 +58,7 @@ body .main {
   padding-top: 10px;
   text-align: center;
   transform: translateY(-10px);
+  border: 2px solid #191F28;
 }
 .header__logo:hover {
   transition: 0.4s;
@@ -101,6 +102,15 @@ body .main {
   color: #c4c4c4;
   text-align: start;
   margin-right: 52px;
+  background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-animation: ortizdevelop-anim 4s linear infinite;
+          animation: ortizdevelop-anim 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .footer .footer-top__logo {
   margin-right: 38px;
@@ -113,7 +123,7 @@ body .main {
   mix-blend-mode: normal;
 }
 .footer .footer-mid {
-  margin-bottom: 43.5px;
+  margin-bottom: 53.5px;
   margin-left: 50px;
 }
 .footer .footer-mid__link {
@@ -139,12 +149,45 @@ body .main {
 }
 .footer .footer-bot {
   margin-bottom: 46px;
+  margin-left: 830px;
+}
+.footer .footer-bot__images ul {
+  display: flex;
+  width: 150px;
+}
+.footer .footer-bot__images ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+}
+.footer .footer-bot__images ul li a span {
+  position: absolute;
+  color: #EE6C4D;
+  opacity: 0;
+}
+.footer .footer-bot__images ul li a span:last-child {
+  margin-right: 44px;
+}
+.footer .footer-bot__images ul li a span:nth-child(2) {
+  margin-right: 46px;
+}
+.footer .footer-bot__images ul li a:hover img {
+  transform: translateY(-15px);
+  filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+  transition: 0.35s;
+}
+.footer .footer-bot__images ul li a:hover span {
+  transform: translateY(10px);
+  transition: 0.35s;
+  opacity: 1;
 }
 .footer .footer-bot__images img {
-  margin-right: 27px;
-}
-.footer .footer-bot__images img:hover {
-  filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+  margin-right: 47px;
 }
 .footer .copyright__title {
   font-size: 16px;
@@ -181,5 +224,15 @@ body .main {
   }
   100% {
     color: #C4C4C4;
+  }
+}
+@-webkit-keyframes ortizdevelop-anim {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes ortizdevelop-anim {
+  to {
+    background-position: 200% center;
   }
 }

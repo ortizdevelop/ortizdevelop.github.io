@@ -85,6 +85,7 @@ body{
         padding-top: 10px;
         text-align: center;
         transform: translateY(-10px);
+        border: 2px solid $color4;
 
         &:hover{
             transition: 0.4s;
@@ -137,6 +138,14 @@ body{
                 color: #c4c4c4;
                 text-align: start;
                 margin-right: 52px;
+                background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                background-clip: text;
+                animation: ortizdevelop-anim 4s linear infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
 
             &__logo {
@@ -152,7 +161,7 @@ body{
             }
     }
     .footer-mid {
-        margin-bottom: 43.5px;
+        margin-bottom: 53.5px;
         margin-left: 50px;
     
             &__links {
@@ -185,14 +194,57 @@ body{
     }
     .footer-bot {
         margin-bottom: 46px;
+        margin-left: 830px;
 
             &__images {
-                img{
-                    margin-right: 27px;
+                ul{
+                    display: flex;
+                    width: 150px;
 
-                    &:hover{
-                        filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                    li{
+                        a{
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            text-align: center;
+                            width: 100%;
+                            font-weight: 700;
+                            
+                            span{
+                                position: absolute;
+                                color: $color1;
+                                opacity: 0;
+
+                                &:last-child{
+                                    margin-right: 44px;
+                                }
+
+                                &:nth-child(2){
+                                    margin-right: 46px;
+                                }
+                            }
+
+                            &:hover{
+                                img{
+                                    transform: translateY(-15px);
+                                    filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                                    transition: 0.35s;
+                                }
+
+                                span{
+                                    transform: translateY(10px);
+                                    transition: 0.35s;
+                                    opacity: 1;
+                                }
+                            }
+                        }
                     }
+                }
+
+                img{
+                    margin-right: 47px;
                 }
             }
     }
@@ -220,11 +272,17 @@ body{
     }
 
     50%{
-        color: $color1;
+        color: $color1;         //* Анимация для копирайта
         opacity: 100%;
     }
 
     100%{
         color: $color3;
+    }
+}
+
+@keyframes ortizdevelop-anim{
+    to{
+        background-position: 200% center; //* Анимация для надписи ORTIZ DEVELOP
     }
 }

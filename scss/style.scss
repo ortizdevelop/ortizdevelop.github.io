@@ -13,13 +13,18 @@ $color1: #EE6C4D;
 $color2: #FFFFFF;
 $color3: #C4C4C4;
 $color4: #191F28;
+$color5: #1D1D1D;
 
 /*Основные параметры сайта*/
 body{
     font-family: 'Almarai', sans-serif;
     background-color: $color4;
 
-    .main{}
+    .main{
+        position: relative;
+        width: 1440px;
+        height: 3564px;
+    }
 
     .projects{}
 
@@ -107,7 +112,96 @@ body{
 }
 
 /*footer*/
+.footer {
+    position: absolute;
+    width: 1840px;
+    height: 433px;
+    left: 0px;
+    top: 2880px;
+    background-color: $color5;
+    text-align: center;
+    
+    .container {
+    }
+    .footer-top {
+        padding-top: 69px;
+        display: flex;
+        margin-left: 685px;
+        margin-bottom: 54px;
 
+            &__title {
+                padding-top: 10px;
+                font-size: 24px;
+                font-weight: 700;
+                letter-spacing: 0.17em;
+                color: #c4c4c4;
+                text-align: start;
+                margin-right: 52px;
+            }
+
+            &__logo {
+                margin-right: 38px;
+            }
+
+            &__subtitle {
+                padding-top: 30px;
+                font-size: 18px;
+                line-height: 100%;
+                color: #c4c4c4;
+                mix-blend-mode: normal;
+            }
+    }
+    .footer-mid {
+        margin-bottom: 43.5px;
+        margin-left: 50px;
+    
+            &__links {
+            }
+
+            &__link {
+                margin-right: 80px;
+
+                span{
+                    font-size: 15px;
+                    font-weight: 700;
+                    letter-spacing: -0.20454545319080353px;
+                    color: #c4c4c4;
+                    padding: 5px;
+                    border-radius: 5px;
+
+                    &:hover{
+                        background-color: $color1;
+                        color: $color4;
+                        transition: 0.35s;
+                    }
+
+                    &:active{
+                        color: $color1;
+                        background-color: transparent;
+                        transition: 0.35s;
+                    }
+                }
+            }
+    }
+    .footer-bot {
+        margin-bottom: 46px;
+
+            &__images {
+                img{
+                    margin-right: 27px;
+
+                    &:hover{
+                        filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                    }
+                }
+            }
+    }
+    .copyright {
+
+            &__title {
+            }
+    }
+}
 /*main.html*/
 
 /*projects.html*/

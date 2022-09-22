@@ -146,7 +146,40 @@ body .main {
 .footer .footer-bot__images img:hover {
   filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
 }
+.footer .copyright__title {
+  font-size: 16px;
+  line-height: 20px;
+  color: #c4c4c4;
+  opacity: 50%;
+  -webkit-animation: copyright-anim 8s infinite linear;
+          animation: copyright-anim 8s infinite linear;
+}
+
 /*main.html*/
 /*projects.html*/
 /*contacts.html*/
 /*Анимации*/
+@-webkit-keyframes copyright-anim {
+  0% {
+    color: #C4C4C4;
+  }
+  50% {
+    color: #EE6C4D;
+    opacity: 100%;
+  }
+  100% {
+    color: #C4C4C4;
+  }
+}
+@keyframes copyright-anim {
+  0% {
+    color: #C4C4C4;
+  }
+  50% {
+    color: #EE6C4D;
+    opacity: 100%;
+  }
+  100% {
+    color: #C4C4C4;
+  }
+}

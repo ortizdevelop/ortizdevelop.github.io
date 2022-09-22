@@ -199,6 +199,11 @@ body{
     .copyright {
 
             &__title {
+                font-size: 16px;
+                line-height: 20px;
+                color: #c4c4c4;
+                opacity: 50%;
+                animation: copyright-anim 8s infinite linear;
             }
     }
 }
@@ -209,3 +214,17 @@ body{
 /*contacts.html*/
 
 /*Анимации*/
+@keyframes copyright-anim{
+    0%{
+        color: $color3;
+    }
+
+    50%{
+        color: $color1;
+        opacity: 100%;
+    }
+
+    100%{
+        color: $color3;
+    }
+}

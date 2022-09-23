@@ -59,6 +59,7 @@ body{
             padding-left: 15px;
             padding-bottom: 8px;
             padding-top: 8px;
+            transition: 0.35s;
 
             &:hover{
                 color: $color1;
@@ -88,6 +89,7 @@ body{
         text-align: center;
         transform: translateY(-10px);
         border: 2px solid $color4;
+        transition: 0.35s;
 
         &:hover{
             transition: 0.4s;
@@ -322,6 +324,7 @@ body{
                 font-size: 32px;
                 color: #fff;
                 padding: 30px 63px;
+                transition: 0.35s;
 
                 &:hover {
                     background: $color1;
@@ -350,7 +353,6 @@ body{
 .about-middle {
 
     &__body {
-        border: $border1;
         margin-top: 104px;
         margin-left: 250px;
         width: 1440px;
@@ -378,40 +380,74 @@ body{
     }
 
     &__subtitle {
-        font-weight: 400;
+        font-weight: 300;
         font-size: 32px;
         line-height: 36px;
+        margin-top: 100px;
+        transform: translateX(-340px);
 
         p{
-            width: 505px;
+            width: 535px;
             color: $color2;
         }
 
         span{
             color: $color1;
+            
+            &:nth-child(2){
+                &::before{
+                    content: '';
+                    position: absolute;
+                    width: 259px;
+                    height: 0px;
+                    left: 0px;
+                    top: 120px;
+                    border: $bd1;
+                }
+            }
         }
     }
 
     &__tools {
+        transform: translate(-255px, 140px);
     }
 
     &__tools-column {
-        border: $border1;
-        width: 320px;
+        width: 619px;
+        background: url('/img/main/Rectangle\ 13.png') 0px 30px no-repeat;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        align-items: center;
+        text-align: center;
     }
 
     &__tools-list {
+        position: relative;
         display: inline;
+        margin-right: 24px;
+        box-shadow: -1.5px 30px 20px 5px #111111;
+        transition: 0.35s;
+
+        img{
+            transition: 0.35s;
+
+            &:hover{
+                position: relative;
+                transform: translateY(-15px);
+                transition: transform 0.35s ease-in-out;
+                filter: brightness(0) saturate(100%) invert(77%) sepia(68%) saturate(5398%) hue-rotate(329deg) brightness(97%) contrast(92%);
+            }
+        }
     }
 
     &__img {
         margin-top: 187px;
-        transform: translateX(-1438px);
+        transform: translate(-1767px, 187px);
     }
 
     &__column {
         margin-top: 187px;
-        transform: translateX(-1008px);
+        transform: translate(-1308px, 187px);
     }
 
     &__list{
@@ -435,6 +471,42 @@ body{
                 letter-spacing: 0.12em;
             }
         }
+
+        .list-line1{
+            &::before{
+                content: '';
+                position: absolute;
+                width: 259px;
+                height: 0px;
+                left: 55px;
+                top: 250px;
+                border: $bd1;
+            }
+        }
+
+        .list-line2{
+            &::before{
+                content: '';
+                position: absolute;
+                width: 259px;
+                height: 0px;
+                left: 55px;
+                top: 500px;
+                border: $bd1;
+            }
+        }
+
+        img{
+            transform: translate(-107px, 60px);
+        }
+    }
+
+    &__box{
+        width: 585.5px;
+        height: 685px;
+        transform: translate(-120px, -720px);
+        border: $bd1;
+        border-radius: 10px;
     }
 }
 

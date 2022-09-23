@@ -133,6 +133,7 @@ body .main {
 }
 .footer .footer-mid__link {
   margin-right: 80px;
+  transition: 0.2s;
 }
 .footer .footer-mid__link span {
   font-size: 15px;
@@ -141,6 +142,7 @@ body .main {
   color: #c4c4c4;
   padding: 5px;
   border-radius: 5px;
+  transition: 0.2s;
 }
 .footer .footer-mid__link span:hover {
   background-color: #EE6C4D;
@@ -159,6 +161,10 @@ body .main {
 .footer .footer-bot__images ul {
   display: flex;
   width: 150px;
+  transition: 0.2s;
+}
+.footer .footer-bot__images ul li {
+  transition: 0.2s;
 }
 .footer .footer-bot__images ul li a {
   position: relative;
@@ -169,17 +175,22 @@ body .main {
   text-align: center;
   width: 100%;
   font-weight: 700;
+  transition: 0.4s;
 }
 .footer .footer-bot__images ul li a span {
   position: absolute;
   color: #EE6C4D;
   opacity: 0;
+  transition: 0.2s;
 }
 .footer .footer-bot__images ul li a span:last-child {
   margin-right: 44px;
 }
 .footer .footer-bot__images ul li a span:nth-child(2) {
   margin-right: 46px;
+}
+.footer .footer-bot__images ul li a img {
+  transition: 0.2s;
 }
 .footer .footer-bot__images ul li a:hover img {
   transform: translateY(-15px);

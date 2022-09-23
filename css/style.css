@@ -67,6 +67,9 @@ body .main {
 .header__contact {
   padding-top: 20px;
 }
+.header__contact span {
+  border: 2px solid transparent;
+}
 .header__contact span:hover {
   transition: 0.4s;
   color: #C4C4C4;
@@ -200,10 +203,74 @@ body .main {
 
 /*main.html*/
 .about-head__body {
-  border: 2px solid red;
-  margin-top: 280px;
+  width: 1760px;
+  height: 864px;
+  padding-top: 280px;
   margin-left: 100px;
+  background: url("/img/main/bg-logo.png") 440px -100px;
 }
+.about-head__content {
+  margin-left: 160px;
+}
+.about-head__title {
+  width: 472px;
+  height: 213px;
+  font-size: 64px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+.about-head__title span {
+  color: #EE6C4D;
+}
+.about-head__title span:nth-child(3) {
+  color: #FFFFFF;
+  background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-animation: ortizdevelop-anim 8s linear infinite;
+          animation: ortizdevelop-anim 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-head__subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  color: #FFFFFF;
+  opacity: 70%;
+}
+.about-head__subtitle span {
+  color: #EE6C4D;
+}
+.about-head__button {
+  margin-top: 82px;
+}
+.about-head__button a span {
+  border: 1px solid #EE6C4D;
+  border-radius: 5px;
+  font-size: 32px;
+  color: #fff;
+  padding: 30px 63px;
+}
+.about-head__button a span:hover {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.about-head__button a span:active {
+  box-shadow: 0 0 20px #EE6C4D;
+  background: #EC5A64;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+  filter: hue-rotate(20deg);
+}
+.about-head__line {
+  margin-top: 102px;
+  transform: translateX(-60px);
+}
+
 /*projects.html*/
 /*contacts.html*/
 /*Анимации*/

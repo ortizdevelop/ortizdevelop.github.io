@@ -9,6 +9,8 @@ $border1: 2px solid red;
 $border2: 2px solid blue;
 $border3: 2px solid pink;
 
+$bd1: 1px solid #EE6C4D;
+
 $color1: #EE6C4D;
 $color2: #FFFFFF;
 $color3: #C4C4C4;
@@ -97,6 +99,7 @@ body{
         padding-top: 20px;
         
         span{
+            border: 2px solid transparent;
             &:hover{
                 transition: 0.4s;
                 color: $color3;
@@ -264,18 +267,83 @@ body{
 .about-head {
 
     &__body {
-        border: $border1;
-        margin-top: 280px;
+        width: 1760px;
+        height: 864px;
+        padding-top: 280px;
         margin-left: 100px;
+        background: url('/img/main/bg-logo.png') 440px -100px;
+    }
+
+    &__content{
+        margin-left: 160px;
     }
 
     &__title {
+        width: 472px;
+        height: 213px;
+        font-size: 64px;
+        font-weight: 700;
+        color: $color2;
+
+        span{
+            color: $color1;
+
+            &:nth-child(3){
+                color: $color2;
+                background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                background-clip: text;
+                animation: ortizdevelop-anim 8s linear infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
     }
 
     &__subtitle {
+        font-size: 24px;
+        font-weight: 300;
+        color: $color2;
+        opacity: 70%;
+
+        span{
+            color: $color1;
+        }
     }
 
     &__button {
+        margin-top: 82px;
+        a{
+            span{
+                border: $bd1;
+                border-radius: 5px;
+                font-size: 32px;
+                color: #fff;
+                padding: 30px 63px;
+
+                &:hover {
+                    background: $color1;
+                    box-shadow: 0 0 40px $color1;
+                    color: $color4;
+                    transition: background .5s, color .5s;
+                    filter: hue-rotate(20deg);
+                }
+
+                &:active {
+                    box-shadow: 0 0 20px $color1;
+                    background: #EC5A64;
+                    transition: background .5s, color .5s, box-shadow .5s;
+                    filter: hue-rotate(20deg);
+                }
+            }
+        }
+    }
+
+    &__line{
+        margin-top: 102px;
+        transform: translateX(-60px);
     }
 }
 

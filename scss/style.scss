@@ -350,30 +350,91 @@ body{
 .about-middle {
 
     &__body {
+        border: $border1;
+        margin-top: 104px;
+        margin-left: 250px;
+        width: 1440px;
+        height: 1216px;
     }
 
     &__content {
+        display: flex;
     }
 
     &__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 54px;
+        text-align: center;
+        
+        p{
+            width: 340px;
+            color: $color2;
+        }
+
+        span{
+            color: $color1;
+        }
     }
 
     &__subtitle {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 36px;
+
+        p{
+            width: 505px;
+            color: $color2;
+        }
+
+        span{
+            color: $color1;
+        }
     }
 
     &__tools {
     }
 
     &__tools-column {
+        border: $border1;
+        width: 320px;
     }
 
     &__tools-list {
+        display: inline;
     }
 
     &__img {
+        margin-top: 187px;
+        transform: translateX(-1438px);
     }
 
     &__column {
+        margin-top: 187px;
+        transform: translateX(-1008px);
+    }
+
+    &__list{
+        margin-bottom: 44px;
+
+        p{
+            &:nth-child(2){
+                color: $color2;
+                width: 449px;
+                height: 72px;
+                font-size: 32px;
+                font-weight: 700;
+                letter-spacing: 0.12em;
+                margin-bottom: 28px;    
+            }
+
+            &:nth-child(3){
+                color: $color2;
+                font-size: 20px;
+                font-weight: 500;
+                letter-spacing: 0.12em;
+            }
+        }
     }
 }
 

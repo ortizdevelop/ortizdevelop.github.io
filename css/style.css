@@ -357,6 +357,10 @@ body .main {
 .about-middle__list {
   margin-bottom: 44px;
 }
+.about-middle__list p {
+  position: relative;
+  z-index: 2;
+}
 .about-middle__list p:nth-child(2) {
   color: #FFFFFF;
   width: 449px;
@@ -365,6 +369,11 @@ body .main {
   font-weight: 700;
   letter-spacing: 0.12em;
   margin-bottom: 28px;
+  transition: 0.2s;
+}
+.about-middle__list p:nth-child(2):hover {
+  color: #EE6C4D;
+  transition: 0.2s;
 }
 .about-middle__list p:nth-child(3) {
   color: #FFFFFF;

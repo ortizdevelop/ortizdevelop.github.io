@@ -89,7 +89,7 @@ body .main {
   width: 1840px;
   height: 433px;
   left: 0px;
-  top: 2880px;
+  top: 3280px;
   background-color: #1D1D1D;
   text-align: center;
 }
@@ -421,6 +421,10 @@ body .main {
   border-radius: 10px;
 }
 
+.about-bottom__body {
+  margin-top: 77px;
+  margin-left: 190px;
+}
 /*projects.html*/
 /*contacts.html*/
 /*Анимации*/

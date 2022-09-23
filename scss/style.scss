@@ -123,7 +123,7 @@ body{
     width: 1840px;
     height: 433px;
     left: 0px;
-    top: 2880px;
+    top: 3280px;
     background-color: $color5;
     text-align: center;
     
@@ -527,6 +527,33 @@ body{
         border-radius: 10px;
     }
 }
+
+.about-bottom {
+
+    &__body {
+        margin-top: 77px;
+        margin-left: 190px;
+    }
+
+    &__content {
+    }
+
+    &__banner {
+    }
+
+    &__button {
+    }
+
+    &__line {
+    }
+
+    &__text {
+    }
+
+    &__contact {
+    }
+}
+
 
 
 /*projects.html*/

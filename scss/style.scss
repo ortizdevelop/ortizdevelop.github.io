@@ -261,6 +261,25 @@ body{
 }
 /*main.html*/
 
+.about-head {
+
+    &__body {
+        border: $border1;
+        margin-top: 280px;
+        margin-left: 100px;
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+    }
+
+    &__button {
+    }
+}
+
+
 /*projects.html*/
 
 /*contacts.html*/

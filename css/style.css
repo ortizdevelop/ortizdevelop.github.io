@@ -199,6 +199,11 @@ body .main {
 }
 
 /*main.html*/
+.about-head__body {
+  border: 2px solid red;
+  margin-top: 280px;
+  margin-left: 100px;
+}
 /*projects.html*/
 /*contacts.html*/
 /*Анимации*/

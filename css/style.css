@@ -20,7 +20,7 @@ html .contacts, body .contacts {
   height: 1024px;
 }
 html .contacts .footer, body .contacts .footer {
-  top: 1000px;
+  top: 1500px;
   left: 0;
 }
 
@@ -226,6 +226,15 @@ html .contacts .footer, body .contacts .footer {
   letter-spacing: 0.12em;
   color: #c4c4c4;
   line-height: 54px;
+  background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-animation: ortizdevelop-anim 8s linear infinite;
+          animation: ortizdevelop-anim 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .contact-us__subtitle {
   margin-top: 46px;
@@ -255,7 +264,7 @@ html .contacts .footer, body .contacts .footer {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 .contact-us-form__name input::-moz-placeholder {
   padding-left: 85px;
@@ -275,6 +284,22 @@ html .contacts .footer, body .contacts .footer {
   font-weight: 300;
   color: #fff;
 }
+.contact-us-form__name input:focus {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__name input:focus::-moz-placeholder {
+  color: #191F28;
+}
+.contact-us-form__name input:focus:-ms-input-placeholder {
+  color: #191F28;
+}
+.contact-us-form__name input:focus::placeholder {
+  color: #191F28;
+}
 .contact-us-form__mail {
   transform: translate(325px, -108px);
 }
@@ -282,7 +307,7 @@ html .contacts .footer, body .contacts .footer {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
-  padding-left: 40px;
+  padding-left: 30px;
   width: 350px;
 }
 .contact-us-form__mail input::-moz-placeholder {
@@ -305,6 +330,22 @@ html .contacts .footer, body .contacts .footer {
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
+}
+.contact-us-form__mail input:focus {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__mail input:focus::-moz-placeholder {
+  color: #191F28;
+}
+.contact-us-form__mail input:focus:-ms-input-placeholder {
+  color: #191F28;
+}
+.contact-us-form__mail input:focus::placeholder {
+  color: #191F28;
 }
 .contact-us-form__message textarea {
   width: 575px;
@@ -331,6 +372,49 @@ html .contacts .footer, body .contacts .footer {
   font-weight: 300;
   color: #fff;
 }
+.contact-us-form__button {
+  width: 545px;
+  height: 69px;
+  padding: 16px 170px;
+  border: 1px solid #EE6C4D;
+  transform: translate(16px, 32px);
+}
+.contact-us-form__button span {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 36px;
+  background-color: #191F28;
+}
+.contact-us-form__button:hover {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__button:hover span {
+  color: #191F28;
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(0deg);
+}
+.contact-us-form__button:active {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__button:active span {
+  color: #191F28;
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(0deg);
+}
+
 /*Анимации*/
 @-webkit-keyframes copyright-anim {
   0% {

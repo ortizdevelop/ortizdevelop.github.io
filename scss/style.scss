@@ -15,6 +15,8 @@ $color3: #C4C4C4;
 $color4: #191F28;
 $color5: #1D1D1D;
 
+$bd1: 1px solid $color1;
+
 /*Основные параметры сайта*/
 html, body{
     font-family: 'Almarai', sans-serif;
@@ -34,7 +36,7 @@ html, body{
         height: 1024px;
 
         .footer{
-            top: 1000px;
+            top: 1500px;
             left: 0;
         }
     }
@@ -292,6 +294,14 @@ html, body{
         letter-spacing: 0.12em;
         color: #c4c4c4;
         line-height: 54px;
+        background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        background-clip: text;
+        animation: ortizdevelop-anim 8s linear infinite;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     &__subtitle {
@@ -328,13 +338,25 @@ html, body{
             font-size: 25px;
             font-weight: 300;
             color: #fff;
-            padding-left: 10px;
+            padding-left: 5px;
 
             &::placeholder{
                 padding-left: 85px;
                 font-size: 25px;
                 font-weight: 300;
                 color: #fff;
+            }
+
+            &:focus{
+                background: $color1;
+                box-shadow: 0 0 40px $color1;
+                color: $color4;
+                transition: background .5s, color .5s;
+                filter: hue-rotate(20deg);
+
+                &::placeholder{
+                    color: $color4;
+                }
             }
         }
     }
@@ -346,7 +368,7 @@ html, body{
             font-size: 25px;
             font-weight: 300;
             color: #fff;
-            padding-left: 40px;
+            padding-left: 30px;
             width: 350px;
 
             &::placeholder{
@@ -355,6 +377,18 @@ html, body{
                 font-weight: 300;
                 color: #fff;
                 text-transform: uppercase;
+            }
+
+            &:focus{
+                background: $color1;
+                box-shadow: 0 0 40px $color1;
+                color: $color4;
+                transition: background .5s, color .5s;
+                filter: hue-rotate(20deg);
+
+                &::placeholder{
+                    color: $color4;
+                }
             }
         }
     }
@@ -379,6 +413,51 @@ html, body{
     }
 
     &__button {
+        width: 545px;
+        height: 69px;
+        padding: 16px 170px;
+        border: $bd1;
+        transform: translate(16px,32px);
+
+        span{
+            font-size: 32px;
+            color: #fff;
+            font-weight: 400;
+            line-height: 36px;
+            background-color: $color4;
+        }
+
+        &:hover{
+            background: $color1;
+            box-shadow: 0 0 40px $color1;
+            color: $color4;
+            transition: background .5s, color .5s;
+            filter: hue-rotate(20deg);
+
+            span{
+                color: $color4;
+                background: $color1;
+                box-shadow: 0 0 40px $color1;
+                transition: background .5s, color .5s;
+                filter: hue-rotate(0deg);
+            }
+        }
+
+        &:active{
+            background: $color1;
+            box-shadow: 0 0 40px $color1;
+            color: $color4;
+            transition: background .5s, color .5s;
+            filter: hue-rotate(20deg);
+
+            span{
+                color: $color4;
+                background: $color1;
+                box-shadow: 0 0 40px $color1;
+                transition: background .5s, color .5s;
+                filter: hue-rotate(0deg);
+            }
+        }
     }
 }
 .contact-us-images {

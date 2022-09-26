@@ -14,6 +14,7 @@ $color2: #FFFFFF;
 $color3: #C4C4C4;
 $color4: #191F28;
 $color5: #1D1D1D;
+$color6: #EC5A64;
 
 $bd1: 1px solid $color1;
 
@@ -444,16 +445,16 @@ html, body{
         }
 
         &:active{
-            background: $color1;
-            box-shadow: 0 0 40px $color1;
+            background: #EC5A64;
+            box-shadow: 0 0 40px #EC5A64;
             color: $color4;
             transition: background .5s, color .5s;
             filter: hue-rotate(20deg);
 
             span{
                 color: $color4;
-                background: $color1;
-                box-shadow: 0 0 40px $color1;
+                background: #EC5A64;
+                box-shadow: 0 0 40px #EC5A64;
                 transition: background .5s, color .5s;
                 filter: hue-rotate(0deg);
             }

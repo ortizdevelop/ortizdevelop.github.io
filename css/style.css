@@ -401,16 +401,16 @@ html .contacts .footer, body .contacts .footer {
   filter: hue-rotate(0deg);
 }
 .contact-us-form__button:active {
-  background: #EE6C4D;
-  box-shadow: 0 0 40px #EE6C4D;
+  background: #EC5A64;
+  box-shadow: 0 0 40px #EC5A64;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
 .contact-us-form__button:active span {
   color: #191F28;
-  background: #EE6C4D;
-  box-shadow: 0 0 40px #EE6C4D;
+  background: #EC5A64;
+  box-shadow: 0 0 40px #EC5A64;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(0deg);
 }

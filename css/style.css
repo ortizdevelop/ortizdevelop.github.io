@@ -14,6 +14,7 @@ html .main, body .main {
   width: 1440px;
   height: 3564px;
 }
+
 html .main .footer, body .main .footer {
   top: 3700px;
 }
@@ -27,6 +28,13 @@ html .contacts .footer, body .contacts .footer {
   left: 0;
 }
 
+html .projects-main, body .projects-main {
+  width: 1440px;
+  height: 1024px;
+}
+html .projects-main footer, body .projects-main footer {
+  top: 1000px;
+}
 /*header*/
 .header {
   position: relative;
@@ -539,6 +547,139 @@ html .contacts .footer, body .contacts .footer {
 }
 
 /*projects.html*/
+.projects__body {
+  transform: translate(120px, 450px);
+}
+.projects__title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #C4C4C4;
+  margin-bottom: 32px;
+}
+.projects__title span {
+  color: #C4C4C4;
+  background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-animation: ortizdevelop-anim 4s linear infinite;
+          animation: ortizdevelop-anim 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projects__text {
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  color: #c4c4c4;
+}
+.projects__text p {
+  margin-bottom: 55px;
+}
+.projects__text a {
+  transition: 0.15s;
+}
+.projects__text a span {
+  position: relative;
+  top: 0;
+  left: -55px;
+  color: #EE6C4D;
+  transition: 0.15s;
+  border-radius: 5px;
+}
+.projects__text a span::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  height: 2px;
+  width: 55px;
+  background-color: #EE6C4D;
+  border: 1px solid #EE6C4D;
+  top: 5px;
+  left: 150px;
+  transition: 0.15s;
+}
+.projects__text a span:hover {
+  color: #EC5A64;
+  left: -220px;
+}
+.projects__text a span:hover::before {
+  content: "";
+  position: relative;
+  top: 7.5px;
+  width: 220px;
+  left: 223px;
+  border: 1.5px solid #EC5A64;
+}
+
+.project-slider__slider-body {
+  width: 587px;
+  height: 320px;
+  overflow: hidden;
+  border-bottom: 10px solid #EE6C4D;
+  transform: translate(900px, -320px);
+}
+.project-slider input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+.project-slider__slides {
+  width: 600%;
+  height: 100%;
+  display: flex;
+}
+.project-slider__slide {
+  width: 25%;
+  transition: all 0.3s ease;
+}
+.project-slider__slide img {
+  width: 100%;
+  height: 100%;
+}
+.project-slider__navigation {
+  width: 412px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  display: flex;
+  transform: translate(265px, -160px);
+  background: url("/img/projects/slider/arrows.png") 0px 10px no-repeat;
+}
+.project-slider__bar {
+  position: relative;
+  left: 60px;
+  height: 20px;
+  width: 20px;
+  margin: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  transition: all 0.3s ease;
+}
+.project-slider__bar:hover {
+  background-color: #EE6C4D;
+  transform: scale(1.1);
+}
+.project-slider #r1:checked ~ .s1 {
+  margin-left: 0;
+}
+.project-slider #r2:checked ~ .s1 {
+  margin-left: -22%;
+}
+.project-slider #r3:checked ~ .s1 {
+  margin-left: -53%;
+}
+.project-slider #r4:checked ~ .s1 {
+  margin-left: -79%;
+}
+.project-slider #r5:checked ~ .s1 {
+  margin-left: -102%;
+}
+.project-slider #r6:checked ~ .s1 {
+  margin-left: -125%;
+}
+
 /*contacts.html*/
 .contacts .contact-us__body {
   transform: translate(120px, 230px);

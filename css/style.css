@@ -14,6 +14,9 @@ html .main, body .main {
   width: 1440px;
   height: 3564px;
 }
+html .main .footer, body .main .footer {
+  top: 3700px;
+}
 html .contacts, body .contacts {
   position: relative;
   width: 1440px;
@@ -25,6 +28,10 @@ html .contacts .footer, body .contacts .footer {
 }
 
 /*header*/
+.header {
+  position: relative;
+  z-index: 2;
+}
 .header__links {
   display: flex;
   text-align: center;
@@ -33,8 +40,13 @@ html .contacts .footer, body .contacts .footer {
   height: 74.68px;
   left: 100px;
   top: 60.83px;
+  transition: 0.35s;
 }
-.header__links span {
+.header__links a {
+  transition: 0.35s;
+}
+.header__links a span {
+  border: 1px solid #191F28;
   color: #C4C4C4;
   font-size: 20px;
   font-weight: 700;
@@ -47,9 +59,14 @@ html .contacts .footer, body .contacts .footer {
   padding-top: 8px;
   transition: 0.35s;
 }
-.header__links span:hover {
-  color: #EE6C4D;
-  transition: 0.4s;
+.header__links a span:hover {
+  border: 1px solid #EE6C4D;
+  transition: 0.35s;
+}
+.header__links a span:active {
+  transition: 0.35s;
+  background-color: #EE6C4D;
+  color: #191F28;
 }
 .header__link-about {
   margin-right: 39px;
@@ -225,27 +242,31 @@ html .contacts .footer, body .contacts .footer {
 }
 
 /*main.html*/
-.about-head__body {
-  width: 1760px;
-  height: 864px;
-  padding-top: 280px;
-  margin-left: 100px;
-  background: url("/img/main/bg-logo.png") 440px -100px;
+.main .about-head {
+  position: relative;
+  z-index: 1;
 }
-.about-head__content {
+.main .about-head__body {
+  transform: translateY(30px);
+  width: 1865px;
+  height: 1014px;
+  padding-top: 280px;
+  background: url("/img/main/bg-logo.png") 540px -100px no-repeat;
+}
+.main .about-head__content {
   margin-left: 160px;
 }
-.about-head__title {
+.main .about-head__title {
   width: 472px;
   height: 213px;
   font-size: 64px;
   font-weight: 700;
   color: #FFFFFF;
 }
-.about-head__title span {
+.main .about-head__title span {
   color: #EE6C4D;
 }
-.about-head__title span:nth-child(3) {
+.main .about-head__title span:nth-child(3) {
   color: #FFFFFF;
   background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
   background-size: auto auto;
@@ -257,19 +278,19 @@ html .contacts .footer, body .contacts .footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.about-head__subtitle {
+.main .about-head__subtitle {
   font-size: 24px;
   font-weight: 300;
   color: #FFFFFF;
   opacity: 70%;
 }
-.about-head__subtitle span {
+.main .about-head__subtitle span {
   color: #EE6C4D;
 }
-.about-head__button {
+.main .about-head__button {
   margin-top: 82px;
 }
-.about-head__button a span {
+.main .about-head__button a span {
   border: 1px solid #EE6C4D;
   border-radius: 5px;
   font-size: 32px;
@@ -277,61 +298,60 @@ html .contacts .footer, body .contacts .footer {
   padding: 30px 63px;
   transition: 0.35s;
 }
-.about-head__button a span:hover {
+.main .about-head__button a span:hover {
   background: #EE6C4D;
   box-shadow: 0 0 40px #EE6C4D;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
-.about-head__button a span:active {
+.main .about-head__button a span:active {
   box-shadow: 0 0 20px #EE6C4D;
   background: #EC5A64;
   transition: background 0.5s, color 0.5s, box-shadow 0.5s;
   filter: hue-rotate(20deg);
 }
-.about-head__line {
+.main .about-head__line {
   margin-top: 102px;
-  transform: translateX(-60px);
+  transform: translateX(44.5px);
 }
-
-.about-middle__body {
+.main .about-middle__body {
   margin-top: 104px;
   margin-left: 250px;
   width: 1440px;
   height: 1216px;
 }
-.about-middle__content {
+.main .about-middle__content {
   display: flex;
 }
-.about-middle__title {
+.main .about-middle__title {
   font-weight: 700;
   font-size: 48px;
   line-height: 54px;
   text-align: center;
 }
-.about-middle__title p {
+.main .about-middle__title p {
   width: 340px;
   color: #FFFFFF;
 }
-.about-middle__title span {
+.main .about-middle__title span {
   color: #EE6C4D;
 }
-.about-middle__subtitle {
+.main .about-middle__subtitle {
   font-weight: 300;
   font-size: 32px;
   line-height: 36px;
   margin-top: 100px;
   transform: translateX(-340px);
 }
-.about-middle__subtitle p {
+.main .about-middle__subtitle p {
   width: 535px;
   color: #FFFFFF;
 }
-.about-middle__subtitle span {
+.main .about-middle__subtitle span {
   color: #EE6C4D;
 }
-.about-middle__subtitle span:nth-child(2)::before {
+.main .about-middle__subtitle span:nth-child(2)::before {
   content: "";
   position: absolute;
   width: 259px;
@@ -340,10 +360,10 @@ html .contacts .footer, body .contacts .footer {
   top: 120px;
   border: 1px solid #EE6C4D;
 }
-.about-middle__tools {
+.main .about-middle__tools {
   transform: translate(-255px, 140px);
 }
-.about-middle__tools-column {
+.main .about-middle__tools-column {
   width: 619px;
   background: url("/img/main/Rectangle 13.png") 0px 30px no-repeat;
   padding-top: 10px;
@@ -351,38 +371,38 @@ html .contacts .footer, body .contacts .footer {
   align-items: center;
   text-align: center;
 }
-.about-middle__tools-list {
+.main .about-middle__tools-list {
   position: relative;
   display: inline;
   margin-right: 24px;
   box-shadow: -1.5px 30px 20px 5px #111111;
   transition: 0.35s;
 }
-.about-middle__tools-list img {
+.main .about-middle__tools-list img {
   transition: 0.35s;
 }
-.about-middle__tools-list img:hover {
+.main .about-middle__tools-list img:hover {
   position: relative;
   transform: translateY(-15px);
-  transition: transform 0.35s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   filter: brightness(0) saturate(100%) invert(77%) sepia(68%) saturate(5398%) hue-rotate(329deg) brightness(97%) contrast(92%);
 }
-.about-middle__img {
+.main .about-middle__img {
   margin-top: 187px;
   transform: translate(-1767px, 187px);
 }
-.about-middle__column {
+.main .about-middle__column {
   margin-top: 187px;
   transform: translate(-1308px, 187px);
 }
-.about-middle__list {
+.main .about-middle__list {
   margin-bottom: 44px;
 }
-.about-middle__list p {
+.main .about-middle__list p {
   position: relative;
   z-index: 2;
 }
-.about-middle__list p:nth-child(2) {
+.main .about-middle__list p:nth-child(2) {
   color: #FFFFFF;
   width: 449px;
   height: 72px;
@@ -392,17 +412,17 @@ html .contacts .footer, body .contacts .footer {
   margin-bottom: 28px;
   transition: 0.2s;
 }
-.about-middle__list p:nth-child(2):hover {
+.main .about-middle__list p:nth-child(2):hover {
   color: #EE6C4D;
   transition: 0.2s;
 }
-.about-middle__list p:nth-child(3) {
+.main .about-middle__list p:nth-child(3) {
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.12em;
 }
-.about-middle__list .list-line1::before {
+.main .about-middle__list .list-line1::before {
   content: "";
   position: absolute;
   width: 259px;
@@ -411,7 +431,7 @@ html .contacts .footer, body .contacts .footer {
   top: 250px;
   border: 1px solid #EE6C4D;
 }
-.about-middle__list .list-line2::before {
+.main .about-middle__list .list-line2::before {
   content: "";
   position: absolute;
   width: 259px;
@@ -420,22 +440,21 @@ html .contacts .footer, body .contacts .footer {
   top: 500px;
   border: 1px solid #EE6C4D;
 }
-.about-middle__list img {
+.main .about-middle__list img {
   transform: translate(-107px, 60px);
 }
-.about-middle__box {
+.main .about-middle__box {
   width: 585.5px;
   height: 685px;
   transform: translate(-120px, -720px);
   border: 1px solid #EE6C4D;
   border-radius: 10px;
 }
-
-.about-bottom__body {
+.main .about-bottom__body {
   margin-top: 77px;
   margin-left: 190px;
 }
-.about-bottom__title {
+.main .about-bottom__title {
   font-size: 32px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -444,10 +463,10 @@ html .contacts .footer, body .contacts .footer {
   color: #FFFFFF;
   transform: translate(100px, -450px);
 }
-.about-bottom__title span {
+.main .about-bottom__title span {
   color: #191F28;
 }
-.about-bottom__button {
+.main .about-bottom__button {
   font-size: 32px;
   background-color: transparent;
   transform: translate(130px, -265px);
@@ -456,62 +475,63 @@ html .contacts .footer, body .contacts .footer {
   border-radius: 5px;
   transition: 0.35s;
 }
-.about-bottom__button span {
+.main .about-bottom__button span {
   transition: 0.35s;
   color: #FFFFFF;
   font-weight: 400;
   line-height: 36px;
 }
-.about-bottom__button:hover {
+.main .about-bottom__button:hover {
   background: #EE6C4D;
   box-shadow: 0 0 40px #EE6C4D;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
-.about-bottom__button:hover span {
+.main .about-bottom__button:hover span {
   color: #191F28;
 }
-.about-bottom__button:active {
+.main .about-bottom__button:active {
   box-shadow: 0 0 20px #EE6C4D;
   background: #EC5A64;
   transition: background 0.5s, color 0.5s, box-shadow 0.5s;
   filter: hue-rotate(20deg);
 }
-.about-bottom__text {
+.main .about-bottom__text {
   font-weight: 700;
   font-size: 32px;
   line-height: 36px;
   letter-spacing: 0.12em;
   color: #FFFFFF;
+  transform: translateY(113.5px);
 }
-.about-bottom__contact {
+.main .about-bottom__contact {
   border: 1px solid #EE6C4D;
   width: 300px;
   text-align: center;
   border-radius: 5px;
   padding: 17px 60px;
-  transform: translate(950px, -75px);
+  transform: translate(950px, 50px);
   transition: 0.35s;
 }
-.about-bottom__contact span {
+.main .about-bottom__contact span {
   color: #FFFFFF;
   font-weight: 400;
   font-size: 32px;
   line-height: 36px;
   transition: 0.35s;
 }
-.about-bottom__contact:hover {
+.main .about-bottom__contact:hover {
   background: #EE6C4D;
   box-shadow: 0 0 40px #EE6C4D;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
-.about-bottom__contact:hover span {
+.main .about-bottom__contact:hover span {
   color: #191F28;
 }
-.about-bottom__contact:active {
+.main .about-bottom__contact:active {
   box-shadow: 0 0 20px #EE6C4D;
   background: #EC5A64;
   transition: background 0.5s, color 0.5s, box-shadow 0.5s;
@@ -520,10 +540,10 @@ html .contacts .footer, body .contacts .footer {
 
 /*projects.html*/
 /*contacts.html*/
-.contact-us__body {
+.contacts .contact-us__body {
   transform: translate(120px, 230px);
 }
-.contact-us__title {
+.contacts .contact-us__title {
   font-size: 48px;
   font-weight: 700;
   letter-spacing: 0.12em;
@@ -539,118 +559,117 @@ html .contacts .footer, body .contacts .footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.contact-us__subtitle {
+.contacts .contact-us__subtitle {
   margin-top: 46px;
   font-size: 24px;
   letter-spacing: 0.12em;
   color: #fff;
   line-height: 27px;
 }
-
-.contact-us-form__body {
+.contacts .contact-us-form__body {
   transform: translate(900px, -80px);
 }
-.contact-us-form input {
+.contacts .contact-us-form input {
   width: 250px;
   height: 68px;
   background-color: rgba(217, 217, 217, 0.1);
   border: 1px solid #ee6c4d;
   border-radius: 5px;
 }
-.contact-us-form p {
+.contacts .contact-us-form p {
   font-size: 32px;
   font-weight: 300;
   color: #fff;
   margin-bottom: 8.5px;
 }
-.contact-us-form__name input {
+.contacts .contact-us-form__name input {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
   padding-left: 5px;
 }
-.contact-us-form__name input::-moz-placeholder {
+.contacts .contact-us-form__name input::-moz-placeholder {
   padding-left: 85px;
   font-size: 25px;
   font-weight: 300;
   color: #fff;
 }
-.contact-us-form__name input:-ms-input-placeholder {
+.contacts .contact-us-form__name input:-ms-input-placeholder {
   padding-left: 85px;
   font-size: 25px;
   font-weight: 300;
   color: #fff;
 }
-.contact-us-form__name input::placeholder {
+.contacts .contact-us-form__name input::placeholder {
   padding-left: 85px;
   font-size: 25px;
   font-weight: 300;
   color: #fff;
 }
-.contact-us-form__name input:focus {
+.contacts .contact-us-form__name input:focus {
   background: #EE6C4D;
   box-shadow: 0 0 40px #EE6C4D;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
-.contact-us-form__name input:focus::-moz-placeholder {
+.contacts .contact-us-form__name input:focus::-moz-placeholder {
   color: #191F28;
 }
-.contact-us-form__name input:focus:-ms-input-placeholder {
+.contacts .contact-us-form__name input:focus:-ms-input-placeholder {
   color: #191F28;
 }
-.contact-us-form__name input:focus::placeholder {
+.contacts .contact-us-form__name input:focus::placeholder {
   color: #191F28;
 }
-.contact-us-form__mail {
+.contacts .contact-us-form__mail {
   transform: translate(325px, -108.5px);
 }
-.contact-us-form__mail input {
+.contacts .contact-us-form__mail input {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
   padding-left: 30px;
   width: 350px;
 }
-.contact-us-form__mail input::-moz-placeholder {
+.contacts .contact-us-form__mail input::-moz-placeholder {
   padding-left: 25px;
   font-size: 18px;
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
 }
-.contact-us-form__mail input:-ms-input-placeholder {
+.contacts .contact-us-form__mail input:-ms-input-placeholder {
   padding-left: 25px;
   font-size: 18px;
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
 }
-.contact-us-form__mail input::placeholder {
+.contacts .contact-us-form__mail input::placeholder {
   padding-left: 25px;
   font-size: 18px;
   font-weight: 300;
   color: #fff;
   text-transform: uppercase;
 }
-.contact-us-form__mail input:focus {
+.contacts .contact-us-form__mail input:focus {
   background: #EE6C4D;
   box-shadow: 0 0 40px #EE6C4D;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
-.contact-us-form__mail input:focus::-moz-placeholder {
+.contacts .contact-us-form__mail input:focus::-moz-placeholder {
   color: #191F28;
 }
-.contact-us-form__mail input:focus:-ms-input-placeholder {
+.contacts .contact-us-form__mail input:focus:-ms-input-placeholder {
   color: #191F28;
 }
-.contact-us-form__mail input:focus::placeholder {
+.contacts .contact-us-form__mail input:focus::placeholder {
   color: #191F28;
 }
-.contact-us-form__message textarea {
+.contacts .contact-us-form__message textarea {
   width: 575px;
   height: 380px;
   background-color: rgba(217, 217, 217, 0.1);
@@ -660,22 +679,22 @@ html .contacts .footer, body .contacts .footer {
   font-weight: 300;
   color: #fff;
 }
-.contact-us-form__message textarea::-moz-placeholder {
+.contacts .contact-us-form__message textarea::-moz-placeholder {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
 }
-.contact-us-form__message textarea:-ms-input-placeholder {
+.contacts .contact-us-form__message textarea:-ms-input-placeholder {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
 }
-.contact-us-form__message textarea::placeholder {
+.contacts .contact-us-form__message textarea::placeholder {
   font-size: 25px;
   font-weight: 300;
   color: #fff;
 }
-.contact-us-form__button {
+.contacts .contact-us-form__button {
   position: relative;
   width: 545px;
   height: 69px;
@@ -684,88 +703,87 @@ html .contacts .footer, body .contacts .footer {
   transform: translate(16px, 32px);
   z-index: 4;
 }
-.contact-us-form__button span {
+.contacts .contact-us-form__button span {
   font-size: 32px;
   color: #fff;
   font-weight: 400;
   line-height: 36px;
   background-color: #191F28;
 }
-.contact-us-form__button:hover {
+.contacts .contact-us-form__button:hover {
   background: #EE6C4D;
   box-shadow: 0 0 40px #EE6C4D;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
-.contact-us-form__button:hover span {
+.contacts .contact-us-form__button:hover span {
   color: #191F28;
   background: #EE6C4D;
   box-shadow: 0 0 40px #EE6C4D;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(0deg);
 }
-.contact-us-form__button:active {
+.contacts .contact-us-form__button:active {
   background: #EC5A64;
   box-shadow: 0 0 40px #EC5A64;
   color: #191F28;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(20deg);
 }
-.contact-us-form__button:active span {
+.contacts .contact-us-form__button:active span {
   color: #191F28;
   background: #EC5A64;
   box-shadow: 0 0 40px #EC5A64;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(0deg);
 }
-
-.contact-us-images {
+.contacts .contact-us-images {
   width: 0px;
 }
-.contact-us-images__body {
+.contacts .contact-us-images__body {
   width: 60%;
   transform: translate(0px, -500px);
 }
-.contact-us-images__bg {
+.contacts .contact-us-images__bg {
   position: relative;
   z-index: 1;
 }
-.contact-us-images__bg span {
+.contacts .contact-us-images__bg span {
   position: absolute;
   width: 1091.01px;
   height: 954px;
   background: url("/img/contacts/bg.png");
   transform: translate(-200px, -800px);
 }
-.contact-us-images__media {
+.contacts .contact-us-images__media {
   position: relative;
   z-index: 3;
   transform: translate(700px, 46px);
 }
-.contact-us-images__list {
+.contacts .contact-us-images__list {
   margin-bottom: 109px;
   transition: 0.35s;
   width: 70px;
 }
-.contact-us-images__list span {
+.contacts .contact-us-images__list span {
   position: absolute;
   color: #EE6C4D;
   opacity: 0;
   padding-top: 20px;
   transition: 0.35s;
 }
-.contact-us-images__list img {
+.contacts .contact-us-images__list img {
   transition: 0.35s;
 }
-.contact-us-images__list:nth-child(3) span {
+.contacts .contact-us-images__list:nth-child(3) span {
   padding-left: 10px;
 }
-.contact-us-images__list:hover img {
+.contacts .contact-us-images__list:hover img {
   filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
   transition: 0.35s;
 }
-.contact-us-images__list:hover span {
+.contacts .contact-us-images__list:hover span {
   transform: translatex(-85px);
   transition: 0.35s;
   opacity: 1;

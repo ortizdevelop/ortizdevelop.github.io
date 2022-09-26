@@ -200,6 +200,72 @@ body .main {
 
 /*main.html*/
 /*projects.html*/
+.projects__body {
+  transform: translate(120px, 250px);
+}
+.projects__title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #C4C4C4;
+  margin-bottom: 32px;
+}
+.projects__title span {
+  color: #C4C4C4;
+  background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-animation: ortizdevelop-anim 4s linear infinite;
+          animation: ortizdevelop-anim 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projects__text {
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  color: #c4c4c4;
+}
+.projects__text p {
+  margin-bottom: 55px;
+}
+.projects__text a {
+  transition: 0.15s;
+}
+.projects__text a span {
+  position: relative;
+  top: 0;
+  left: -55px;
+  color: #EE6C4D;
+  transition: 0.15s;
+  border-radius: 5px;
+}
+.projects__text a span::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  height: 2px;
+  width: 55px;
+  background-color: #EE6C4D;
+  border: 1px solid #EE6C4D;
+  top: 5px;
+  left: 150px;
+  transition: 0.15s;
+}
+.projects__text a span:hover {
+  color: #EC5A64;
+  left: -220px;
+}
+.projects__text a span:hover::before {
+  content: "";
+  position: relative;
+  top: 7.5px;
+  width: 220px;
+  left: 223px;
+  border: 1.5px solid #EC5A64;
+}
+
 /*contacts.html*/
 /*Анимации*/
 @-webkit-keyframes copyright-anim {

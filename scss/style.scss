@@ -265,16 +265,80 @@ body{
 .projects {
 
     &__body {
+        transform: translate(120px,250px);
     }
 
     &__title {
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        color: $color3;
+        margin-bottom: 32px;
+
+        span{
+            color: $color3;
+            background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            background-clip: text;
+            animation: ortizdevelop-anim 4s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     &__text {
+        font-size: 24px;
+        letter-spacing: 0.12em;
+        color: #c4c4c4;
+        
+        p{
+            margin-bottom: 55px;
+        }
+        
+        a{
+            transition: 0.15s;
+            span{
+                position: relative;
+                top: 0;
+                left: -55px;
+                color: $color1;
+                transition: 0.15s;
+                border-radius: 5px;
+
+                &::before{
+                    content: "";
+                    position: relative;
+                    display: inline-block;
+                    height: 2px;
+                    width: 55px;
+                    background-color: $color1;
+                    border: 1px solid $color1;
+                    top: 5px;
+                    left: 150px;
+                    transition: 0.15s;
+                }
+                
+                &:hover{
+                    color: #EC5A64;
+                    left: -220px;
+
+                    &::before{
+                        content: "";
+                        position: relative;
+                        top: 7.5px;
+                        width: 220px;
+                        left: 223px;
+                        border: 1.5px solid #EC5A64;
+                    }
+                }
+            }
+        }
     }
 }
 .project-slider {
-    
+
     .slider {
 
         &__body {

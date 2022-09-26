@@ -476,7 +476,7 @@ html, body{
                 &:hover{
                     position: relative;
                     transform: translateY(-15px);
-                    transition: transform 0.35s ease-in-out;
+                    transition: transform 0.25s ease-in-out;
                     filter: brightness(0) saturate(100%) invert(77%) sepia(68%) saturate(5398%) hue-rotate(329deg) brightness(97%) contrast(92%);
                 }
             }

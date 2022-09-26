@@ -37,7 +37,7 @@ html, body{
         height: 1024px;
 
         .footer{
-            top: 1500px;
+            top: 1100px;
             left: 0;
         }
     }
@@ -363,7 +363,7 @@ html, body{
     }
 
     &__mail {
-        transform: translate(325px,-108px);
+        transform: translate(325px,-108.5px);
 
         input{
             font-size: 25px;
@@ -414,11 +414,13 @@ html, body{
     }
 
     &__button {
+        position: relative;
         width: 545px;
         height: 69px;
         padding: 16px 170px;
         border: $bd1;
         transform: translate(16px,32px);
+        z-index: 4;
 
         span{
             font-size: 32px;
@@ -462,20 +464,73 @@ html, body{
     }
 }
 .contact-us-images {
-
+    width: 0px;
+    
     &__body {
+        
+        width: 60%;
+        transform: translate(0px,-500px);
     }
 
     &__bg {
+        position: relative;
+        z-index: 1;
+
+        span{
+            position: absolute;
+            width: 1091.01px;
+            height: 954px;
+            background: url('/img/contacts/bg.png');
+            transform: translate(-200px,-800px);
+        }
     }
 
     &__media {
+        position: relative;
+        z-index: 3;
+        transform: translate(700px,46px);
+        
     }
 
     &__column{
     }
 
     &__list{
+        margin-bottom: 109px;
+        transition: 0.35s;
+        width: 70px;
+        
+        span{
+            position: absolute;
+            color: $color1;
+            opacity: 0;
+            padding-top: 20px;
+            transition: 0.35s;
+        }
+
+        img{
+            transition: 0.35s;
+        }
+
+        &:nth-child(3){
+            span{
+                padding-left: 10px;
+            }
+        }
+
+        &:hover{
+            img{
+                filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                transition: 0.35s;
+            }
+
+            span{
+                transform: translatex(-85px);
+                transition: 0.35s;
+                opacity: 1;
+                font-weight: bold;
+            }
+        }
     }
 }
 

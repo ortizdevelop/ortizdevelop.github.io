@@ -20,7 +20,7 @@ html .contacts, body .contacts {
   height: 1024px;
 }
 html .contacts .footer, body .contacts .footer {
-  top: 1500px;
+  top: 1100px;
   left: 0;
 }
 
@@ -301,7 +301,7 @@ html .contacts .footer, body .contacts .footer {
   color: #191F28;
 }
 .contact-us-form__mail {
-  transform: translate(325px, -108px);
+  transform: translate(325px, -108.5px);
 }
 .contact-us-form__mail input {
   font-size: 25px;
@@ -373,11 +373,13 @@ html .contacts .footer, body .contacts .footer {
   color: #fff;
 }
 .contact-us-form__button {
+  position: relative;
   width: 545px;
   height: 69px;
   padding: 16px 170px;
   border: 1px solid #EE6C4D;
   transform: translate(16px, 32px);
+  z-index: 4;
 }
 .contact-us-form__button span {
   font-size: 32px;
@@ -413,6 +415,58 @@ html .contacts .footer, body .contacts .footer {
   box-shadow: 0 0 40px #EC5A64;
   transition: background 0.5s, color 0.5s;
   filter: hue-rotate(0deg);
+}
+
+.contact-us-images {
+  width: 0px;
+}
+.contact-us-images__body {
+  width: 60%;
+  transform: translate(0px, -500px);
+}
+.contact-us-images__bg {
+  position: relative;
+  z-index: 1;
+}
+.contact-us-images__bg span {
+  position: absolute;
+  width: 1091.01px;
+  height: 954px;
+  background: url("/img/contacts/bg.png");
+  transform: translate(-200px, -800px);
+}
+.contact-us-images__media {
+  position: relative;
+  z-index: 3;
+  transform: translate(700px, 46px);
+}
+.contact-us-images__list {
+  margin-bottom: 109px;
+  transition: 0.35s;
+  width: 70px;
+}
+.contact-us-images__list span {
+  position: absolute;
+  color: #EE6C4D;
+  opacity: 0;
+  padding-top: 20px;
+  transition: 0.35s;
+}
+.contact-us-images__list img {
+  transition: 0.35s;
+}
+.contact-us-images__list:nth-child(3) span {
+  padding-left: 10px;
+}
+.contact-us-images__list:hover img {
+  filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+  transition: 0.35s;
+}
+.contact-us-images__list:hover span {
+  transform: translatex(-85px);
+  transition: 0.35s;
+  opacity: 1;
+  font-weight: bold;
 }
 
 /*Анимации*/

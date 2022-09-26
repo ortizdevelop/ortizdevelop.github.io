@@ -287,23 +287,95 @@ html, body{
     }
 
     &__title {
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        color: #c4c4c4;
+        line-height: 54px;
     }
 
     &__subtitle {
+        margin-top: 46px;
+        font-size: 24px;
+        letter-spacing: 0.12em;
+        color: #fff;
+        line-height: 27px;
     }
 }
 .contact-us-form {
 
     &__body {
+        transform: translate(900px,-80px);
+    }
+
+    input{
+        width: 250px;
+        height: 68px;
+        background-color: rgba(217, 217, 217, 0.1);
+        border: 1px solid #ee6c4d;
+        border-radius: 5px;
+    }
+
+    p{
+        font-size: 32px;
+        font-weight: 300;
+        color: #fff;
+        margin-bottom: 8.5px;
     }
 
     &__name {
+        input{
+            font-size: 25px;
+            font-weight: 300;
+            color: #fff;
+            padding-left: 10px;
+
+            &::placeholder{
+                padding-left: 85px;
+                font-size: 25px;
+                font-weight: 300;
+                color: #fff;
+            }
+        }
     }
 
     &__mail {
+        transform: translate(325px,-108px);
+
+        input{
+            font-size: 25px;
+            font-weight: 300;
+            color: #fff;
+            padding-left: 40px;
+            width: 350px;
+
+            &::placeholder{
+                padding-left: 25px;
+                font-size: 18px;
+                font-weight: 300;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
     }
 
     &__message {
+        textarea{
+            width: 575px;
+            height: 380px;
+            background-color: rgba(217, 217, 217, 0.1);
+            border: 1px solid #ee6c4d;
+            border-radius: 5px;
+            font-size: 25px;
+            font-weight: 300;
+            color: #fff;
+
+            &::placeholder{
+                font-size: 25px;
+                font-weight: 300;
+                color: #fff;
+            }
+        }
     }
 
     &__button {

@@ -220,6 +220,117 @@ html .contacts .footer, body .contacts .footer {
 .contact-us__body {
   transform: translate(120px, 230px);
 }
+.contact-us__title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #c4c4c4;
+  line-height: 54px;
+}
+.contact-us__subtitle {
+  margin-top: 46px;
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  color: #fff;
+  line-height: 27px;
+}
+
+.contact-us-form__body {
+  transform: translate(900px, -80px);
+}
+.contact-us-form input {
+  width: 250px;
+  height: 68px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border: 1px solid #ee6c4d;
+  border-radius: 5px;
+}
+.contact-us-form p {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 8.5px;
+}
+.contact-us-form__name input {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 10px;
+}
+.contact-us-form__name input::-moz-placeholder {
+  padding-left: 85px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__name input:-ms-input-placeholder {
+  padding-left: 85px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__name input::placeholder {
+  padding-left: 85px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__mail {
+  transform: translate(325px, -108px);
+}
+.contact-us-form__mail input {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 40px;
+  width: 350px;
+}
+.contact-us-form__mail input::-moz-placeholder {
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-us-form__mail input:-ms-input-placeholder {
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-us-form__mail input::placeholder {
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-us-form__message textarea {
+  width: 575px;
+  height: 380px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border: 1px solid #ee6c4d;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__message textarea::-moz-placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__message textarea:-ms-input-placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__message textarea::placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
 /*Анимации*/
 @-webkit-keyframes copyright-anim {
   0% {

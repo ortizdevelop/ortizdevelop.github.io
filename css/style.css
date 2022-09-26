@@ -14,6 +14,9 @@ html .main, body .main {
   width: 1440px;
   height: 3564px;
 }
+html .main .footer, body .main .footer {
+  top: 3700px;
+}
 html .contacts, body .contacts {
   position: relative;
   width: 1440px;
@@ -236,10 +239,9 @@ html .contacts .footer, body .contacts .footer {
 
 /*main.html*/
 .about-head__body {
-  width: 1760px;
-  height: 864px;
+  width: 1865px;
+  height: 1014px;
   padding-top: 280px;
-  margin-left: 100px;
   background: url("/img/main/bg-logo.png") 440px -100px;
 }
 .about-head__content {
@@ -494,6 +496,7 @@ html .contacts .footer, body .contacts .footer {
   line-height: 36px;
   letter-spacing: 0.12em;
   color: #FFFFFF;
+  transform: translateY(113.5px);
 }
 .about-bottom__contact {
   border: 1px solid #EE6C4D;
@@ -501,7 +504,7 @@ html .contacts .footer, body .contacts .footer {
   text-align: center;
   border-radius: 5px;
   padding: 17px 60px;
-  transform: translate(950px, -75px);
+  transform: translate(950px, 50px);
   transition: 0.35s;
 }
 .about-bottom__contact span {

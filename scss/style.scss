@@ -29,6 +29,10 @@ html, body{
         position: relative;
         width: 1440px;
         height: 3564px;
+
+        .footer{
+            top: 3700px;
+        }
     }
 
     .projects{}
@@ -304,10 +308,9 @@ html, body{
 .about-head {
 
     &__body {
-        width: 1760px;
-        height: 864px;
+        width: 1865px;
+        height: 1014px;
         padding-top: 280px;
-        margin-left: 100px;
         background: url('/img/main/bg-logo.png') 440px -100px;
     }
 
@@ -629,6 +632,7 @@ html, body{
         line-height: 36px;
         letter-spacing: 0.12em;
         color: $color2;
+        transform: translateY(113.5px);
     }
 
     &__contact {
@@ -637,7 +641,7 @@ html, body{
         text-align: center;
         border-radius: 5px;
         padding: 17px 60px;
-        transform: translate(950px,-75px);
+        transform: translate(950px, 50px);
         transition: 0.35s;
 
         span{

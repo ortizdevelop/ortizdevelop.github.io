@@ -16,7 +16,7 @@ $color4: #191F28;
 $color5: #1D1D1D;
 
 /*Основные параметры сайта*/
-body{
+html, body{
     font-family: 'Almarai', sans-serif;
     background-color: $color4;
 
@@ -28,7 +28,16 @@ body{
 
     .projects{}
 
-    .contacts{}
+    .contacts{
+        position: relative;
+        width: 1440px;
+        height: 1024px;
+
+        .footer{
+            top: 1000px;
+            left: 0;
+        }
+    }
 }
 
 /*header*/
@@ -57,6 +66,7 @@ body{
             padding-left: 15px;
             padding-bottom: 8px;
             padding-top: 8px;
+            transition: 0.4s;
 
             &:hover{
                 color: $color1;
@@ -86,6 +96,7 @@ body{
         text-align: center;
         transform: translateY(-10px);
         border: 2px solid $color4;
+        transition: 0.4s;
 
         &:hover{
             transition: 0.4s;
@@ -97,6 +108,9 @@ body{
         padding-top: 20px;
         
         span{
+            transition: 0.4s;
+            border: 1px solid $color4;  
+
             &:hover{
                 transition: 0.4s;
                 color: $color3;
@@ -264,6 +278,55 @@ body{
 /*projects.html*/
 
 /*contacts.html*/
+
+
+.contact-us {
+
+    &__body {
+        transform: translate(120px, 230px);
+    }
+
+    &__title {
+    }
+
+    &__subtitle {
+    }
+}
+.contact-us-form {
+
+    &__body {
+    }
+
+    &__name {
+    }
+
+    &__mail {
+    }
+
+    &__message {
+    }
+
+    &__button {
+    }
+}
+.contact-us-images {
+
+    &__body {
+    }
+
+    &__bg {
+    }
+
+    &__media {
+    }
+
+    &__column{
+    }
+
+    &__list{
+    }
+}
+
 
 /*Анимации*/
 @keyframes copyright-anim{

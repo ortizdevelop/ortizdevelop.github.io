@@ -5,15 +5,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 /*Шаблоны*/
 /*Основные параметры сайта*/
-body {
+html, body {
   font-family: "Almarai", sans-serif;
   background-color: #191F28;
 }
-body .main {
+html .main, body .main {
   position: relative;
   width: 1440px;
   height: 3564px;
 }
+html .contacts, body .contacts {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+}
+html .contacts .footer, body .contacts .footer {
+  top: 1000px;
+  left: 0;
+}
+
 /*header*/
 .header__links {
   display: flex;
@@ -35,6 +45,7 @@ body .main {
   padding-left: 15px;
   padding-bottom: 8px;
   padding-top: 8px;
+  transition: 0.4s;
 }
 .header__links span:hover {
   color: #EE6C4D;
@@ -59,6 +70,7 @@ body .main {
   text-align: center;
   transform: translateY(-10px);
   border: 2px solid #191F28;
+  transition: 0.4s;
 }
 .header__logo:hover {
   transition: 0.4s;
@@ -66,6 +78,10 @@ body .main {
 }
 .header__contact {
   padding-top: 20px;
+}
+.header__contact span {
+  transition: 0.4s;
+  border: 1px solid #191F28;
 }
 .header__contact span:hover {
   transition: 0.4s;
@@ -201,6 +217,9 @@ body .main {
 /*main.html*/
 /*projects.html*/
 /*contacts.html*/
+.contact-us__body {
+  transform: translate(120px, 230px);
+}
 /*Анимации*/
 @-webkit-keyframes copyright-anim {
   0% {

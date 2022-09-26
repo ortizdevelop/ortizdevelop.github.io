@@ -599,9 +599,48 @@ body{
     }
 
     &__text {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+        letter-spacing: 0.12em;
+        color: $color2;
     }
 
     &__contact {
+        border: $bd1;
+        width: 300px;
+        text-align: center;
+        border-radius: 5px;
+        padding: 17px 60px;
+        transform: translate(950px,-75px);
+        transition: 0.35s;
+
+        span{
+            color: $color2;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 36px;
+            transition: 0.35s;
+        }
+
+        &:hover {
+            background: $color1;
+            box-shadow: 0 0 40px $color1;
+            color: $color4;
+            transition: background .5s, color .5s;
+            filter: hue-rotate(20deg);
+
+            span{
+                color: $color4;
+            }
+        }
+
+        &:active {
+            box-shadow: 0 0 20px $color1;
+            background: #EC5A64;
+            transition: background .5s, color .5s, box-shadow .5s;
+            filter: hue-rotate(20deg);
+        }
     }
 }
 

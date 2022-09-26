@@ -468,6 +468,46 @@ body .main {
   transition: background 0.5s, color 0.5s, box-shadow 0.5s;
   filter: hue-rotate(20deg);
 }
+.about-bottom__text {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.12em;
+  color: #FFFFFF;
+}
+.about-bottom__contact {
+  border: 1px solid #EE6C4D;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 17px 60px;
+  transform: translate(950px, -75px);
+  transition: 0.35s;
+}
+.about-bottom__contact span {
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  transition: 0.35s;
+}
+.about-bottom__contact:hover {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.about-bottom__contact:hover span {
+  color: #191F28;
+}
+.about-bottom__contact:active {
+  box-shadow: 0 0 20px #EE6C4D;
+  background: #EC5A64;
+  transition: background 0.5s, color 0.5s, box-shadow 0.5s;
+  filter: hue-rotate(20deg);
+}
+
 /*projects.html*/
 /*contacts.html*/
 /*Анимации*/

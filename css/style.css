@@ -5,15 +5,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 /*Шаблоны*/
 /*Основные параметры сайта*/
-body {
+html, body {
   font-family: "Almarai", sans-serif;
   background-color: #191F28;
 }
-body .main {
+html .main, body .main {
   position: relative;
   width: 1440px;
   height: 3564px;
 }
+html .contacts, body .contacts {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+}
+html .contacts .footer, body .contacts .footer {
+  top: 1100px;
+  left: 0;
+}
+
 /*header*/
 .header__links {
   display: flex;
@@ -510,6 +520,258 @@ body .main {
 
 /*projects.html*/
 /*contacts.html*/
+.contact-us__body {
+  transform: translate(120px, 230px);
+}
+.contact-us__title {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #c4c4c4;
+  line-height: 54px;
+  background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-animation: ortizdevelop-anim 8s linear infinite;
+          animation: ortizdevelop-anim 8s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.contact-us__subtitle {
+  margin-top: 46px;
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  color: #fff;
+  line-height: 27px;
+}
+
+.contact-us-form__body {
+  transform: translate(900px, -80px);
+}
+.contact-us-form input {
+  width: 250px;
+  height: 68px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border: 1px solid #ee6c4d;
+  border-radius: 5px;
+}
+.contact-us-form p {
+  font-size: 32px;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 8.5px;
+}
+.contact-us-form__name input {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 5px;
+}
+.contact-us-form__name input::-moz-placeholder {
+  padding-left: 85px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__name input:-ms-input-placeholder {
+  padding-left: 85px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__name input::placeholder {
+  padding-left: 85px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__name input:focus {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__name input:focus::-moz-placeholder {
+  color: #191F28;
+}
+.contact-us-form__name input:focus:-ms-input-placeholder {
+  color: #191F28;
+}
+.contact-us-form__name input:focus::placeholder {
+  color: #191F28;
+}
+.contact-us-form__mail {
+  transform: translate(325px, -108.5px);
+}
+.contact-us-form__mail input {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+  padding-left: 30px;
+  width: 350px;
+}
+.contact-us-form__mail input::-moz-placeholder {
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-us-form__mail input:-ms-input-placeholder {
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-us-form__mail input::placeholder {
+  padding-left: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+.contact-us-form__mail input:focus {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__mail input:focus::-moz-placeholder {
+  color: #191F28;
+}
+.contact-us-form__mail input:focus:-ms-input-placeholder {
+  color: #191F28;
+}
+.contact-us-form__mail input:focus::placeholder {
+  color: #191F28;
+}
+.contact-us-form__message textarea {
+  width: 575px;
+  height: 380px;
+  background-color: rgba(217, 217, 217, 0.1);
+  border: 1px solid #ee6c4d;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__message textarea::-moz-placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__message textarea:-ms-input-placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__message textarea::placeholder {
+  font-size: 25px;
+  font-weight: 300;
+  color: #fff;
+}
+.contact-us-form__button {
+  position: relative;
+  width: 545px;
+  height: 69px;
+  padding: 16px 170px;
+  border: 1px solid #EE6C4D;
+  transform: translate(16px, 32px);
+  z-index: 4;
+}
+.contact-us-form__button span {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 400;
+  line-height: 36px;
+  background-color: #191F28;
+}
+.contact-us-form__button:hover {
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__button:hover span {
+  color: #191F28;
+  background: #EE6C4D;
+  box-shadow: 0 0 40px #EE6C4D;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(0deg);
+}
+.contact-us-form__button:active {
+  background: #EC5A64;
+  box-shadow: 0 0 40px #EC5A64;
+  color: #191F28;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(20deg);
+}
+.contact-us-form__button:active span {
+  color: #191F28;
+  background: #EC5A64;
+  box-shadow: 0 0 40px #EC5A64;
+  transition: background 0.5s, color 0.5s;
+  filter: hue-rotate(0deg);
+}
+
+.contact-us-images {
+  width: 0px;
+}
+.contact-us-images__body {
+  width: 60%;
+  transform: translate(0px, -500px);
+}
+.contact-us-images__bg {
+  position: relative;
+  z-index: 1;
+}
+.contact-us-images__bg span {
+  position: absolute;
+  width: 1091.01px;
+  height: 954px;
+  background: url("/img/contacts/bg.png");
+  transform: translate(-200px, -800px);
+}
+.contact-us-images__media {
+  position: relative;
+  z-index: 3;
+  transform: translate(700px, 46px);
+}
+.contact-us-images__list {
+  margin-bottom: 109px;
+  transition: 0.35s;
+  width: 70px;
+}
+.contact-us-images__list span {
+  position: absolute;
+  color: #EE6C4D;
+  opacity: 0;
+  padding-top: 20px;
+  transition: 0.35s;
+}
+.contact-us-images__list img {
+  transition: 0.35s;
+}
+.contact-us-images__list:nth-child(3) span {
+  padding-left: 10px;
+}
+.contact-us-images__list:hover img {
+  filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+  transition: 0.35s;
+}
+.contact-us-images__list:hover span {
+  transform: translatex(-85px);
+  transition: 0.35s;
+  opacity: 1;
+  font-weight: bold;
+}
+
 /*Анимации*/
 @-webkit-keyframes copyright-anim {
   0% {

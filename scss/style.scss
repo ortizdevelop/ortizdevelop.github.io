@@ -16,7 +16,7 @@ $color4: #191F28;
 $color5: #1D1D1D;
 
 /*Основные параметры сайта*/
-body{
+html, body{
     font-family: 'Almarai', sans-serif;
     background-color: $color4;
 
@@ -26,7 +26,14 @@ body{
         height: 3564px;
     }
 
-    .projects{}
+    .projects-main{
+        width: 1440px;
+        height: 1024px;
+
+        footer{
+            top: 1000px;
+        }
+    }
 
     .contacts{}
 }
@@ -265,7 +272,7 @@ body{
 .projects {
 
     &__body {
-        transform: translate(120px,250px);
+        transform: translate(120px,450px);
     }
 
     &__title {
@@ -299,7 +306,7 @@ body{
         
         a{
             transition: 0.15s;
-            span{
+            span{   
                 position: relative;
                 top: 0;
                 left: -55px;
@@ -337,29 +344,91 @@ body{
         }
     }
 }
+
 .project-slider {
+    
+    &__slider-body{
+        width: 587px;
+        height: 320px;
+        overflow: hidden;
+        border-bottom: 10px solid #EE6C4D;;
+        transform: translate(900px,-320px);
+    }
 
-    .slider {
+        input[name="r"]{
+            position: absolute;
+            visibility: hidden;
+        }
 
-        &__body {
+    &__slides {
+        width: 600%;
+        height: 100%;
+        display: flex;
+    }
+
+    &__slide {
+        width: 25%;
+        transition: all .3s ease;
+
+        img{
+            width: 100%;
+            height: 100%;
         }
-    
-        &__slides {
-        }
-    
-        &__overflow {
-        }
-    
-        &__img {
-        }
-    
-        &__controls {
-        }
-    
-        &__active {
+
+    }
+
+    &__navigation {
+        width: 412px;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        display: flex;
+        transform: translate(265px,-160px);
+        background: url('/img/projects/slider/arrows.png') 0px 10px no-repeat;
+    }
+
+    &__bar {
+        position: relative;
+        left: 60px;
+        height: 20px;
+        width: 20px;
+        margin: 14px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: $color3;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: $color1;
+            transform: scale(1.1);
         }
     }
+
+    #r1:checked ~ .s1{
+        margin-left: 0;
+    }
+
+    #r2:checked ~ .s1{
+        margin-left: -22%;
+    }
+
+    #r3:checked ~ .s1{
+        margin-left: -53%;
+    }
+
+    #r4:checked ~ .s1{
+        margin-left: -79%;
+    }
+    
+    #r5:checked ~ .s1{
+        margin-left: -102%;
+    }
+
+    #r6:checked ~ .s1{
+        margin-left: -125%;
+    }
 }
+
 
 /*contacts.html*/
 

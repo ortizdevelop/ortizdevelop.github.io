@@ -5,14 +5,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
 /*Шаблоны*/
 /*Основные параметры сайта*/
-body {
+html, body {
   font-family: "Almarai", sans-serif;
   background-color: #191F28;
 }
-body .main {
+html .main, body .main {
   position: relative;
   width: 1440px;
   height: 3564px;
+}
+html .projects-main, body .projects-main {
+  width: 1440px;
+  height: 1024px;
+}
+html .projects-main footer, body .projects-main footer {
+  top: 1000px;
 }
 /*header*/
 .header__links {
@@ -201,7 +208,7 @@ body .main {
 /*main.html*/
 /*projects.html*/
 .projects__body {
-  transform: translate(120px, 250px);
+  transform: translate(120px, 450px);
 }
 .projects__title {
   font-size: 36px;
@@ -264,6 +271,73 @@ body .main {
   width: 220px;
   left: 223px;
   border: 1.5px solid #EC5A64;
+}
+
+.project-slider__slider-body {
+  width: 587px;
+  height: 320px;
+  overflow: hidden;
+  border-bottom: 10px solid #EE6C4D;
+  transform: translate(900px, -320px);
+}
+.project-slider input[name=r] {
+  position: absolute;
+  visibility: hidden;
+}
+.project-slider__slides {
+  width: 600%;
+  height: 100%;
+  display: flex;
+}
+.project-slider__slide {
+  width: 25%;
+  transition: all 0.3s ease;
+}
+.project-slider__slide img {
+  width: 100%;
+  height: 100%;
+}
+.project-slider__navigation {
+  width: 412px;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  display: flex;
+  transform: translate(265px, -160px);
+  background: url("/img/projects/slider/arrows.png") 0px 10px no-repeat;
+}
+.project-slider__bar {
+  position: relative;
+  left: 60px;
+  height: 20px;
+  width: 20px;
+  margin: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: #C4C4C4;
+  transition: all 0.3s ease;
+}
+.project-slider__bar:hover {
+  background-color: #EE6C4D;
+  transform: scale(1.1);
+}
+.project-slider #r1:checked ~ .s1 {
+  margin-left: 0;
+}
+.project-slider #r2:checked ~ .s1 {
+  margin-left: -22%;
+}
+.project-slider #r3:checked ~ .s1 {
+  margin-left: -53%;
+}
+.project-slider #r4:checked ~ .s1 {
+  margin-left: -79%;
+}
+.project-slider #r5:checked ~ .s1 {
+  margin-left: -102%;
+}
+.project-slider #r6:checked ~ .s1 {
+  margin-left: -125%;
 }
 
 /*contacts.html*/

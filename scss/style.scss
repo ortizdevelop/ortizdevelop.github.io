@@ -59,23 +59,35 @@ html, body{
         height: 74.68px;
         left: 100px;
         top: 60.83px;
+        transition: 0.35s;
 
-        span{
-            color: $color3;
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: 0.3em;
-            text-align: center;
-            border-radius: 5px;
-            padding-right: 15px;
-            padding-left: 15px;
-            padding-bottom: 8px;
-            padding-top: 8px;
+        a{
             transition: 0.35s;
 
-            &:hover{
-                color: $color1;
-                transition: 0.4s;
+            span{
+                border: 1px solid $color4;
+                color: $color3;
+                font-size: 20px;
+                font-weight: 700;
+                letter-spacing: 0.3em;
+                text-align: center;
+                border-radius: 5px;
+                padding-right: 15px;
+                padding-left: 15px;
+                padding-bottom: 8px;
+                padding-top: 8px;
+                transition: 0.35s;
+    
+                &:hover{
+                    border: $bd1;
+                    transition: 0.35s;
+                }
+
+                &:active{
+                    transition: 0.35s;
+                    background-color: $color1;
+                    color: $color4;
+                }
             }
         }
     }

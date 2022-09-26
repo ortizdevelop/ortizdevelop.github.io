@@ -33,8 +33,13 @@ html .contacts .footer, body .contacts .footer {
   height: 74.68px;
   left: 100px;
   top: 60.83px;
+  transition: 0.35s;
 }
-.header__links span {
+.header__links a {
+  transition: 0.35s;
+}
+.header__links a span {
+  border: 1px solid #191F28;
   color: #C4C4C4;
   font-size: 20px;
   font-weight: 700;
@@ -47,9 +52,14 @@ html .contacts .footer, body .contacts .footer {
   padding-top: 8px;
   transition: 0.35s;
 }
-.header__links span:hover {
-  color: #EE6C4D;
-  transition: 0.4s;
+.header__links a span:hover {
+  border: 1px solid #EE6C4D;
+  transition: 0.35s;
+}
+.header__links a span:active {
+  transition: 0.35s;
+  background-color: #EE6C4D;
+  color: #191F28;
 }
 .header__link-about {
   margin-right: 39px;

@@ -541,8 +541,59 @@ body{
     &__banner {
     }
 
-    &__button {
+    &__title{
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        font-weight: 700;
+        line-height: 36px;
+        color: $color2;
+        transform: translate(100px, -450px);
+        
+
+        span{
+            color: $color4;
+        }
     }
+
+    &__btn {
+	}
+
+	&__button {
+        font-size: 32px;
+        background-color: transparent;
+        transform: translate(130px, -230px);
+        border: $bd1;
+        padding: 21px 90px;
+        border-radius: 5px;
+        transition: 0.35s;
+
+        span{
+            transition: 0.35s;
+            color: $color2;
+            font-weight: 400;
+            line-height: 36px;
+        }
+
+        &:hover {
+            background: $color1;
+            box-shadow: 0 0 40px $color1;
+            color: $color4;
+            transition: background .5s, color .5s;
+            filter: hue-rotate(20deg);
+
+            span{
+                color: $color4;
+            }
+        }
+
+        &:active {
+            box-shadow: 0 0 20px $color1;
+            background: #EC5A64;
+            transition: background .5s, color .5s, box-shadow .5s;
+            filter: hue-rotate(20deg);
+        }
+	}
 
     &__line {
     }

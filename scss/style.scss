@@ -849,18 +849,69 @@ html, body{
 .projects-pages {
 
     &__body {
+        transform: translate(120px,250px);
     }
 
     &__content {
     }
 
     &__title {
+        margin-bottom: 106px;
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        color: $color3;
+
+        span{
+            color: $color1;
+        }
     }
 
     &__description {
+        margin-bottom: 141px;
+        font-size: 24px;
+        letter-spacing: 0.12em;
+        line-height: 27px;
+        color: $color3;
+
+        span{
+            color: $color3;
+            background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            background-clip: text;
+            animation: ortizdevelop-anim 4s linear infinite;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
 
     &__tools-links {
+        display: flex;
+        width: 458px;
+        height: 40px;
+        justify-content: space-between;
+
+        p{
+            border-radius: 5px;
+            height: 45px;
+            padding-left: 5px;
+            padding-top: 2px;
+            text-align: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 40px;
+            letter-spacing: 0.12em;
+            color: $color1;
+            transition: 0.35s;
+
+            &:hover{
+                color: $color4;
+                background-color: $color1;
+            }
+        }
     }
 
     &__tools {

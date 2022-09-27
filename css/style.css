@@ -680,6 +680,62 @@ html .contacts .footer, body .contacts .footer {
 }
 
 /*projects-page.html*/
+.projects-pages__body {
+  transform: translate(120px, 250px);
+}
+.projects-pages__title {
+  margin-bottom: 106px;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  color: #C4C4C4;
+}
+.projects-pages__title span {
+  color: #EE6C4D;
+}
+.projects-pages__description {
+  margin-bottom: 141px;
+  font-size: 24px;
+  letter-spacing: 0.12em;
+  line-height: 27px;
+  color: #C4C4C4;
+}
+.projects-pages__description span {
+  color: #C4C4C4;
+  background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-animation: ortizdevelop-anim 4s linear infinite;
+          animation: ortizdevelop-anim 4s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.projects-pages__tools-links {
+  display: flex;
+  width: 458px;
+  height: 40px;
+  justify-content: space-between;
+}
+.projects-pages__tools-links p {
+  border-radius: 5px;
+  height: 45px;
+  padding-left: 5px;
+  padding-top: 2px;
+  text-align: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.12em;
+  color: #EE6C4D;
+  transition: 0.35s;
+}
+.projects-pages__tools-links p:hover {
+  color: #191F28;
+  background-color: #EE6C4D;
+}
 /*contacts.html*/
 .contacts .contact-us__body {
   transform: translate(120px, 230px);

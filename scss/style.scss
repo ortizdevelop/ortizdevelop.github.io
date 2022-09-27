@@ -44,6 +44,15 @@ html, body{
         }
     }
 
+    .projects-page{
+        width: 1440px;
+        height: 1024px;
+
+        footer{
+            top: 1000px;
+        }
+    }
+
     .contacts{
         position: relative;
         width: 1440px;
@@ -929,6 +938,12 @@ html, body{
 .projects-pages-slider {
 
     &__body {
+        background-color: #252E3B;
+        position: absolute;
+        width: 779px;
+        height: 837px;
+        left: 775px;
+        top: -50px;
     }
 
     &__slider-body {

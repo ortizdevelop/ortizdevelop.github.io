@@ -24,6 +24,13 @@ html .projects-main, body .projects-main {
 html .projects-main footer, body .projects-main footer {
   top: 1000px;
 }
+html .projects-page, body .projects-page {
+  width: 1440px;
+  height: 1024px;
+}
+html .projects-page footer, body .projects-page footer {
+  top: 1000px;
+}
 html .contacts, body .contacts {
   position: relative;
   width: 1440px;
@@ -735,6 +742,14 @@ html .contacts .footer, body .contacts .footer {
 .projects-pages__tools-links p:hover {
   color: #191F28;
   background-color: #EE6C4D;
+}
+.projects-pages-slider__body {
+  background-color: #252E3B;
+  position: absolute;
+  width: 779px;
+  height: 837px;
+  left: 775px;
+  top: -50px;
 }
 /*contacts.html*/
 .contacts .contact-us__body {

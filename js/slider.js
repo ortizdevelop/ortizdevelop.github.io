@@ -37,18 +37,10 @@ r1.addEventListener('click', () => {
     in one application. <br>
     </p>`;
 
-    toolsImg1.innerHTML =
-    img.src = '/img/projects/slider/akar-icons_html-fill.png';
-
-    toolsImg2.innerHTML =
-    img.src = '/img/projects/slider/akar-icons_react-fill.png';
-
-    toolsImg3.innerHTML =
-    img.src = '/img/projects/slider/akar-icons_css-fill.png';
-
-    toolsImg4.innerHTML =
-    img.src = '/img/projects/slider/akar-icons_javascript-fill.png';
-
+    toolsImg1.src = '/img/projects/slider/akar-icons_html-fill.png';
+    toolsImg2.src = '/img/projects/slider/akar-icons_python-fill.png';
+    toolsImg3.src = '/img/projects/slider/akar-icons_css-fill.png';
+    toolsImg4.src = '/img/projects/slider/akar-icons_javascript-fill.png';
 });
 
 r2.addEventListener('click', () => {
@@ -57,4 +49,9 @@ r2.addEventListener('click', () => {
 
     projectsText.innerHTML = 
     `<p>It's a fucking caffe, what do u want?</p>`;
+    
+    toolsImg1.src = '/img/projects/slider/akar-icons_html-fill.png';
+    toolsImg2.src = '/img/projects/slider/akar-icons_react-fill.png';
+    toolsImg3.src = '/img/projects/slider/akar-icons_css-fill.png';
+    toolsImg4.src = '/img/projects/slider/akar-icons_javascript-fill.png';
 });

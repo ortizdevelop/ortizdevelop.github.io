@@ -863,6 +863,9 @@ html, body{
     }
 
     &__title {
+        position: absolute;
+        top: 0;
+        left: 0;
         font-size: 48px;
         font-weight: 700;
         letter-spacing: 0.12em;
@@ -871,6 +874,7 @@ html, body{
         margin-bottom: 106px;
         transition: 0.3s;
         transform: translateY(-100px);
+        animation: projects-anim 2.5s linear;
 
         span{
             color: $color3;
@@ -886,12 +890,16 @@ html, body{
     }
 
     &__text {
+        position: absolute;
+        top: 166px;
+        left: 0;
         font-size: 24px;
         letter-spacing: 0.12em;
         line-height: 27px;
         color: #c4c4c4;
         transition: 0.3s;
         transform: translateY(-100px);
+        animation: projects-anim 3s linear;
         
         p{
             margin-bottom: 55px;
@@ -926,6 +934,7 @@ html, body{
             position: absolute;
             top: 341px;
             left: 0;
+            animation: projects-anim 2.5s linear;
 		}
 
 	&__tools-title {
@@ -1422,5 +1431,20 @@ html, body{
 @keyframes ortizdevelop-anim{
     to{
         background-position: 200% center; //* Анимация для надписи ORTIZ DEVELOP
+    }
+}
+
+@keyframes projects-anim{
+    0%{
+        left: -100%;
+    }
+
+    50%{
+        left: -50%;
+    }
+
+    100%{
+        left: 0%;
+        animation-play-state: paused;
     }
 }

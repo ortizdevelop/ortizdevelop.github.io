@@ -698,6 +698,7 @@ html .contacts .footer, body .contacts .footer {
   line-height: 54px;
   color: #C4C4C4;
   margin-bottom: 106px;
+  transition: 0.3s;
   transform: translateY(-100px);
 }
 .projects-pages__title span {

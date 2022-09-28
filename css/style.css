@@ -29,7 +29,7 @@ html .projects-page, body .projects-page {
   height: 1024px;
 }
 html .projects-page footer, body .projects-page footer {
-  top: 2100px;
+  top: 1100px;
 }
 html .contacts, body .contacts {
   position: relative;
@@ -744,7 +744,9 @@ html .contacts .footer, body .contacts .footer {
 }
 .projects-pages__tools-and-links {
   display: flex;
-  transform: translateY(-100px);
+  position: absolute;
+  top: 341px;
+  left: 0;
 }
 .projects-pages__tools-title {
   font-size: 36px;
@@ -873,7 +875,7 @@ html .contacts .footer, body .contacts .footer {
   visibility: hidden;
 }
 .project-pages-slider__slides {
-  width: 600%;
+  width: 400%;
   height: 100%;
   display: flex;
 }
@@ -911,13 +913,13 @@ html .contacts .footer, body .contacts .footer {
   transform: scale(1.1);
 }
 .project-pages-slider #r1:checked ~ .s1 {
-  margin-left: 0;
+  margin-left: 0px;
 }
 .project-pages-slider #r2:checked ~ .s1 {
-  margin-left: -22%;
+  margin-left: -25%;
 }
 .project-pages-slider #r3:checked ~ .s1 {
-  margin-left: -53%;
+  margin-left: -50%;
 }
 .project-pages-slider #r4:checked ~ .s1 {
   margin-left: -79%;

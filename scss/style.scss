@@ -49,7 +49,7 @@ html, body{
         height: 1024px;
 
         footer{
-            top: 2100px;
+            top: 1100px;
         }
     }
 
@@ -923,7 +923,9 @@ html, body{
 
 	&__tools-and-links {
             display: flex;
-            transform: translateY(-100px);
+            position: absolute;
+            top: 341px;
+            left: 0;
 		}
 
 	&__tools-title {
@@ -1077,7 +1079,7 @@ html, body{
         }
 
     &__slides {
-        width: 600%;
+        width: 400%;
         height: 100%;
         display: flex;
     }
@@ -1122,15 +1124,15 @@ html, body{
     }
 
     #r1:checked ~ .s1{
-        margin-left: 0;
+        margin-left: 0px;
     }
 
     #r2:checked ~ .s1{
-        margin-left: -22%;
+        margin-left: -25%;
     }
 
     #r3:checked ~ .s1{
-        margin-left: -53%;
+        margin-left: -50%;
     }
 
     #r4:checked ~ .s1{

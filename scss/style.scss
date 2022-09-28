@@ -49,7 +49,7 @@ html, body{
         height: 1024px;
 
         footer{
-            top: 1000px;
+            top: 2100px;
         }
     }
 
@@ -858,30 +858,18 @@ html, body{
 .projects-pages {
 
     &__body {
-        transform: translate(120px,250px);
-    }
-
-    &__content {
+        transform: translate(120px,450px);
+        width: 600px;
     }
 
     &__title {
-        margin-bottom: 106px;
         font-size: 48px;
         font-weight: 700;
         letter-spacing: 0.12em;
+        line-height: 54px;
         color: $color3;
-
-        span{
-            color: $color1;
-        }
-    }
-
-    &__description {
-        margin-bottom: 141px;
-        font-size: 24px;
-        letter-spacing: 0.12em;
-        line-height: 27px;
-        color: $color3;
+        margin-bottom: 106px;
+        transform: translateY(-100px);
 
         span{
             color: $color3;
@@ -896,77 +884,265 @@ html, body{
         }
     }
 
-    &__tools-links {
-        display: flex;
-        width: 458px;
-        height: 40px;
-        justify-content: space-between;
-
+    &__text {
+        font-size: 24px;
+        letter-spacing: 0.12em;
+        line-height: 27px;
+        color: #c4c4c4;
+        transition: 0.3s;
+        transform: translateY(-100px);
+        
         p{
-            border-radius: 5px;
-            height: 45px;
-            padding-left: 5px;
-            padding-top: 2px;
-            text-align: center;
-            align-items: center;
-            font-weight: 700;
-            font-size: 36px;
-            line-height: 40px;
-            letter-spacing: 0.12em;
-            color: $color1;
-            transition: 0.35s;
+            margin-bottom: 55px;
+            transition: 0.3s;
+        }
+        
+        a{
+            span{
+                position: relative;
+                left: 0;
+                top: 0;
+                color: $color1;
+                border-radius: 5px;
+                transition: 0.3s;
 
-            &:hover{
-                color: $color4;
-                background-color: $color1;
+                &:hover{
+                    color: $color6;
+                    transition: 0.3s;
+                }
+
+                &:active{
+                    background-color: $color6;
+                    color: $color4;
+                    transition: 0.3s;
+                }
             }
         }
     }
 
-    &__tools {
-    }
+	&__tools-and-links {
+            display: flex;
+            transform: translateY(-100px);
+		}
 
-    &__links {
-    }
+	&__tools-title {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            line-height: 40px;
+            color: #ee6c4d;
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+		}
 
-    &__tools-img {
-    }
+	&__links-title {
+            font-size: 36px;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            line-height: 40px;
+            color: #ee6c4d;
+            transform: translateX(236px);
+            padding: 5px;
+            border-radius: 5px;
+            text-align: center;
+		}
 
-    &__links-img {
-    }
+	&__tools-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+            li{
+                position: relative;
+                width: 70px;
+                height: 70px;
+
+                a{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    span{
+                        transform: translateY(0px);
+                        position: absolute;
+                        color: $color1;
+                        opacity: 0;
+                        transition: 0.2s;
+                        font-weight: bold;
+                    }
+
+                    &:hover{
+                        img{
+                            filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                            transition: 0.35s;
+                        }
+
+                        span{
+                            transform: translateY(-35px);
+                            transition: 0.35s;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            img{
+                width: 36px;
+                height: 36px;
+                transition: 0.2s;
+            }
+            transform: translate(-325px,86px);
+		}
+
+	&__links-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+
+            li{
+                position: relative;
+                width: 70px;
+                height: 70px;
+
+                a{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    span{
+                        transform: translateY(0px);
+                        position: absolute;
+                        color: $color1;
+                        opacity: 0;
+                        transition: 0.2s;
+                        font-weight: bold;
+                    }
+
+                    &:hover{
+                        img{
+                            filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                            transition: 0.35s;
+                        }
+
+                        span{
+                            transform: translateY(-35px);
+                            transition: 0.35s;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            img{
+                width: 36px;
+                height: 36px;
+                transition: 0.2s;
+            }
+            transform: translate(-180px,86px);   
+		}
+
+
 }
-.projects-pages-slider {
 
-    &__body {
-        background-color: #252E3B;
+.project-pages-slider {
+    position: absolute;
+    width: 779px;
+    height: 837px;
+    left: 663px;
+    top: -188px;
+    background-color: #252E3B;
+
+    &__slider-body{
         position: absolute;
-        width: 779px;
-        height: 837px;
-        left: 775px;
-        top: -50px;
+        width: 672px;
+        height: 284px;
+        left: 50px;
+        top: 239px;
+        overflow: hidden;
+        border: $bd1;
     }
 
-    &__slider-body {
-    }
+        input[name="r"]{
+            position: absolute;
+            visibility: hidden;
+        }
 
     &__slides {
+        width: 600%;
+        height: 100%;
+        display: flex;
     }
 
     &__slide {
+        width: 25%;
+        transition: all .3s ease;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
     }
 
     &__navigation {
+        width: 412px;
+        position: absolute;
+        bottom: 16px;
+        left: -80px;
+        display: flex;
+        transform: translate(265px,-160px);
+        background: url('/img/projects/slider/arrows.png') 0px 10px no-repeat;
     }
-}
-.ss1 {
-}
-.project-pages-slider {
 
     &__bar {
+        position: relative;
+        left: 60px;
+        top: 0;
+        height: 20px;
+        width: 20px;
+        margin: 14px;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: $color3;
+        transition: all .3s ease;
+
+        &:hover{
+            background-color: $color1;
+            transform: scale(1.1);
+        }
+    }
+
+    #r1:checked ~ .s1{
+        margin-left: 0;
+    }
+
+    #r2:checked ~ .s1{
+        margin-left: -22%;
+    }
+
+    #r3:checked ~ .s1{
+        margin-left: -53%;
+    }
+
+    #r4:checked ~ .s1{
+        margin-left: -79%;
+    }
+    
+    #r5:checked ~ .s1{
+        margin-left: -102%;
+    }
+
+    #r6:checked ~ .s1{
+        margin-left: -125%;
     }
 }
-
-
 /*contacts.html*/
 .contacts{
     .contact-us {

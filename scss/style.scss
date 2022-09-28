@@ -1067,7 +1067,8 @@ html, body{
         left: 50px;
         top: 239px;
         overflow: hidden;
-        border: $bd1;
+        border: 5px solid $color1;
+        border-radius: 5px;
     }
 
         input[name="r"]{

@@ -865,7 +865,8 @@ html .contacts .footer, body .contacts .footer {
   left: 50px;
   top: 239px;
   overflow: hidden;
-  border: 1px solid #EE6C4D;
+  border: 5px solid #EE6C4D;
+  border-radius: 5px;
 }
 .project-pages-slider input[name=r] {
   position: absolute;

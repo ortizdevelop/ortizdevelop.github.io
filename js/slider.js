@@ -52,7 +52,7 @@ r1.addEventListener('click', () => {
 
 r2.addEventListener('click', () => {
     projectsTitle.innerHTML = 
-    `<p>Caffe <span>Origami</span></p>`;
+    `<p>Caffe <span>Origami</span>.</p>`;
 
     projectsText.innerHTML = 
     `Start your day with aromatic coffee and a delicious dessert at - <a href="" target="_blank"><span>Caffe Origami</span></a>. <br>

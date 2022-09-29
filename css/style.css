@@ -6,6 +6,7 @@
 /*Шаблоны*/
 /*Основные параметры сайта*/
 html, body {
+  scroll-behavior: smooth;
   font-family: "Almarai", sans-serif;
   background-color: #191F28;
 }
@@ -346,6 +347,32 @@ html .contacts .footer, body .contacts .footer {
 .main .about-head__line {
   margin-top: 102px;
   transform: translateX(44.5px);
+}
+.main #progress {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 100;
+}
+.main #progress-value {
+  display: block;
+  height: calc(100% - 15px);
+  width: calc(100% - 15px);
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 35px;
+  color: #191F28;
+  transition: 0.3s;
 }
 .main .about-middle__body {
   margin-top: 104px;

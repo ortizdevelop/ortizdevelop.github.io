@@ -335,6 +335,7 @@ html .contacts .footer, body .contacts .footer {
   border-radius: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  transition: 0.3s;
   z-index: 100;
 }
 .main #progress-value {
@@ -347,6 +348,7 @@ html .contacts .footer, body .contacts .footer {
   place-items: center;
   font-size: 35px;
   color: #191F28;
+  transition: 0.3s;
 }
 .main .about-middle__body {
   margin-top: 104px;

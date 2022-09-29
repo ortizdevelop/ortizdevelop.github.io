@@ -9,6 +9,24 @@ html, body {
   font-family: "Almarai", sans-serif;
   background-color: #191F28;
 }
+html ::-webkit-scrollbar, body ::-webkit-scrollbar {
+  width: 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html ::-webkit-scrollbar-track, body ::-webkit-scrollbar-track {
+  background: #191F28;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
+  background: #EE6C4D;
+  border-radius: 8px;
+  border: 3px solid #EE6C4D;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
 html .main, body .main {
   position: relative;
   width: 1440px;

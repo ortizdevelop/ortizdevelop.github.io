@@ -25,6 +25,24 @@ html, body{
     font-family: 'Almarai', sans-serif;
     background-color: $color4;
 
+    ::-webkit-scrollbar{
+        width: 15px;
+        transition: 0.3s;
+    }
+
+    ::-webkit-scrollbar-track{
+        background: $color4;
+        box-shadow: 0 0 2px rgba(0, 0, 0, .2) inset;
+        transition: 0.3s;
+    }
+
+    ::-webkit-scrollbar-thumb{
+        background: $color1;
+        border-radius: 8px;
+        border: 3px solid $color1;
+        transition: 0.3s;
+    }
+
     .main{
         position: relative;
         width: 1440px;
@@ -323,6 +341,7 @@ html, body{
 }
 /*main.html*/
 .main{
+    
     .about-head {
         position: relative;
         z-index: 1;
@@ -409,7 +428,6 @@ html, body{
     }
     
     .about-middle {
-    
         &__body {
             margin-top: 104px;
             margin-left: 250px;

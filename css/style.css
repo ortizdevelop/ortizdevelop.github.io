@@ -748,8 +748,8 @@ html .contacts .footer, body .contacts .footer {
   margin-bottom: 106px;
   transition: 0.3s;
   transform: translateY(-100px);
-  -webkit-animation: projects-anim 2.5s linear;
-          animation: projects-anim 2.5s linear;
+  -webkit-animation: projects-anim 1s linear;
+          animation: projects-anim 1s linear;
 }
 .projects-pages__title span {
   color: #C4C4C4;
@@ -773,8 +773,8 @@ html .contacts .footer, body .contacts .footer {
   color: #c4c4c4;
   transition: 0.3s;
   transform: translateY(-100px);
-  -webkit-animation: projects-anim 3s linear;
-          animation: projects-anim 3s linear;
+  -webkit-animation: projects-anim 1s linear;
+          animation: projects-anim 1s linear;
 }
 .projects-pages__text p {
   margin-bottom: 55px;
@@ -802,8 +802,8 @@ html .contacts .footer, body .contacts .footer {
   position: absolute;
   top: 341px;
   left: 0;
-  -webkit-animation: projects-anim 2.5s linear;
-          animation: projects-anim 2.5s linear;
+  -webkit-animation: projects-anim 1s linear;
+          animation: projects-anim 1s linear;
 }
 .projects-pages__tools-title {
   font-size: 36px;

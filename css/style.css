@@ -324,7 +324,6 @@ html .contacts .footer, body .contacts .footer {
   transform: translateX(44.5px);
 }
 .main #progress {
-  background-color: #EE6C4D;
   position: fixed;
   bottom: 20px;
   right: 10px;

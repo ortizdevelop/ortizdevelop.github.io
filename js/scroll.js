@@ -5,7 +5,7 @@ calcScrollValue = () => {
     let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
     let scrollValue = Math.round((pos * 100)/ calcHeight);
     
-    if(pos > 823){
+    if(pos > 100){
         scrollProgress.style.display="grid";
     } else{
         scrollProgress.style.display="none";
@@ -14,6 +14,8 @@ calcScrollValue = () => {
     scrollProgress.addEventListener('click', () =>{
         document.documentElement.scrollTop = 0;
     });
+
+    scrollProgress.style.background = `conic-gradient(#EE6C4D ${scrollValue}%, #C4C4C4 ${scrollValue}%`;
 }
 
 window.onscroll = calcScrollValue;

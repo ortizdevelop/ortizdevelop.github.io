@@ -29,7 +29,7 @@ html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
   transition: 0.3s;
 }
 html .main, body .main {
-  position: relative;
+  position: absolute;
   width: 1440px;
   height: 3564px;
 }
@@ -351,7 +351,7 @@ html .contacts .footer, body .contacts .footer {
 .main #progress {
   position: fixed;
   bottom: 20px;
-  right: 10px;
+  right: 30px;
   height: 70px;
   width: 70px;
   display: none;

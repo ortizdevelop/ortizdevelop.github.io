@@ -383,6 +383,12 @@ html, body{
                     animation: title-anim 3s steps(12) infinite;
                 }
             }
+
+            .third-text{
+                span{
+                    color: $color1;
+                }
+            }
     
             span{
                 color: $color2;

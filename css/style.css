@@ -315,6 +315,9 @@ html .contacts .footer, body .contacts .footer {
   -webkit-animation: title-anim 3s steps(12) infinite;
           animation: title-anim 3s steps(12) infinite;
 }
+.main .about-head__title .third-text span {
+  color: #EE6C4D;
+}
 .main .about-head__title span {
   color: #FFFFFF;
 }

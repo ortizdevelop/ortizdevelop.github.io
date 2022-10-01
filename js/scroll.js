@@ -1,3 +1,4 @@
+/* A function that calculates the scroll value and displays it in the progress bar. */
 calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
     let progressValue = document.getElementById("progress-value");

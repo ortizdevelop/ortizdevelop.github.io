@@ -1,3 +1,4 @@
+/* Changing the content of the page. */
 let r1 = document.querySelector("#r1");
 let r2 = document.querySelector("#r2");
 let r3 = document.querySelector("#r3");

@@ -1,3 +1,4 @@
+/* Changing the text of the element with the class "second-text" every 12 seconds. */
 const text = document.querySelector(".second-text");
 
 const textLoad = () => {

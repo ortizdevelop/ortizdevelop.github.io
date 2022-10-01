@@ -363,7 +363,7 @@ html, body{
         }
     
         &__title {
-            width: 472px;
+            width: 672px;
             height: 213px;
             font-size: 64px;
             font-weight: 700;
@@ -380,60 +380,34 @@ html, body{
                     height: 64px;
                     background-color: $color4;
                     border-left: $bd1;
-                    animation: title-anim 3s steps(12) infinite;
+                    animation: title-anim 3.9s steps(12) infinite;
                 }
             }
 
             .third-text{
-                span{
-                    color: $color1;
-                }
+                color: $color2;
+                background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                background-clip: text;
+                animation: ortizdevelop-anim 8s linear infinite;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
             }
     
             span{
                 color: $color2;
     
                 &:nth-child(3){
-                    color: $color2;
-                    background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
-                    background-size: auto auto;
-                    background-clip: border-box;
-                    background-size: 200% auto;
-                    background-clip: text;
-                    animation: ortizdevelop-anim 8s linear infinite;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    color: $color1;
                 }
-
-                // &:nth-child(4){
-                //     color: $color2;
-                //     background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
-                //     background-size: auto auto;
-                //     background-clip: border-box;
-                //     background-size: 200% auto;
-                //     background-clip: text;
-                //     animation: ortizdevelop-anim 8s linear infinite;
-                //     -webkit-background-clip: text;
-                //     -webkit-text-fill-color: transparent;
-                // }
-
-                // &:nth-child(5){
-                //     color: $color2;
-                //     background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
-                //     background-size: auto auto;
-                //     background-clip: border-box;
-                //     background-size: 200% auto;
-                //     background-clip: text;
-                //     animation: ortizdevelop-anim 8s linear infinite;
-                //     -webkit-background-clip: text;
-                //     -webkit-text-fill-color: transparent;
-                // }
             }
             
         }
     
         &__subtitle {
-            margin-top: 70px;
+            margin-top: 10px;
             font-size: 24px;
             font-weight: 300;
             color: $color2;
@@ -1588,7 +1562,7 @@ html, body{
 
 @keyframes title-anim{ //* Анимация для шапки сайта
     40%, 60%{
-        left: 485px;
+        left: 472px;
     }
 
     100%{

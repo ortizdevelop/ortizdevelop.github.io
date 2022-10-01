@@ -294,7 +294,7 @@ html .contacts .footer, body .contacts .footer {
   margin-left: 160px;
 }
 .main .about-head__title {
-  width: 472px;
+  width: 672px;
   height: 213px;
   font-size: 64px;
   font-weight: 700;
@@ -312,16 +312,10 @@ html .contacts .footer, body .contacts .footer {
   height: 64px;
   background-color: #191F28;
   border-left: 1px solid #EE6C4D;
-  -webkit-animation: title-anim 3s steps(12) infinite;
-          animation: title-anim 3s steps(12) infinite;
+  -webkit-animation: title-anim 3.9s steps(12) infinite;
+          animation: title-anim 3.9s steps(12) infinite;
 }
-.main .about-head__title .third-text span {
-  color: #EE6C4D;
-}
-.main .about-head__title span {
-  color: #FFFFFF;
-}
-.main .about-head__title span:nth-child(3) {
+.main .about-head__title .third-text {
   color: #FFFFFF;
   background: linear-gradient(to right, #EC5A64 10%, #EE6C4D 50%, #E2DADA 60%);
   background-size: auto auto;
@@ -333,8 +327,14 @@ html .contacts .footer, body .contacts .footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.main .about-head__title span {
+  color: #FFFFFF;
+}
+.main .about-head__title span:nth-child(3) {
+  color: #EE6C4D;
+}
 .main .about-head__subtitle {
-  margin-top: 70px;
+  margin-top: 10px;
   font-size: 24px;
   font-weight: 300;
   color: #FFFFFF;
@@ -1306,7 +1306,7 @@ html .contacts .footer, body .contacts .footer {
 /*Анимации*/
 @-webkit-keyframes title-anim {
   40%, 60% {
-    left: 485px;
+    left: 472px;
   }
   100% {
     left: 290px;
@@ -1314,7 +1314,7 @@ html .contacts .footer, body .contacts .footer {
 }
 @keyframes title-anim {
   40%, 60% {
-    left: 485px;
+    left: 472px;
   }
   100% {
     left: 290px;

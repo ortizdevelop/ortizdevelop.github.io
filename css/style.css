@@ -434,6 +434,30 @@ html .contacts .footer, body .contacts .footer {
   align-items: center;
   text-align: center;
 }
+.main .about-middle__tools-column li:nth-child(5) span {
+  left: -15px;
+}
+.main .about-middle__tools-column li:nth-child(3) span {
+  left: -5px;
+}
+.main .about-middle__tools-column li:nth-child(7) span {
+  left: -7px;
+}
+.main .about-middle__tools-column li:nth-child(1) span {
+  left: -3.5px;
+}
+.main .about-middle__tools-column li:nth-child(4) span {
+  left: 2px;
+}
+.main .about-middle__tools-column li:nth-last-child(1) span {
+  left: -1px;
+}
+.main .about-middle__tools-column li:nth-last-child(2) span {
+  left: -2.5px;
+}
+.main .about-middle__tools-column li:nth-child(6) span {
+  left: -5px;
+}
 .main .about-middle__tools-list {
   position: relative;
   display: inline;
@@ -442,13 +466,27 @@ html .contacts .footer, body .contacts .footer {
   transition: 0.35s;
 }
 .main .about-middle__tools-list img {
-  transition: 0.35s;
+  transition: 0.3s;
 }
-.main .about-middle__tools-list img:hover {
-  position: relative;
-  transform: translateY(-15px);
-  transition: transform 0.25s ease-in-out;
-  filter: brightness(0) saturate(100%) invert(77%) sepia(68%) saturate(5398%) hue-rotate(329deg) brightness(97%) contrast(92%);
+.main .about-middle__tools-list span {
+  position: absolute;
+  left: 0;
+  top: 5px;
+  color: #EE6C4D;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.3s;
+  opacity: 0;
+}
+.main .about-middle__tools-list:hover img {
+  filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+  transition: 0.3s;
+  transform: translateY(-5px);
+}
+.main .about-middle__tools-list:hover span {
+  transform: translateY(-29px);
+  transition: 0.3s;
+  opacity: 1;
 }
 .main .about-middle__img {
   margin-top: 187px;

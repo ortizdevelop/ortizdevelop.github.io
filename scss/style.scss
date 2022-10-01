@@ -528,6 +528,56 @@ html, body{
             padding-bottom: 20px;
             align-items: center;
             text-align: center;
+
+            li{
+                &:nth-child(5){
+                    span{
+                        left: -15px;
+                    };
+                }
+
+                &:nth-child(3){
+                    span{
+                        left: -5px;
+                    };
+                }
+
+                &:nth-child(7){
+                    span{
+                        left: -7px;
+                    };
+                }
+
+                &:nth-child(1){
+                    span{
+                        left: -3.5px;
+                    }
+                }
+
+                &:nth-child(4){
+                    span{
+                        left: 2px;
+                    }
+                }
+
+                &:nth-last-child(1){
+                    span{
+                        left: -1px;
+                    }
+                }
+
+                &:nth-last-child(2){
+                    span{
+                        left: -2.5px;
+                    }
+                }
+
+                &:nth-child(6){
+                    span{
+                        left: -5px;
+                    };
+                }
+            }
         }
     
         &__tools-list {
@@ -536,18 +586,38 @@ html, body{
             margin-right: 24px;
             box-shadow: -1.5px 30px 20px 5px #111111;
             transition: 0.35s;
-    
+
             img{
-                transition: 0.35s;
-    
-                &:hover{
-                    position: relative;
-                    transform: translateY(-15px);
-                    transition: transform 0.25s ease-in-out;
-                    filter: brightness(0) saturate(100%) invert(77%) sepia(68%) saturate(5398%) hue-rotate(329deg) brightness(97%) contrast(92%);
+                transition: 0.3s;
+            }
+
+            span{
+                position: absolute;
+                left: 0;
+                top: 5px;
+                color: $color1;
+                border-radius: 5px;
+                font-weight: bold;
+                transition: 0.3s;
+                opacity: 0;
+            }
+
+            &:hover{
+                img{
+                    filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                    transition: 0.3s;
+                    transform: translateY(-5px);
+                }
+
+                span{
+                    transform: translateY(-29px);
+                    transition: 0.3s;
+                    opacity: 1;
                 }
             }
         }
+
+        
     
         &__img {
             margin-top: 187px;

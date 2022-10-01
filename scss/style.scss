@@ -334,7 +334,7 @@ html, body{
             }
     }
     .copyright {
-
+        transform: translateX(-20px);
             &__title {
                 font-size: 16px;
                 line-height: 20px;
@@ -552,10 +552,16 @@ html, body{
             text-align: center;
 
             li{
-                &:nth-child(5){
+                &:nth-child(1){
                     span{
-                        left: -15px;
-                    };
+                        left: -3.5px;
+                    }
+                }
+
+                &:nth-child(2){
+                    span{
+                        left: -2px;
+                    }
                 }
 
                 &:nth-child(3){
@@ -564,24 +570,36 @@ html, body{
                     };
                 }
 
-                &:nth-child(7){
-                    span{
-                        left: -7px;
-                    };
-                }
-
-                &:nth-child(1){
-                    span{
-                        left: -3.5px;
-                    }
-                }
-
                 &:nth-child(4){
                     span{
                         left: 2px;
                     }
                 }
 
+                &:nth-child(5){
+                    span{
+                        left: -15px;
+                    };
+                }
+
+                &:nth-child(6){
+                    span{
+                        left: -5px;
+                    };
+                }
+
+                &:nth-child(7){
+                    span{
+                        left: -10.5px;
+                    };
+                }
+
+                &:nth-child(8){
+                    span{
+                        left: -90.5px;
+                    }
+                }
+                
                 &:nth-last-child(1){
                     span{
                         left: -1px;
@@ -592,13 +610,7 @@ html, body{
                     span{
                         left: -2.5px;
                     }
-                }
-
-                &:nth-child(6){
-                    span{
-                        left: -5px;
-                    };
-                }
+                } 
             }
         }
     

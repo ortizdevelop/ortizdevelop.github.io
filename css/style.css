@@ -269,6 +269,9 @@ html .contacts .footer, body .contacts .footer {
 .footer .footer-bot__images img {
   margin-right: 47px;
 }
+.footer .copyright {
+  transform: translateX(-20px);
+}
 .footer .copyright__title {
   font-size: 16px;
   line-height: 20px;
@@ -454,29 +457,35 @@ html .contacts .footer, body .contacts .footer {
   align-items: center;
   text-align: center;
 }
-.main .about-middle__tools-column li:nth-child(5) span {
-  left: -15px;
+.main .about-middle__tools-column li:nth-child(1) span {
+  left: -3.5px;
+}
+.main .about-middle__tools-column li:nth-child(2) span {
+  left: -2px;
 }
 .main .about-middle__tools-column li:nth-child(3) span {
   left: -5px;
 }
-.main .about-middle__tools-column li:nth-child(7) span {
-  left: -7px;
-}
-.main .about-middle__tools-column li:nth-child(1) span {
-  left: -3.5px;
-}
 .main .about-middle__tools-column li:nth-child(4) span {
   left: 2px;
+}
+.main .about-middle__tools-column li:nth-child(5) span {
+  left: -15px;
+}
+.main .about-middle__tools-column li:nth-child(6) span {
+  left: -5px;
+}
+.main .about-middle__tools-column li:nth-child(7) span {
+  left: -10.5px;
+}
+.main .about-middle__tools-column li:nth-child(8) span {
+  left: -90.5px;
 }
 .main .about-middle__tools-column li:nth-last-child(1) span {
   left: -1px;
 }
 .main .about-middle__tools-column li:nth-last-child(2) span {
   left: -2.5px;
-}
-.main .about-middle__tools-column li:nth-child(6) span {
-  left: -5px;
 }
 .main .about-middle__tools-list {
   position: relative;

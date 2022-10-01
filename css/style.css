@@ -342,6 +342,7 @@ html .contacts .footer, body .contacts .footer {
 }
 .main .about-head__subtitle span {
   color: #EE6C4D;
+  font-weight: bold;
 }
 .main .about-head__button {
   margin-top: 82px;

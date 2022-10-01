@@ -300,8 +300,23 @@ html .contacts .footer, body .contacts .footer {
   font-weight: 700;
   color: #FFFFFF;
 }
+.main .about-head__title .second-text {
+  color: red;
+}
+.main .about-head__title .second-text::before {
+  content: "";
+  position: absolute;
+  left: 290px;
+  top: 345px;
+  width: 194px;
+  height: 64px;
+  background-color: #191F28;
+  border-left: 1px solid #EE6C4D;
+  -webkit-animation: title-anim 3s steps(12) infinite;
+          animation: title-anim 3s steps(12) infinite;
+}
 .main .about-head__title span {
-  color: #EE6C4D;
+  color: #FFFFFF;
 }
 .main .about-head__title span:nth-child(3) {
   color: #FFFFFF;
@@ -316,6 +331,7 @@ html .contacts .footer, body .contacts .footer {
   -webkit-text-fill-color: transparent;
 }
 .main .about-head__subtitle {
+  margin-top: 70px;
   font-size: 24px;
   font-weight: 300;
   color: #FFFFFF;
@@ -1285,6 +1301,22 @@ html .contacts .footer, body .contacts .footer {
 }
 
 /*Анимации*/
+@-webkit-keyframes title-anim {
+  40%, 60% {
+    left: 485px;
+  }
+  100% {
+    left: 290px;
+  }
+}
+@keyframes title-anim {
+  40%, 60% {
+    left: 485px;
+  }
+  100% {
+    left: 290px;
+  }
+}
 @-webkit-keyframes copyright-anim {
   0% {
     color: #C4C4C4;

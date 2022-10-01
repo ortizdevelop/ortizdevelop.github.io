@@ -368,9 +368,24 @@ html, body{
             font-size: 64px;
             font-weight: 700;
             color: $color2;
+
+            .second-text{
+                color: red;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 290px;
+                    top: 345px;
+                    width: 194px;
+                    height: 64px;
+                    background-color: $color4;
+                    border-left: $bd1;
+                    animation: title-anim 3s steps(12) infinite;
+                }
+            }
     
             span{
-                color: $color1;
+                color: $color2;
     
                 &:nth-child(3){
                     color: $color2;
@@ -383,10 +398,36 @@ html, body{
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                 }
+
+                // &:nth-child(4){
+                //     color: $color2;
+                //     background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+                //     background-size: auto auto;
+                //     background-clip: border-box;
+                //     background-size: 200% auto;
+                //     background-clip: text;
+                //     animation: ortizdevelop-anim 8s linear infinite;
+                //     -webkit-background-clip: text;
+                //     -webkit-text-fill-color: transparent;
+                // }
+
+                // &:nth-child(5){
+                //     color: $color2;
+                //     background: linear-gradient(to right, #EC5A64     10%, $color1 50%, #E2DADA 60%);
+                //     background-size: auto auto;
+                //     background-clip: border-box;
+                //     background-size: 200% auto;
+                //     background-clip: text;
+                //     animation: ortizdevelop-anim 8s linear infinite;
+                //     -webkit-background-clip: text;
+                //     -webkit-text-fill-color: transparent;
+                // }
             }
+            
         }
     
         &__subtitle {
+            margin-top: 70px;
             font-size: 24px;
             font-weight: 300;
             color: $color2;
@@ -1538,6 +1579,17 @@ html, body{
 
 
 /*Анимации*/
+
+@keyframes title-anim{ //* Анимация для шапки сайта
+    40%, 60%{
+        left: 485px;
+    }
+
+    100%{
+        left: 290px;
+    }
+} 
+
 @keyframes copyright-anim{
     0%{
         color: $color3;

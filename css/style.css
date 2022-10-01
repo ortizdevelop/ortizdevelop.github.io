@@ -34,6 +34,7 @@ html .main, body .main {
   height: 3564px;
 }
 html .main .footer, body .main .footer {
+  position: absolute;
   top: 3700px;
 }
 html .projects-main, body .projects-main {
@@ -41,6 +42,7 @@ html .projects-main, body .projects-main {
   height: 1024px;
 }
 html .projects-main footer, body .projects-main footer {
+  position: absolute;
   top: 1000px;
 }
 html .projects-page, body .projects-page {
@@ -48,6 +50,7 @@ html .projects-page, body .projects-page {
   height: 1024px;
 }
 html .projects-page footer, body .projects-page footer {
+  position: absolute;
   top: 1100px;
 }
 html .contacts, body .contacts {
@@ -56,7 +59,8 @@ html .contacts, body .contacts {
   height: 1024px;
 }
 html .contacts .footer, body .contacts .footer {
-  top: 1100px;
+  position: absolute;
+  top: 1100;
   left: 0;
 }
 
@@ -145,8 +149,8 @@ html .contacts .footer, body .contacts .footer {
 
 /*footer*/
 .footer {
-  position: absolute;
-  width: 1840px;
+  position: relative;
+  width: 1864px;
   height: 433px;
   left: 0px;
   top: 3280px;

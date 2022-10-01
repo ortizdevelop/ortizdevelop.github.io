@@ -50,6 +50,7 @@ html, body{
         height: 3564px;
 
         .footer{
+            position: absolute;
             top: 3700px;
         }
     }
@@ -59,6 +60,7 @@ html, body{
         height: 1024px;
 
         footer{
+            position: absolute;
             top: 1000px;
         }
     }
@@ -68,6 +70,7 @@ html, body{
         height: 1024px;
 
         footer{
+            position: absolute;
             top: 1100px;
         }
     }
@@ -78,7 +81,8 @@ html, body{
         height: 1024px;
 
         .footer{
-            top: 1100px;
+            position: absolute;
+            top: 1100;
             left: 0;
         }
     }
@@ -185,8 +189,8 @@ html, body{
 
 /*footer*/
 .footer {
-    position: absolute;
-    width: 1840px;
+    position: relative;
+    width: 1864px;
     height: 433px;
     left: 0px;
     top: 3280px;

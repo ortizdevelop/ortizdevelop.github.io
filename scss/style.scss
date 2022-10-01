@@ -995,7 +995,7 @@ html, body{
         margin-bottom: 106px;
         transition: 0.3s;
         transform: translateY(-100px);
-        animation: projects-anim 1s linear;
+        animation: projects-anim 0.8s linear;
 
         span{
             color: $color3;
@@ -1020,7 +1020,7 @@ html, body{
         color: #c4c4c4;
         transition: 0.3s;
         transform: translateY(-100px);
-        animation: projects-anim 1s linear;
+        animation: projects-anim 0.8s linear;
         
         p{
             margin-bottom: 55px;
@@ -1055,7 +1055,7 @@ html, body{
             position: absolute;
             top: 341px;
             left: 0;
-            animation: projects-anim 1s linear;
+            animation: projects-anim 0.8s linear;
 		}
 
 	&__tools-title {
@@ -1307,6 +1307,10 @@ html, body{
             letter-spacing: 0.12em;
             color: #fff;
             line-height: 27px;
+
+            span{
+                color: $color1;
+            }
         }
     }
     .contact-us-form {

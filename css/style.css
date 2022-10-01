@@ -790,8 +790,8 @@ html .contacts .footer, body .contacts .footer {
   margin-bottom: 106px;
   transition: 0.3s;
   transform: translateY(-100px);
-  -webkit-animation: projects-anim 1s linear;
-          animation: projects-anim 1s linear;
+  -webkit-animation: projects-anim 0.8s linear;
+          animation: projects-anim 0.8s linear;
 }
 .projects-pages__title span {
   color: #C4C4C4;
@@ -815,8 +815,8 @@ html .contacts .footer, body .contacts .footer {
   color: #c4c4c4;
   transition: 0.3s;
   transform: translateY(-100px);
-  -webkit-animation: projects-anim 1s linear;
-          animation: projects-anim 1s linear;
+  -webkit-animation: projects-anim 0.8s linear;
+          animation: projects-anim 0.8s linear;
 }
 .projects-pages__text p {
   margin-bottom: 55px;
@@ -844,8 +844,8 @@ html .contacts .footer, body .contacts .footer {
   position: absolute;
   top: 341px;
   left: 0;
-  -webkit-animation: projects-anim 1s linear;
-          animation: projects-anim 1s linear;
+  -webkit-animation: projects-anim 0.8s linear;
+          animation: projects-anim 0.8s linear;
 }
 .projects-pages__tools-title {
   font-size: 36px;
@@ -1056,6 +1056,9 @@ html .contacts .footer, body .contacts .footer {
   letter-spacing: 0.12em;
   color: #fff;
   line-height: 27px;
+}
+.contacts .contact-us__subtitle span {
+  color: #EE6C4D;
 }
 .contacts .contact-us-form__body {
   transform: translate(900px, -80px);

@@ -627,9 +627,10 @@ html, body{
 
             span{
                 position: absolute;
-                left: 0;
+                left: 0px;
                 top: 5px;
                 color: $color1;
+                text-align: center;
                 border-radius: 5px;
                 font-weight: bold;
                 transition: 0.3s;
@@ -647,6 +648,90 @@ html, body{
                     transform: translateY(-29px);
                     transition: 0.3s;
                     opacity: 1;
+                }
+
+                &:nth-child(3){
+                    span{
+                        transform: translate(7.5px,-29px);
+                    }
+                }
+
+                &:nth-child(4){
+                    span{
+                        transform: translate(-3.5px,-29px);
+                    }
+                }
+
+                &:nth-child(5){
+                    span{
+                        transform: translate(-1px,-29px);
+                    }
+                }
+
+                &:nth-child(6){
+                    span{
+                        transform: translate(2.5px,-29px);
+                    }
+                }
+    
+                &:nth-child(7){
+                    span{
+                        transform: translate(7.5px,-29px);
+                    }
+                }
+    
+                &:nth-child(8){
+                    span{
+                        transform: translate(-7.5px,-29px);
+                    }
+                }
+    
+                &:nth-child(9){
+                    span{
+                        transform: translate(-7.5px,-59px);
+                    }
+                }
+            }
+
+            &:nth-child(3){
+                span{
+                    transform: translate(7.5px,0px);
+                }
+            }
+
+            &:nth-child(4){
+                span{
+                    transform: translate(-3.5px,0px);
+                }
+            }
+
+            &:nth-child(5){
+                span{
+                    transform: translate(-1px,0px);
+                }
+            }
+
+            &:nth-child(6){
+                span{
+                    transform: translate(2.5px,0px);
+                }
+            }
+
+            &:nth-child(7){
+                span{
+                    transform: translate(7.5px,0px);
+                }
+            }
+
+            &:nth-child(8){
+                span{
+                    transform: translate(-7.5px,0px);
+                }
+            }
+
+            &:nth-child(9){
+                span{
+                    transform: translate(-7.5px,0px);
                 }
             }
         }

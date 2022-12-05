@@ -662,6 +662,12 @@ html, body{
                     }
                 }
 
+                &:nth-child(5){
+                    span{
+                        transform: translate(-1px,-29px);
+                    }
+                }
+
                 &:nth-child(6){
                     span{
                         transform: translate(2.5px,-29px);
@@ -696,6 +702,12 @@ html, body{
             &:nth-child(4){
                 span{
                     transform: translate(-3.5px,0px);
+                }
+            }
+
+            &:nth-child(5){
+                span{
+                    transform: translate(-1px,0px);
                 }
             }
 

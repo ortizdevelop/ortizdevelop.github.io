@@ -524,6 +524,9 @@ html .contacts .footer, body .contacts .footer {
 .main .about-middle__tools-list:hover:nth-child(4) span {
   transform: translate(-3.5px, -29px);
 }
+.main .about-middle__tools-list:hover:nth-child(5) span {
+  transform: translate(-1px, -29px);
+}
 .main .about-middle__tools-list:hover:nth-child(6) span {
   transform: translate(2.5px, -29px);
 }
@@ -541,6 +544,9 @@ html .contacts .footer, body .contacts .footer {
 }
 .main .about-middle__tools-list:nth-child(4) span {
   transform: translate(-3.5px, 0px);
+}
+.main .about-middle__tools-list:nth-child(5) span {
+  transform: translate(-1px, 0px);
 }
 .main .about-middle__tools-list:nth-child(6) span {
   transform: translate(2.5px, 0px);

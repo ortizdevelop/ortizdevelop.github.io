@@ -1135,6 +1135,7 @@ html .contacts .footer, body .contacts .footer {
 }
 .contacts .contact-us__subtitle span {
   color: #EE6C4D;
+  text-transform: capitalize;
 }
 .contacts .contact-us-form__body {
   transform: translate(900px, -80px);

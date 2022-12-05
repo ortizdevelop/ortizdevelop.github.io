@@ -570,6 +570,14 @@ html .contacts .footer, body .contacts .footer {
 }
 .main .about-middle__list {
   margin-bottom: 44px;
+  transition: 0.3s;
+}
+.main .about-middle__list:hover {
+  transition: 0.3s;
+}
+.main .about-middle__list:hover p:nth-child(2) {
+  color: #EE6C4D;
+  transition: 0.2s;
 }
 .main .about-middle__list p {
   position: relative;
@@ -583,10 +591,6 @@ html .contacts .footer, body .contacts .footer {
   font-weight: 700;
   letter-spacing: 0.12em;
   margin-bottom: 28px;
-  transition: 0.2s;
-}
-.main .about-middle__list p:nth-child(2):hover {
-  color: #EE6C4D;
   transition: 0.2s;
 }
 .main .about-middle__list p:nth-child(3) {
@@ -1241,8 +1245,7 @@ html .contacts .footer, body .contacts .footer {
   background-color: rgba(217, 217, 217, 0.1);
   border: 1px solid #ee6c4d;
   border-radius: 5px;
-  font-size: 20px;
-  line-height: 300px;
+  font-size: 25px;
   font-weight: 300;
   color: #fff;
 }

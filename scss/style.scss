@@ -750,6 +750,18 @@ html, body{
     
         &__list{
             margin-bottom: 44px;
+            transition: 0.3s;
+
+            &:hover{
+                transition: 0.3s;
+
+                p{
+                    &:nth-child(2){
+                        color: $color1;
+                        transition: 0.2s;   
+                    }
+                }
+            }
     
             p{
                 position: relative;
@@ -763,11 +775,6 @@ html, body{
                     letter-spacing: 0.12em;
                     margin-bottom: 28px;
                     transition: 0.2s;
-                    
-                    &:hover{
-                        color: $color1;
-                        transition: 0.2s;
-                    }
                 }
     
                 &:nth-child(3){
@@ -1520,8 +1527,7 @@ html, body{
                 background-color: rgba(217, 217, 217, 0.1);
                 border: 1px solid #ee6c4d;
                 border-radius: 5px;
-                font-size: 20px;
-                line-height: 300px;
+                font-size: 25px;
                 font-weight: 300;
                 color: #fff;
     

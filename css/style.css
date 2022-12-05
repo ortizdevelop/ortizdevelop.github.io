@@ -1241,7 +1241,8 @@ html .contacts .footer, body .contacts .footer {
   background-color: rgba(217, 217, 217, 0.1);
   border: 1px solid #ee6c4d;
   border-radius: 5px;
-  font-size: 25px;
+  font-size: 20px;
+  line-height: 300px;
   font-weight: 300;
   color: #fff;
 }

@@ -1,0 +1,112 @@
+//* Шаблоны
+$border1: 2px solid red;
+$border2: 2px solid blue;
+$border3: 2px solid pink;
+
+$bd1: 1px solid #EE6C4D;
+
+$color1: #EE6C4D;
+$color2: #FFFFFF;
+$color3: #C4C4C4;
+$color4: #191F28;
+$color5: #1D1D1D;
+$color6: #EC5A64;
+
+$bd1: 1px solid $color1;
+
+@media only screen and (max-width: 800px) {
+    header, footer{
+        width: 1800px;
+    }
+
+    //* Index.html
+    .about{
+        width: 400px;
+    }
+    // * End of Index.html code
+
+    // * Projects-main.html
+    .header{
+
+        &__links{
+            padding-top: 20px;
+            padding-left: 5px;
+            width: 180px;
+            height: 310px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 30px;
+            background-color: $color4;
+            text-align: left;
+            align-items: flex-start;
+            border-radius: 5px;
+            border: 1px solid $color4;
+        }
+
+        &__link-about{
+            position: absolute;
+            top: 30px;
+            opacity: 0;
+        }
+
+        &__link-projects{
+            position: absolute;
+            top: 30px;
+            margin-right: 0;
+            opacity: 0;
+        }
+        
+        &__contact{
+            position: absolute;
+            top: 30px;
+            opacity: 0;
+        }
+
+        &__logo{
+            grid-area: 1 / 1 / 2 / 2;
+            margin-right: 0;
+        }
+    }
+
+    //* JS Script Classes
+    .activeBurgerMenu{
+        .header{
+            background-color: $color5;
+            border: $bd1;
+
+            &__link-about{
+                position: absolute;
+                top: 120px;
+                opacity: 1;
+            }
+    
+            &__link-projects{
+                position: absolute;
+                top: 180px;
+                margin-right: 0;
+                opacity: 1;
+            }
+            
+            &__contact{
+                position: absolute;
+                top: 240px;
+                opacity: 1;
+            }
+        }
+    }
+    // * End of Projects-main.html code
+
+    //* Projects-pages.html
+    .projects-pages{
+        width: 100%;
+    }
+    // * End of Projects-pages.html code
+
+    //* Contacts.html
+    .contacts{
+        width: 100%;
+    }
+    // * End of Contacts.html code
+}

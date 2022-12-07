@@ -1,0 +1,70 @@
+@media only screen and (max-width: 800px) {
+  header, footer {
+    width: 1800px;
+  }
+  .about {
+    width: 400px;
+  }
+  .header__links {
+    padding-top: 20px;
+    padding-left: 5px;
+    width: 180px;
+    height: 310px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 30px;
+    background-color: #191F28;
+    text-align: left;
+    align-items: flex-start;
+    border-radius: 5px;
+    border: 1px solid #191F28;
+  }
+  .header__link-about {
+    position: absolute;
+    top: 30px;
+    opacity: 0;
+  }
+  .header__link-projects {
+    position: absolute;
+    top: 30px;
+    margin-right: 0;
+    opacity: 0;
+  }
+  .header__contact {
+    position: absolute;
+    top: 30px;
+    opacity: 0;
+  }
+  .header__logo {
+    grid-area: 1/1/2/2;
+    margin-right: 0;
+  }
+  .activeBurgerMenu .header {
+    background-color: #1D1D1D;
+    border: 1px solid #EE6C4D;
+  }
+  .activeBurgerMenu .header__link-about {
+    position: absolute;
+    top: 120px;
+    opacity: 1;
+  }
+  .activeBurgerMenu .header__link-projects {
+    position: absolute;
+    top: 180px;
+    margin-right: 0;
+    opacity: 1;
+  }
+  .activeBurgerMenu .header__contact {
+    position: absolute;
+    top: 240px;
+    opacity: 1;
+  }
+  .projects-pages {
+    width: 100%;
+  }
+  .contacts {
+    width: 100%;
+  }
+}

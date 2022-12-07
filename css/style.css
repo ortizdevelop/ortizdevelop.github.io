@@ -1,10 +1,5 @@
-@charset "UTF-8";
-/*Обнуление*/
 @import url("/css/nullstyle.css");
-/*Импорт*/
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap");
-/*Шаблоны*/
-/*Основные параметры сайта*/
 html, body {
   scroll-behavior: smooth;
   font-family: "Almarai", sans-serif;
@@ -28,35 +23,17 @@ html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-html .main, body .main {
-  position: absolute;
-  width: 1440px;
-  height: 3564px;
-}
 html .main .footer, body .main .footer {
   position: absolute;
   top: 3700px;
 }
-html .projects-main, body .projects-main {
-  width: 1440px;
-  height: 1024px;
-}
-html .projects-main footer, body .projects-main footer {
+html .projects-main .footer, body .projects-main .footer {
   position: absolute;
   top: 1000px;
 }
-html .projects-page, body .projects-page {
-  width: 1440px;
-  height: 1024px;
-}
-html .projects-page footer, body .projects-page footer {
+html .projects-page .footer, body .projects-page .footer {
   position: absolute;
   top: 1100px;
-}
-html .contacts, body .contacts {
-  position: relative;
-  width: 1440px;
-  height: 1024px;
 }
 html .contacts .footer, body .contacts .footer {
   position: absolute;
@@ -64,7 +41,6 @@ html .contacts .footer, body .contacts .footer {
   left: 0;
 }
 
-/*header*/
 .header {
   position: relative;
   z-index: 2;
@@ -147,23 +123,19 @@ html .contacts .footer, body .contacts .footer {
   color: #191F28;
 }
 
-/*footer*/
-.footer {
-  position: relative;
-  width: 1864px;
+footer {
+  width: 1878px;
   height: 433px;
-  left: 0px;
-  top: 3280px;
   background-color: #1D1D1D;
   text-align: center;
 }
-.footer .footer-top {
+footer .footer-top {
   padding-top: 69px;
   display: flex;
   margin-left: 685px;
   margin-bottom: 54px;
 }
-.footer .footer-top__title {
+footer .footer-top__title {
   padding-top: 10px;
   font-size: 24px;
   font-weight: 700;
@@ -181,25 +153,25 @@ html .contacts .footer, body .contacts .footer {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.footer .footer-top__logo {
+footer .footer-top__logo {
   margin-right: 38px;
 }
-.footer .footer-top__subtitle {
+footer .footer-top__subtitle {
   padding-top: 30px;
   font-size: 18px;
   line-height: 100%;
   color: #c4c4c4;
   mix-blend-mode: normal;
 }
-.footer .footer-mid {
+footer .footer-mid {
   margin-bottom: 53.5px;
   margin-left: 50px;
 }
-.footer .footer-mid__link {
+footer .footer-mid__link {
   margin-right: 80px;
   transition: 0.2s;
 }
-.footer .footer-mid__link span {
+footer .footer-mid__link span {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.2045454532px;
@@ -208,29 +180,29 @@ html .contacts .footer, body .contacts .footer {
   border-radius: 5px;
   transition: 0.2s;
 }
-.footer .footer-mid__link span:hover {
+footer .footer-mid__link span:hover {
   background-color: #EE6C4D;
   color: #191F28;
   transition: 0.35s;
 }
-.footer .footer-mid__link span:active {
+footer .footer-mid__link span:active {
   color: #EE6C4D;
   background-color: transparent;
   transition: 0.35s;
 }
-.footer .footer-bot {
+footer .footer-bot {
   margin-bottom: 46px;
   margin-left: 830px;
 }
-.footer .footer-bot__images ul {
+footer .footer-bot__images ul {
   display: flex;
   width: 150px;
   transition: 0.2s;
 }
-.footer .footer-bot__images ul li {
+footer .footer-bot__images ul li {
   transition: 0.2s;
 }
-.footer .footer-bot__images ul li a {
+footer .footer-bot__images ul li a {
   position: relative;
   display: flex;
   justify-content: center;
@@ -241,38 +213,38 @@ html .contacts .footer, body .contacts .footer {
   font-weight: 700;
   transition: 0.4s;
 }
-.footer .footer-bot__images ul li a span {
+footer .footer-bot__images ul li a span {
   position: absolute;
   color: #EE6C4D;
   opacity: 0;
   transition: 0.2s;
 }
-.footer .footer-bot__images ul li a span:last-child {
+footer .footer-bot__images ul li a span:last-child {
   margin-right: 44px;
 }
-.footer .footer-bot__images ul li a span:nth-child(2) {
+footer .footer-bot__images ul li a span:nth-child(2) {
   margin-right: 46px;
 }
-.footer .footer-bot__images ul li a img {
+footer .footer-bot__images ul li a img {
   transition: 0.2s;
 }
-.footer .footer-bot__images ul li a:hover img {
+footer .footer-bot__images ul li a:hover img {
   transform: translateY(-15px);
   filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
   transition: 0.35s;
 }
-.footer .footer-bot__images ul li a:hover span {
+footer .footer-bot__images ul li a:hover span {
   transform: translateY(10px);
   transition: 0.35s;
   opacity: 1;
 }
-.footer .footer-bot__images img {
+footer .footer-bot__images img {
   margin-right: 47px;
 }
-.footer .copyright {
+footer .copyright {
   transform: translateX(-20px);
 }
-.footer .copyright__title {
+footer .copyright__title {
   font-size: 16px;
   line-height: 20px;
   color: #c4c4c4;
@@ -281,7 +253,6 @@ html .contacts .footer, body .contacts .footer {
           animation: copyright-anim 8s infinite linear;
 }
 
-/*main.html*/
 .main .about-head {
   position: relative;
   z-index: 1;
@@ -715,7 +686,6 @@ html .contacts .footer, body .contacts .footer {
   filter: hue-rotate(20deg);
 }
 
-/*projects-main.html*/
 .projects__body {
   transform: translate(120px, 450px);
 }
@@ -849,7 +819,6 @@ html .contacts .footer, body .contacts .footer {
   margin-left: -125%;
 }
 
-/*projects-page.html*/
 .projects-pages__body {
   transform: translate(120px, 450px);
   width: 600px;
@@ -1106,7 +1075,6 @@ html .contacts .footer, body .contacts .footer {
   margin-left: -125%;
 }
 
-/*contacts.html*/
 .contacts .contact-us__body {
   transform: translate(120px, 230px);
 }
@@ -1362,7 +1330,6 @@ html .contacts .footer, body .contacts .footer {
   font-weight: bold;
 }
 
-/*Анимации*/
 @-webkit-keyframes title-anim {
   40%, 60% {
     left: 472px;
@@ -1371,6 +1338,7 @@ html .contacts .footer, body .contacts .footer {
     left: 290px;
   }
 }
+
 @keyframes title-anim {
   40%, 60% {
     left: 472px;

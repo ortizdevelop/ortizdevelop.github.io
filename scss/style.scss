@@ -1,10 +1,10 @@
-/*Обнуление*/
+//* Обнуление
 @import url('/css/nullstyle.css');
 
-/*Импорт*/
+//* Импорт
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 
-/*Шаблоны*/
+//* Шаблоны
 $border1: 2px solid red;
 $border2: 2px solid blue;
 $border3: 2px solid pink;
@@ -20,7 +20,7 @@ $color6: #EC5A64;
 
 $bd1: 1px solid $color1;
 
-/*Основные параметры сайта*/
+//* Основные параметры сайта
 html, body{
     scroll-behavior: smooth;
     font-family: 'Almarai', sans-serif;
@@ -45,10 +45,6 @@ html, body{
     }
 
     .main{
-        position: absolute;
-        width: 1440px;
-        height: 3564px;
-
         .footer{
             position: absolute;
             top: 3700px;
@@ -56,30 +52,20 @@ html, body{
     }
 
     .projects-main{
-        width: 1440px;
-        height: 1024px;
-
-        footer{
+       .footer{
             position: absolute;
             top: 1000px;
         }
     }
 
     .projects-page{
-        width: 1440px;
-        height: 1024px;
-
-        footer{
+        .footer{
             position: absolute;
             top: 1100px;
         }
     }
 
     .contacts{
-        position: relative;
-        width: 1440px;
-        height: 1024px;
-
         .footer{
             position: absolute;
             top: 1100;
@@ -88,13 +74,11 @@ html, body{
     }
 }
 
-/*header*/
+//* header
 
 .header {
     position: relative;
     z-index: 2;
-    .container {
-    }
 
     &__links {
         display: flex;
@@ -187,18 +171,13 @@ html, body{
     }
 }
 
-/*footer*/
-.footer {
-    position: relative;
-    width: 1864px;
+//* footer
+footer {
+    width: 1878px;
     height: 433px;
-    left: 0px;
-    top: 3280px;
     background-color: $color5;
     text-align: center;
-    
-    .container {
-    }
+
     .footer-top {
         padding-top: 69px;
         display: flex;
@@ -343,8 +322,9 @@ html, body{
                 animation: copyright-anim 8s infinite linear;
             }
     }
-}
-/*main.html*/
+ }
+
+//* main.html
 .main{
     
     .about-head {
@@ -940,7 +920,8 @@ html, body{
         }
     }
 }
-/*projects-main.html*/
+
+//* projects-main.html
 .projects {
 
     &__body {
@@ -1101,7 +1082,7 @@ html, body{
     }
 }
 
-/*projects-page.html*/
+//* projects-page.html
 .projects-pages {
 
     &__body {
@@ -1403,7 +1384,8 @@ html, body{
         margin-left: -125%;
     }
 }
-/*contacts.html*/
+
+//* contacts.html
 .contacts{
     .contact-us {
 
@@ -1663,9 +1645,7 @@ html, body{
     }
 }
 
-
-
-/*Анимации*/
+//* Анимации
 
 @keyframes title-anim{ //* Анимация для шапки сайта
     40%, 60%{

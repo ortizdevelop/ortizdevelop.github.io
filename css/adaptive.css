@@ -9,7 +9,7 @@
     padding-top: 20px;
     padding-left: 5px;
     width: 180px;
-    height: 310px;
+    height: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
@@ -23,43 +23,71 @@
   }
   .header__link-about {
     position: absolute;
-    top: 30px;
+    top: -30px;
     opacity: 0;
   }
   .header__link-projects {
     position: absolute;
-    top: 30px;
+    top: -30px;
     margin-right: 0;
     opacity: 0;
   }
   .header__contact {
     position: absolute;
-    top: 30px;
+    top: -30px;
     opacity: 0;
   }
   .header__logo {
     grid-area: 1/1/2/2;
     margin-right: 0;
   }
+  .activeBurgerMenu {
+    transition: 0.3s;
+  }
   .activeBurgerMenu .header {
+    transition: 0.3s;
+  }
+  .activeBurgerMenu .header__links {
+    position: relative;
+    bottom: 50px;
+    right: 50px;
     background-color: #1D1D1D;
     border: 1px solid #EE6C4D;
+    height: 310px;
+  }
+  .activeBurgerMenu .header__links a {
+    transition: 0.35s;
+  }
+  .activeBurgerMenu .header__links a span:hover {
+    border: none;
+    transition: 0.35s;
+  }
+  .activeBurgerMenu .header__links a span:active {
+    transition: 0.35s;
+    background-color: #191F28;
+    color: #EE6C4D;
   }
   .activeBurgerMenu .header__link-about {
     position: absolute;
-    top: 120px;
+    transform: translateY(140px);
     opacity: 1;
+    transition: 0.3s;
   }
   .activeBurgerMenu .header__link-projects {
     position: absolute;
-    top: 180px;
+    transform: translateY(200px);
     margin-right: 0;
     opacity: 1;
+    transition: 0.3s;
+  }
+  .activeBurgerMenu .header__logo {
+    border: none;
   }
   .activeBurgerMenu .header__contact {
     position: absolute;
-    top: 240px;
+    transform: translateY(260px);
     opacity: 1;
+    transition: 0.3s;
   }
   .projects-pages {
     width: 100%;

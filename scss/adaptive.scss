@@ -32,7 +32,7 @@ $bd1: 1px solid $color1;
             padding-top: 20px;
             padding-left: 5px;
             width: 180px;
-            height: 310px;
+            height: 10px;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(5, 1fr);
@@ -47,20 +47,20 @@ $bd1: 1px solid $color1;
 
         &__link-about{
             position: absolute;
-            top: 30px;
+            top: -30px;
             opacity: 0;
         }
 
         &__link-projects{
             position: absolute;
-            top: 30px;
+            top: -30px;
             margin-right: 0;
             opacity: 0;
         }
         
         &__contact{
             position: absolute;
-            top: 30px;
+            top: -30px;
             opacity: 0;
         }
 
@@ -72,27 +72,62 @@ $bd1: 1px solid $color1;
 
     //* JS Script Classes
     .activeBurgerMenu{
+        transition: 0.3s;
+
         .header{
-            background-color: $color5;
-            border: $bd1;
+            transition: 0.3s;
+
+            &__links{
+                position: relative;
+                bottom: 50px;
+                right: 50px;
+                background-color: $color5;
+                border: 1px solid $color1;
+                height: 310px;
+
+                a{
+                    transition: 0.35s;
+        
+                    span{
+            
+                        &:hover{
+                            border: none;
+                            transition: 0.35s;
+                        }
+        
+                        &:active{
+                            transition: 0.35s;
+                            background-color: $color4;
+                            color: $color1;
+                        }
+                    }
+                }
+            }
 
             &__link-about{
                 position: absolute;
-                top: 120px;
+                transform: translateY(140px);
                 opacity: 1;
+                transition: 0.3s;
             }
     
             &__link-projects{
                 position: absolute;
-                top: 180px;
+                transform: translateY(200px);
                 margin-right: 0;
                 opacity: 1;
+                transition: 0.3s;
+            }
+
+            &__logo{
+                border: none;
             }
             
             &__contact{
                 position: absolute;
-                top: 240px;
+                transform: translateY(260px);
                 opacity: 1;
+                transition: 0.3s;
             }
         }
     }

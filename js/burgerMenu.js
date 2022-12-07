@@ -6,5 +6,7 @@ function DropDownMenuOn(){
     this.classList.add('activeBurgerMenu');
 }
 
+// TODO: Finish the script, make a function that deletes the class when you click on it.
+
 burgerMenu.forEach((item) =>
 item.addEventListener('click', DropDownMenuOn));

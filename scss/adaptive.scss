@@ -318,4 +318,12 @@ $bd1: 1px solid $color1;
     // * End of Contacts.html code
 }
 
-@media only screen and (max-width: 320px){}
+@media only screen and (max-width: 320px){
+    //* Index.html
+    .about{}
+    // * End of Index.html code
+
+    // * Projects-main.html
+    .projects{}
+    // * End of Projects-main.html code
+}

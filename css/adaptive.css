@@ -11,9 +11,9 @@
     top: 1100px;
   }
   html .contacts .footer, body .contacts .footer {
+    width: 1100px;
     position: absolute;
-    top: 1100;
-    left: 0;
+    top: 1300px;
   }
   header, footer {
     width: 1800px;
@@ -206,17 +206,34 @@
   .contacts {
     width: 100%;
   }
-  .contacts .footer .footer-top {
-    margin-left: 385px;
+  .contacts .header {
+    width: 300px;
   }
-  .contacts .footer .footer-mid {
-    margin-right: 550px;
-  }
-  .contacts .footer .footer-bot {
-    margin-left: 520px;
-  }
-  .contacts .footer .copyright {
+  .contacts .contact-us {
     position: relative;
-    right: 280px;
+    top: 200px;
+  }
+  .contacts .contact-us .contact-us-form {
+    opacity: 0;
+  }
+  .contacts .contact-us .contact-us-images__column {
+    position: relative;
+    right: 10px;
+  }
+  .contacts .footer .container .footer-top {
+    position: relative;
+    right: 50px;
+  }
+  .contacts .footer .container .footer-mid {
+    position: relative;
+    left: 310px;
+  }
+  .contacts .footer .container .footer-bot {
+    position: relative;
+    right: 50px;
+  }
+  .contacts .footer .container .copyright {
+    position: relative;
+    left: 130px;
   }
 }

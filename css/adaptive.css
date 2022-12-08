@@ -1,9 +1,28 @@
 @media only screen and (max-width: 800px) {
+  html .projects-main, body .projects-main {
+    height: 50px;
+  }
+  html .projects-main .footer, body .projects-main .footer {
+    position: absolute;
+    top: 1000px;
+  }
+  html .projects-page .footer, body .projects-page .footer {
+    position: absolute;
+    top: 1100px;
+  }
+  html .contacts .footer, body .contacts .footer {
+    position: absolute;
+    top: 1100;
+    left: 0;
+  }
   header, footer {
     width: 1800px;
   }
   .about {
     width: 400px;
+  }
+  .header {
+    position: absolute;
   }
   .header__links {
     padding-top: 20px;
@@ -40,6 +59,22 @@
   .header__logo {
     grid-area: 1/1/2/2;
     margin-right: 0;
+  }
+  .footer .footer-top {
+    margin-left: 485px;
+  }
+  .footer .footer-mid {
+    margin-right: 360px;
+  }
+  .footer .footer-bot {
+    margin-left: 620px;
+  }
+  .footer .copyright {
+    position: relative;
+    right: 180px;
+  }
+  .project-slider__slider-body {
+    transform: translate(580px, -320px);
   }
   .activeBurgerMenu {
     transition: 0.3s;

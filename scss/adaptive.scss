@@ -15,6 +15,35 @@ $color6: #EC5A64;
 $bd1: 1px solid $color1;
 
 @media only screen and (max-width: 800px) {
+    
+    html, body{
+        .main{}
+
+        .projects-main{
+            height: 50px;
+
+            .footer{
+                 position: absolute;
+                 top: 1000px;
+             }
+         }
+     
+         .projects-page{
+             .footer{
+                 position: absolute;
+                 top: 1100px;
+             }
+         }
+     
+         .contacts{
+             .footer{
+                 position: absolute;
+                 top: 1100;
+                 left: 0;
+             }
+         }
+    }
+    
     header, footer{
         width: 1800px;
     }
@@ -27,6 +56,7 @@ $bd1: 1px solid $color1;
 
     // * Projects-main.html
     .header{
+        position: absolute;
 
         &__links{
             padding-top: 20px;
@@ -67,6 +97,31 @@ $bd1: 1px solid $color1;
         &__logo{
             grid-area: 1 / 1 / 2 / 2;
             margin-right: 0;
+        }
+    }
+
+    .footer{
+        .footer-top{
+            margin-left: 485px;
+        }
+
+        .footer-mid{
+            margin-right: 360px;
+        }
+
+        .footer-bot{
+            margin-left: 620px;
+        }
+
+        .copyright{
+            position: relative;
+            right: 180px;
+        }
+    }
+
+    .project-slider{
+        &__slider-body{
+            transform: translate(580px,-320px);
         }
     }
 

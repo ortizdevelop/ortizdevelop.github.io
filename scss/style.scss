@@ -331,6 +331,7 @@ footer {
     .about-head {
         position: relative;
         z-index: 1;
+        
         &__body {
             transform: translateY(30px);
             width: 1865px;
@@ -1646,9 +1647,9 @@ footer {
     }
 }
 
-//* Анимации
+//* Animations
 
-@keyframes title-anim{ //* Анимация для шапки сайта
+@keyframes title-anim{ //* Animation for website header
     40%, 60%{
         left: 472px;
     }

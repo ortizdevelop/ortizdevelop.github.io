@@ -19,7 +19,62 @@
     width: 1800px;
   }
   .about {
-    width: 400px;
+    width: 800px;
+  }
+  .about .about-head {
+    width: 800px;
+  }
+  .about .about-head__title {
+    margin-top: 100px;
+  }
+  .about .about-head__title .second-text {
+    color: red;
+  }
+  .about .about-head__title .second-text::before {
+    content: "";
+    position: absolute;
+    left: 290px;
+    top: 445px;
+    width: 194px;
+    height: 64px;
+    background-color: #191F28;
+    border-left: 1px solid #EE6C4D;
+    -webkit-animation: title-anim 3.9s steps(12) infinite;
+            animation: title-anim 3.9s steps(12) infinite;
+  }
+  .about .about-head__line {
+    position: relative;
+    right: 200px;
+  }
+  .about .about-middle__title {
+    position: relative;
+    right: 150px;
+  }
+  .about .about-middle__subtitle {
+    position: relative;
+    right: 150px;
+  }
+  .about .about-middle__tools {
+    position: relative;
+    right: 50px;
+  }
+  .about .about-middle__box {
+    position: relative;
+    right: 50px;
+  }
+  .about .about-middle__list {
+    position: relative;
+    right: 50px;
+  }
+  .about .about-bottom__body {
+    margin-left: 0px;
+  }
+  .about .about-bottom__text {
+    position: relative;
+    left: 100px;
+  }
+  .about #progress {
+    top: 50px;
   }
   .header {
     position: absolute;
@@ -127,7 +182,41 @@
   .projects-pages {
     width: 100%;
   }
+  .projects-pages__body {
+    transform: translate(20px, 450px);
+    width: 600px;
+  }
+  .project-pages-slider {
+    position: absolute;
+    left: 515px;
+  }
+  .footer .footer-top {
+    margin-left: 485px;
+  }
+  .footer .footer-mid {
+    margin-right: 360px;
+  }
+  .footer .footer-bot {
+    margin-left: 620px;
+  }
+  .footer .copyright {
+    position: relative;
+    right: 180px;
+  }
   .contacts {
     width: 100%;
+  }
+  .contacts .footer .footer-top {
+    margin-left: 385px;
+  }
+  .contacts .footer .footer-mid {
+    margin-right: 550px;
+  }
+  .contacts .footer .footer-bot {
+    margin-left: 520px;
+  }
+  .contacts .footer .copyright {
+    position: relative;
+    right: 280px;
   }
 }

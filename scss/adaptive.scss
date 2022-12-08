@@ -50,7 +50,76 @@ $bd1: 1px solid $color1;
 
     //* Index.html
     .about{
-        width: 400px;
+        width: 800px;
+
+        .about-head{
+            width: 800px;
+
+            &__title{
+                margin-top: 100px;
+
+                .second-text{
+                    color: red;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 290px;
+                        top: 445px;
+                        width: 194px;
+                        height: 64px;
+                        background-color: $color4;
+                        border-left: $bd1;
+                        animation: title-anim 3.9s steps(12) infinite;
+                    }
+                }
+            }
+
+            &__line{
+                position: relative;
+                right: 200px;
+            }
+        }
+
+        .about-middle__title{
+            position: relative;
+            right: 150px;
+        }
+
+        .about-middle__subtitle{
+            position: relative;
+            right: 150px;
+        }
+
+        .about-middle__tools{
+            position: relative;
+            right: 50px;
+        }
+
+        .about-middle__box{
+            position: relative;
+            right: 50px;
+        }
+
+        .about-middle__list{
+            position: relative;
+            right: 50px;
+        }
+
+        .about-bottom{
+
+            &__body {
+                margin-left: 0px;
+            }
+
+            &__text{
+                position: relative;
+                left: 100px;
+            }
+        }
+
+        #progress{
+            top: 50px;
+        }
     }
     // * End of Index.html code
 
@@ -191,12 +260,62 @@ $bd1: 1px solid $color1;
     //* Projects-pages.html
     .projects-pages{
         width: 100%;
+
+        &__body {
+            transform: translate(20px,450px);
+            width: 600px;
+        }
+    }
+
+    .project-pages-slider{
+        position: absolute;
+        left: 515px;
+    }
+
+    .footer{
+        .footer-top{
+            margin-left: 485px;
+        }
+
+        .footer-mid{
+            margin-right: 360px;
+        }
+
+        .footer-bot{
+            margin-left: 620px;
+        }
+
+        .copyright{
+            position: relative;
+            right: 180px;
+        }
     }
     // * End of Projects-pages.html code
 
     //* Contacts.html
     .contacts{
         width: 100%;
+
+        .footer{
+            .footer-top{
+                margin-left: 385px;
+            }
+    
+            .footer-mid{
+                margin-right: 550px;
+            }
+    
+            .footer-bot{
+                margin-left: 520px;
+            }
+    
+            .copyright{
+                position: relative;
+                right: 280px;
+            }
+        }
     }
     // * End of Contacts.html code
 }
+
+@media only screen and (max-width: 320px){}

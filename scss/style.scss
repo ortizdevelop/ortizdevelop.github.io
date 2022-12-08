@@ -1,10 +1,10 @@
-//* Обнуление
+//* Zeroing
 @import url('/css/nullstyle.css');
 
-//* Импорт
+//* Import
 @import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
 
-//* Шаблоны
+//* Templates
 $border1: 2px solid red;
 $border2: 2px solid blue;
 $border3: 2px solid pink;
@@ -20,7 +20,7 @@ $color6: #EC5A64;
 
 $bd1: 1px solid $color1;
 
-//* Основные параметры сайта
+//* The main parameters of the site
 html, body{
     scroll-behavior: smooth;
     font-family: 'Almarai', sans-serif;
@@ -314,6 +314,7 @@ footer {
     }
     .copyright {
         transform: translateX(-20px);
+        
             &__title {
                 font-size: 16px;
                 line-height: 20px;
@@ -330,6 +331,7 @@ footer {
     .about-head {
         position: relative;
         z-index: 1;
+        
         &__body {
             transform: translateY(30px);
             width: 1865px;
@@ -1004,7 +1006,7 @@ footer {
         width: 587px;
         height: 320px;
         overflow: hidden;
-        border-bottom: 10px solid #EE6C4D;;
+        border-bottom: 10px solid #EE6C4D;
         transform: translate(900px,-320px);
     }
 
@@ -1645,9 +1647,9 @@ footer {
     }
 }
 
-//* Анимации
+//* Animations
 
-@keyframes title-anim{ //* Анимация для шапки сайта
+@keyframes title-anim{ //* Animation for website header
     40%, 60%{
         left: 472px;
     }

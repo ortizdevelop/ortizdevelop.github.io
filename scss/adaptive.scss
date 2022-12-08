@@ -347,12 +347,109 @@ $bd1: 1px solid $color1;
     // * End of Contacts.html code
 }
 
-@media only screen and (max-width: 390px){
+@media only screen and (max-width: 375px){
+    html, body{
+        .main{}
+
+        .projects-main{
+            height: 50px;
+
+            .footer{
+                 position: absolute;
+                 top: 1400px;
+             }
+         }
+     
+         .projects-page{
+             .footer{
+                 position: absolute;
+                 top: 1100px;
+             }
+         }
+
+         .contacts{
+
+            .footer{
+                width: 1100px;
+                position: absolute;
+                top: 1300px;
+            }
+         }
+    }
+
+
     //* Index.html
-    .about{}
+    .about{
+        width: 375px;
+    }
     // * End of Index.html code
 
     // * Projects-main.html
-    .projects{}
+    .projects-main{
+        .projects{
+            width: 375px;
+            position: relative;
+            right: 40px;
+    
+            &__title{
+                position: relative;
+                left: 360px;
+            }
+    
+            &__text{
+                position: relative;
+                top: 30px;
+                left: 200px;
+                width: 600px;
+            }
+        }
+    
+        .project-slider{
+            position: relative;
+            top: 400px;
+            right: 400px;
+
+            &__navigation{
+                position: relative;
+                left: 400px;
+                bottom: 50px;
+            }
+        }
+
+        .footer{
+
+            .footer-top{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-mid{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-bot{
+                position: relative;
+                right: 160px;
+            }
+
+            .copyright{
+                position: relative;
+                right: 340px;
+            }
+        }
+    }
     // * End of Projects-main.html code
+
+    // * Projects-page.html
+    .projects-pages{
+        width: 375px;
+    }
+    // * End of Projects-page.html code
+
+    //* Contacts.html
+    .contacts{
+        width: 375px;
+    }
+    // * End of Contacts.html code
 }

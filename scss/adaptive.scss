@@ -14,9 +14,11 @@ $color6: #EC5A64;
 
 $bd1: 1px solid $color1;
 
-@media only screen and (max-width: 800px) {
-    
+@media only screen and (max-width: 320px){
     html, body{
+        width: 375px;
+        height: 430px;
+
         .main{}
 
         .projects-main{
@@ -24,298 +26,275 @@ $bd1: 1px solid $color1;
 
             .footer{
                  position: absolute;
-                 top: 1000px;
+                 top: 1400px;
              }
          }
      
          .projects-page{
              .footer{
                  position: absolute;
-                 top: 1100px;
+                 top: 2000px;
              }
          }
 
          .contacts{
 
             .footer{
-                width: 1100px;
+                width: 745px;
                 position: absolute;
                 top: 1300px;
             }
          }
     }
-    
-    header, footer{
-        width: 1800px;
-    }
+
 
     //* Index.html
+
     .about{
-        width: 800px;
+        width: 375px;
 
-        .about-head{
-            width: 800px;
+        .about {
+            .header{
+                position: absolute;
+                top: 0px;
+                left: 500px;
+            }
+        }
+        .about-head {
+        
+            &__body {
+                background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
+            }
+    
+            &__content {
+            }
+    
+            &__title {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__subtitle {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__button {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__line {
+                position: relative;
+                right: 350px;
+            }
 
-            &__title{
-                margin-top: 100px;
-
-                .second-text{
-                    color: red;
-                    &::before{
-                        content: '';
-                        position: absolute;
-                        left: 290px;
-                        top: 445px;
-                        width: 194px;
-                        height: 64px;
-                        background-color: $color4;
-                        border-left: $bd1;
-                        animation: title-anim 3.9s steps(12) infinite;
-                    }
+            .text {
+            }
+            .first-text {
+            }
+            .second-text {
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 20px;
+                    width: 194px;
+                    height: 64px;
+                    background-color: $color4;
+                    border-left: $bd1;
+                    animation: title-anim 3.9s steps(12) infinite;
                 }
             }
+    
+            .third-text {
+            }
+            #progress {
+                position: fixed;
+                bottom: 20px;
+                left: 880px;
+            }
+        }
+        
+        .about-middle {
+        
+                &__body {
+                }
+        
+                &__content {
+                }
+        
+                &__title {
+                }
+        
+                &__subtitle {
+                }
+        
+                &__tools {
+                }
+        
+                &__tools-column {
+                }
+        
+                &__tools-list {
+                }
+        
+                &__tools-js {
+                }
+        
+                &__img {
+                }
+        
+                &__column {
+                }
+        
+                &__list {
+                }
+        
+                &__box {
+                }
+        }
+        .list-line1 {
+        }
+        .list-line2 {
+        }
+        .about-bottom {
+        
+                &__body {
+                }
+        
+                &__content {
+                }
+        
+                &__banner {
+                }
+        
+                &__title {
+                }
+        
+                &__btn {
+                }
+        
+                &__button {
+                }
+        
+                &__line {
+                }
+        
+                &__text {
+                }
+        
+                &__contact {
+                }
+        }
+        
+    }
 
-            &__line{
+    // * End of Index.html code
+
+
+    // * Projects-main.html
+
+    .projects-main{
+        .projects{
+            width: 375px;
+            position: relative;
+            right: 40px;
+    
+            &__title{
                 position: relative;
-                right: 200px;
+                left: 360px;
             }
-        }
-
-        .about-middle__title{
-            position: relative;
-            right: 150px;
-        }
-
-        .about-middle__subtitle{
-            position: relative;
-            right: 150px;
-        }
-
-        .about-middle__tools{
-            position: relative;
-            right: 50px;
-        }
-
-        .about-middle__box{
-            position: relative;
-            right: 50px;
-        }
-
-        .about-middle__list{
-            position: relative;
-            right: 50px;
-        }
-
-        .about-bottom{
-
-            &__body {
-                margin-left: 0px;
-            }
-
+    
             &__text{
+                position: relative;
+                top: 30px;
+                left: 200px;
+                width: 600px;
+            }
+        }
+    
+        .project-slider{
+            position: relative;
+            top: 400px;
+            right: 400px;
+
+            &__navigation{
+                position: relative;
+                left: 400px;
+                bottom: 50px;
+            }
+        }
+
+        .footer{
+
+            .footer-top{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-mid{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-bot{
+                position: relative;
+                right: 160px;
+            }
+
+            .copyright{
+                position: relative;
+                right: 340px;
+            }
+        }
+    }
+
+    // * End of Projects-main.html code
+
+
+    // * Projects-page.html
+
+    .projects-page{
+        .projects-pages{
+            width: 375px;
+    
+            &__title{
+                position: relative;
+                top: 80px;
+                left: 200px;
+            }
+    
+            &__text{
+                p{
+                    position: relative;
+                    top: 25px;
+                    left: 200px;
+                }
+            }
+    
+            &__tools-and-links{
+                position: relative;
+                top: 150px;
+                left: 200px;
+            }
+
+            &__links-title{
+                position: relative;
+                left: 100px;
+            }
+
+            &__links-img{
                 position: relative;
                 left: 100px;
             }
         }
-
-        #progress{
-            top: 50px;
-        }
-    }
-    // * End of Index.html code
-
-    // * Projects-main.html
-    .header{
-        position: absolute;
-
-        &__links{
-            padding-top: 20px;
-            padding-left: 5px;
-            width: 180px;
-            height: 10px;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 30px;
-            background-color: $color4;
-            text-align: left;
-            align-items: flex-start;
-            border-radius: 5px;
-            border: 1px solid $color4;
-        }
-
-        &__link-about{
-            position: absolute;
-            top: -30px;
-            opacity: 0;
-        }
-
-        &__link-projects{
-            position: absolute;
-            top: -30px;
-            margin-right: 0;
-            opacity: 0;
-        }
-        
-        &__contact{
-            position: absolute;
-            top: -30px;
-            opacity: 0;
-        }
-
-        &__logo{
-            grid-area: 1 / 1 / 2 / 2;
-            margin-right: 0;
-        }
-    }
-
-    .footer{
-        .footer-top{
-            margin-left: 485px;
-        }
-
-        .footer-mid{
-            margin-right: 360px;
-        }
-
-        .footer-bot{
-            margin-left: 620px;
-        }
-
-        .copyright{
-            position: relative;
-            right: 180px;
-        }
-    }
-
-    .project-slider{
-        &__slider-body{
-            transform: translate(580px,-320px);
-        }
-    }
-
-    //* JS Script Classes
-    .activeBurgerMenu{
-        transition: 0.3s;
-
-        .header{
-            transition: 0.3s;
-
-            &__links{
-                position: relative;
-                bottom: 50px;
-                right: 50px;
-                background-color: $color5;
-                border: 1px solid $color1;
-                height: 310px;
-
-                a{
-                    transition: 0.35s;
-        
-                    span{
-            
-                        &:hover{
-                            border: none;
-                            transition: 0.35s;
-                        }
-        
-                        &:active{
-                            transition: 0.35s;
-                            background-color: $color4;
-                            color: $color1;
-                        }
-                    }
-                }
-            }
-
-            &__link-about{
-                position: absolute;
-                transform: translateY(140px);
-                opacity: 1;
-                transition: 0.3s;
-            }
     
-            &__link-projects{
-                position: absolute;
-                transform: translateY(200px);
-                margin-right: 0;
-                opacity: 1;
-                transition: 0.3s;
-            }
-
-            &__logo{
-                border: none;
-            }
-            
-            &__contact{
-                position: absolute;
-                transform: translateY(260px);
-                opacity: 1;
-                transition: 0.3s;
-            }
-        }
-    }
-    // * End of Projects-main.html code
-
-    //* Projects-pages.html
-    .projects-pages{
-        width: 100%;
-
-        &__body {
-            transform: translate(20px,450px);
-            width: 600px;
-        }
-    }
-
-    .project-pages-slider{
-        position: absolute;
-        left: 515px;
-    }
-
-    .footer{
-        .footer-top{
-            margin-left: 485px;
-        }
-
-        .footer-mid{
-            margin-right: 360px;
-        }
-
-        .footer-bot{
-            margin-left: 620px;
-        }
-
-        .copyright{
+        .project-pages-slider{
             position: relative;
-            right: 180px;
-        }
-    }
-    // * End of Projects-pages.html code
-
-    //* Contacts.html
-    .contacts{
-        width: 100%;
-
-        .header{
-            width: 300px;
-        }
-
-        .contact-us{
-            position: relative;
-            top: 200px;
-
-            .contact-us-form{
-                opacity: 0;
-            }
-
-            .contact-us-images{
-
-                &__column{
-                    position: relative;
-                    right: 10px;
-                }
-            }
+            top: 250px;
+            left: 80px;
         }
 
         .footer{
@@ -324,26 +303,74 @@ $bd1: 1px solid $color1;
 
                 .footer-top{
                     position: relative;
-                    right: 50px;
+                    right: 220px;
                 }
         
                 .footer-mid{
                     position: relative;
-                    left: 310px;
+                    right: 200px;
                 }
         
                 .footer-bot{
                     position: relative;
-                    right: 50px;
+                    right: 210px;
                 }
         
                 .copyright{
                     position: relative;
-                    left: 130px;
+                    right: 390px;
                 }
             }
         }
     }
+    
+    // * End of Projects-page.html code
+
+
+    //* Contacts.html
+
+    .contacts{
+        width: 375px;
+
+        .contact-us{
+            .contact-us-images__media{
+                position: relative;
+                right: 200px;
+                bottom: 100px;
+            }
+        }
+
+        .footer{
+
+            .container{
+                .footer-top{
+                    position: relative;
+                    right: 320px;
+                    width: 600px;
+                }
+        
+                .footer-mid{
+                    position: relative;
+                    left: 140px;
+                    width: 600px;
+                    margin-left: 0;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 315px;
+                    width: 600px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    left: 110px;
+                    width: 600px;
+                }
+            }
+        }
+    }
+
     // * End of Contacts.html code
 }
 
@@ -1424,5 +1451,338 @@ $bd1: 1px solid $color1;
         }
     }
 
+    // * End of Contacts.html code
+}
+
+@media only screen and (max-width: 800px) {
+    
+    html, body{
+        .main{}
+
+        .projects-main{
+            height: 50px;
+
+            .footer{
+                 position: absolute;
+                 top: 1000px;
+             }
+         }
+     
+         .projects-page{
+             .footer{
+                 position: absolute;
+                 top: 1100px;
+             }
+         }
+
+         .contacts{
+
+            .footer{
+                width: 1100px;
+                position: absolute;
+                top: 1300px;
+            }
+         }
+    }
+    
+    header, footer{
+        width: 1800px;
+    }
+
+    //* Index.html
+    .about{
+        width: 800px;
+
+        .about-head{
+            width: 800px;
+
+            &__title{
+                margin-top: 100px;
+
+                .second-text{
+                    color: red;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 290px;
+                        top: 445px;
+                        width: 194px;
+                        height: 64px;
+                        background-color: $color4;
+                        border-left: $bd1;
+                        animation: title-anim 3.9s steps(12) infinite;
+                    }
+                }
+            }
+
+            &__line{
+                position: relative;
+                right: 200px;
+            }
+        }
+
+        .about-middle__title{
+            position: relative;
+            right: 150px;
+        }
+
+        .about-middle__subtitle{
+            position: relative;
+            right: 150px;
+        }
+
+        .about-middle__tools{
+            position: relative;
+            right: 50px;
+        }
+
+        .about-middle__box{
+            position: relative;
+            right: 50px;
+        }
+
+        .about-middle__list{
+            position: relative;
+            right: 50px;
+        }
+
+        .about-bottom{
+
+            &__body {
+                margin-left: 0px;
+            }
+
+            &__text{
+                position: relative;
+                left: 100px;
+            }
+        }
+
+        #progress{
+            top: 50px;
+        }
+    }
+    // * End of Index.html code
+
+    // * Projects-main.html
+    .header{
+        position: absolute;
+
+        &__links{
+            padding-top: 20px;
+            padding-left: 5px;
+            width: 180px;
+            height: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(5, 1fr);
+            grid-column-gap: 0px;
+            grid-row-gap: 30px;
+            background-color: $color4;
+            text-align: left;
+            align-items: flex-start;
+            border-radius: 5px;
+            border: 1px solid $color4;
+        }
+
+        &__link-about{
+            position: absolute;
+            top: -30px;
+            opacity: 0;
+        }
+
+        &__link-projects{
+            position: absolute;
+            top: -30px;
+            margin-right: 0;
+            opacity: 0;
+        }
+        
+        &__contact{
+            position: absolute;
+            top: -30px;
+            opacity: 0;
+        }
+
+        &__logo{
+            grid-area: 1 / 1 / 2 / 2;
+            margin-right: 0;
+        }
+    }
+
+    .footer{
+        .footer-top{
+            margin-left: 485px;
+        }
+
+        .footer-mid{
+            margin-right: 360px;
+        }
+
+        .footer-bot{
+            margin-left: 620px;
+        }
+
+        .copyright{
+            position: relative;
+            right: 180px;
+        }
+    }
+
+    .project-slider{
+        &__slider-body{
+            transform: translate(580px,-320px);
+        }
+    }
+
+    //* JS Script Classes
+    .activeBurgerMenu{
+        transition: 0.3s;
+
+        .header{
+            transition: 0.3s;
+
+            &__links{
+                position: relative;
+                bottom: 50px;
+                right: 50px;
+                background-color: $color5;
+                border: 1px solid $color1;
+                height: 310px;
+
+                a{
+                    transition: 0.35s;
+        
+                    span{
+            
+                        &:hover{
+                            border: none;
+                            transition: 0.35s;
+                        }
+        
+                        &:active{
+                            transition: 0.35s;
+                            background-color: $color4;
+                            color: $color1;
+                        }
+                    }
+                }
+            }
+
+            &__link-about{
+                position: absolute;
+                transform: translateY(140px);
+                opacity: 1;
+                transition: 0.3s;
+            }
+    
+            &__link-projects{
+                position: absolute;
+                transform: translateY(200px);
+                margin-right: 0;
+                opacity: 1;
+                transition: 0.3s;
+            }
+
+            &__logo{
+                border: none;
+            }
+            
+            &__contact{
+                position: absolute;
+                transform: translateY(260px);
+                opacity: 1;
+                transition: 0.3s;
+            }
+        }
+    }
+    // * End of Projects-main.html code
+
+    //* Projects-pages.html
+    .projects-pages{
+        width: 100%;
+
+        &__body {
+            transform: translate(20px,450px);
+            width: 600px;
+        }
+    }
+
+    .project-pages-slider{
+        position: absolute;
+        left: 515px;
+    }
+
+    .footer{
+        .footer-top{
+            margin-left: 485px;
+        }
+
+        .footer-mid{
+            margin-right: 360px;
+        }
+
+        .footer-bot{
+            margin-left: 620px;
+        }
+
+        .copyright{
+            position: relative;
+            right: 180px;
+        }
+    }
+    // * End of Projects-pages.html code
+
+    //* Contacts.html
+    .contacts{
+        width: 100%;
+
+        .header{
+            width: 300px;
+        }
+
+        .contact-us{
+            position: relative;
+            top: 200px;
+
+            .contact-us-form{
+                opacity: 0;
+            }
+
+            .contact-us-images{
+
+                &__column{
+                    position: relative;
+                    right: 10px;
+                }
+            }
+        }
+
+        .footer{
+
+            .container{
+
+                .footer-top{
+                    position: relative;
+                    right: 50px;
+                }
+        
+                .footer-mid{
+                    position: relative;
+                    left: 310px;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 50px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    left: 130px;
+                }
+            }
+        }
+    }
     // * End of Contacts.html code
 }

@@ -136,13 +136,33 @@ $bd1: 1px solid $color1;
         }
     }
 
-    .about{}
+    .about{
+        .footer{
+            position: absolute;
+            top: 1110px;
+        }
+    }
 
-    .projects{}
+    .projects{
+        .footer{
+            position: absolute;
+            top: 1110px;
+        }
+    }
 
-    .projects-pages{}
+    .projects-pages{
+        .footer{
+            position: absolute;
+            top: 1110px;
+        }
+    }
 
-    .contact-us{}
+    .contact-us{
+        .footer{
+            position: absolute;
+            top: 1110px;
+        }
+    }
 }
 
 @media screen and (min-width:481px) and (max-width:801px){

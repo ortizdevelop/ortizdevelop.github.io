@@ -86,6 +86,22 @@
     opacity: 1;
     transition: 0.3s;
   }
+  .about .footer {
+    position: absolute;
+    top: 1110px;
+  }
+  .projects .footer {
+    position: absolute;
+    top: 1110px;
+  }
+  .projects-pages .footer {
+    position: absolute;
+    top: 1110px;
+  }
+  .contact-us .footer {
+    position: absolute;
+    top: 1110px;
+  }
 }
 @media screen and (min-width: 481px) and (max-width: 801px) {
   html .header, body .header {

@@ -561,12 +561,13 @@
     width: 375px;
     height: 430px;
   }
-  html .projects-main, body .projects-main {
-    height: 50px;
+  html .projects-main .content .footer, body .projects-main .content .footer {
+    width: 1100px;
+    position: relative;
+    top: 700px;
   }
-  html .projects-main .footer, body .projects-main .footer {
-    position: absolute;
-    top: 1400px;
+  html .projects-main .content .footer .container, body .projects-main .content .footer .container {
+    position: relative;
   }
   html .projects-page .footer, body .projects-page .footer {
     position: absolute;
@@ -648,6 +649,10 @@
     position: relative;
     left: 400px;
     bottom: 50px;
+  }
+  .projects-main .footer {
+    position: relative;
+    top: 400px;
   }
   .projects-main .footer .footer-top {
     position: relative;

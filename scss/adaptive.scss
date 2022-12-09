@@ -1102,12 +1102,18 @@ $bd1: 1px solid $color1;
         .main{}
 
         .projects-main{
-            height: 50px;
-
-            .footer{
-                 position: absolute;
-                 top: 1400px;
-             }
+            
+            .content{
+                .footer{
+                    width: 1100px;
+                    position: relative;
+                    top: 700px;
+    
+                    .container{
+                        position: relative;
+                    }
+                }
+            }
          }
      
          .projects-page{
@@ -1308,6 +1314,8 @@ $bd1: 1px solid $color1;
         }
 
         .footer{
+            position: relative;
+            top: 400px;
 
             .footer-top{
                 position: relative;

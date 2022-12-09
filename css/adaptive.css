@@ -556,7 +556,7 @@
     width: 600px;
   }
 }
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 425px) {
   html, body {
     width: 375px;
     height: 430px;

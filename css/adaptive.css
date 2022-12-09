@@ -86,19 +86,15 @@
     opacity: 1;
     transition: 0.3s;
   }
-  .about .footer {
+  html .main .footer, body .main .footer {
     position: absolute;
     top: 1110px;
   }
-  .projects .footer {
+  html .projects-main .footer, body .projects-main .footer {
     position: absolute;
     top: 1110px;
   }
-  .projects-pages .footer {
-    position: absolute;
-    top: 1110px;
-  }
-  .contact-us .footer {
+  html .contacts .footer, body .contacts .footer {
     position: absolute;
     top: 1110px;
   }

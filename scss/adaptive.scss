@@ -14,7 +14,7 @@ $color6: #EC5A64;
 
 $bd1: 1px solid $color1;
 
-@media screen and (min-width:320px) and (max-width:480px){
+@media screen and (min-width: 320px) and (max-width: 480px){
     html, body{
         //* JS Script Classes
         .header{
@@ -124,44 +124,37 @@ $bd1: 1px solid $color1;
         }    
 
         .main{
-            .footer{}
+            .footer{
+                position: absolute;
+                top: 1110px;
+            }
         }
 
         .projects-main{
-            .footer{}
+            .footer{
+                position: absolute;
+                top: 1110px;
+            }
         }
 
         .contacts{
-            .footer{}
+            .footer{
+                position: absolute;
+                top: 1110px;
+            }
         }
     }
 
     .about{
-        .footer{
-            position: absolute;
-            top: 1110px;
-        }
     }
 
     .projects{
-        .footer{
-            position: absolute;
-            top: 1110px;
-        }
     }
 
     .projects-pages{
-        .footer{
-            position: absolute;
-            top: 1110px;
-        }
     }
 
     .contact-us{
-        .footer{
-            position: absolute;
-            top: 1110px;
-        }
     }
 }
 

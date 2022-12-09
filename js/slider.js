@@ -38,7 +38,7 @@ r1.addEventListener('click', () => {
 
     projectsText.innerHTML = 
     `<p>
-    Advanced mobile banking - <a href=""><span>E-Wallet</span></a>. <br> 
+    Advanced mobile banking - <a href="https://github.com/ortizdevelop/e-wallet"><span>E-Wallet</span></a>. <br> 
     Created using JavaScript and React <br> 
     framework, support of different <br> 
     languages, possibility to pay everything <br>
@@ -56,11 +56,11 @@ r2.addEventListener('click', () => {
     `<p>Caffe <span>Origami</span>.</p>`;
 
     projectsText.innerHTML = 
-    `Start your day with aromatic coffee and a delicious dessert at - <a href="" target="_blank"><span>Caffe Origami</span></a>. <br>
+    `<p>Start your day with aromatic coffee and a delicious dessert at - <a href="" target="_blank"><span>Caffe Origami</span></a>. <br>
     Site of a coffee house in Pervouralsk, <br>
     Is a fairly simple but modern design, <br>
     designed by my friend <a href="https://vk.com/uxuiuliss" target="_blank"><span>"Uliss"</span></a>, <br>
-    The site looks very exciting and attractive. `;
+    The site looks very exciting and attractive.</p> `;
 
     toolsTitle2.textContent = 'React';
     
@@ -74,7 +74,7 @@ r3.addEventListener('click', () =>{
     projectsTitle.innerHTML = "My <span>GitHub</span> Profile."
 
     projectsText.innerHTML = 
-    `<p>A complete base and newsletter of all developments - <a href="https://github.com/AidenOrtiz" target="_blank"><span>ORTIZ DEVELOP GitHub</span></a>. <br> 
+    `<p>A complete base and newsletter of all developments - <a href="https://github.com/ortizdevelop" target="_blank"><span>ORTIZ DEVELOP GitHub</span></a>. <br> 
     A rapidly growing profile since July 2022, actively updated with all new additions, projects and repositories, many of them, <br> 
      in the public domain. The profile contains basic tools and links, as well as links to various social media.</p>`;
 

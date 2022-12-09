@@ -68,7 +68,7 @@ html, body{
     .contacts{
         .footer{
             position: absolute;
-            top: 1100;
+            top: 1100px;
             left: 0;
         }
     }
@@ -961,6 +961,7 @@ footer {
         
         a{
             transition: 0.15s;
+            
             span{   
                 position: relative;
                 top: 0;
@@ -1654,8 +1655,9 @@ footer {
         left: 472px;
     }
 
-    100%{
+    60%, 100%{
         left: 290px;
+        opacity: 0;
     }
 } 
 

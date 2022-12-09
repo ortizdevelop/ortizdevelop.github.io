@@ -34,13 +34,14 @@ $bd1: 1px solid $color1;
                  top: 1100px;
              }
          }
-     
+
          .contacts{
-             .footer{
-                 position: absolute;
-                 top: 1100;
-                 left: 0;
-             }
+
+            .footer{
+                width: 1100px;
+                position: absolute;
+                top: 1300px;
+            }
          }
     }
     
@@ -296,26 +297,412 @@ $bd1: 1px solid $color1;
     .contacts{
         width: 100%;
 
+        .header{
+            width: 300px;
+        }
+
+        .contact-us{
+            position: relative;
+            top: 200px;
+
+            .contact-us-form{
+                opacity: 0;
+            }
+
+            .contact-us-images{
+
+                &__column{
+                    position: relative;
+                    right: 10px;
+                }
+            }
+        }
+
         .footer{
-            .footer-top{
-                margin-left: 385px;
-            }
-    
-            .footer-mid{
-                margin-right: 550px;
-            }
-    
-            .footer-bot{
-                margin-left: 520px;
-            }
-    
-            .copyright{
-                position: relative;
-                right: 280px;
+
+            .container{
+
+                .footer-top{
+                    position: relative;
+                    right: 50px;
+                }
+        
+                .footer-mid{
+                    position: relative;
+                    left: 310px;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 50px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    left: 130px;
+                }
             }
         }
     }
     // * End of Contacts.html code
 }
 
-@media only screen and (max-width: 320px){}
+@media only screen and (max-width: 375px){
+    html, body{
+        width: 375px;
+        height: 430px;
+
+        .main{}
+
+        .projects-main{
+            height: 50px;
+
+            .footer{
+                 position: absolute;
+                 top: 1400px;
+             }
+         }
+     
+         .projects-page{
+             .footer{
+                 position: absolute;
+                 top: 2000px;
+             }
+         }
+
+         .contacts{
+
+            .footer{
+                width: 745px;
+                position: absolute;
+                top: 1300px;
+            }
+         }
+    }
+
+
+    //* Index.html
+
+    .about{
+        width: 375px;
+
+        .about {
+            .header{
+                position: absolute;
+                top: 0px;
+                left: 500px;
+            }
+        }
+        .about-head {
+        
+            &__body {
+                background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
+            }
+    
+            &__content {
+            }
+    
+            &__title {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__subtitle {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__button {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__line {
+                position: relative;
+                right: 350px;
+            }
+
+            .text {
+            }
+            .first-text {
+            }
+            .second-text {
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 20px;
+                    width: 194px;
+                    height: 64px;
+                    background-color: $color4;
+                    border-left: $bd1;
+                    animation: title-anim 3.9s steps(12) infinite;
+                }
+            }
+    
+            .third-text {
+            }
+            #progress {
+                position: fixed;
+                bottom: 20px;
+                left: 880px;
+            }
+        }
+        
+        .about-middle {
+        
+                &__body {
+                }
+        
+                &__content {
+                }
+        
+                &__title {
+                }
+        
+                &__subtitle {
+                }
+        
+                &__tools {
+                }
+        
+                &__tools-column {
+                }
+        
+                &__tools-list {
+                }
+        
+                &__tools-js {
+                }
+        
+                &__img {
+                }
+        
+                &__column {
+                }
+        
+                &__list {
+                }
+        
+                &__box {
+                }
+        }
+        .list-line1 {
+        }
+        .list-line2 {
+        }
+        .about-bottom {
+        
+                &__body {
+                }
+        
+                &__content {
+                }
+        
+                &__banner {
+                }
+        
+                &__title {
+                }
+        
+                &__btn {
+                }
+        
+                &__button {
+                }
+        
+                &__line {
+                }
+        
+                &__text {
+                }
+        
+                &__contact {
+                }
+        }
+        
+    }
+
+    // * End of Index.html code
+
+
+    // * Projects-main.html
+
+    .projects-main{
+        .projects{
+            width: 375px;
+            position: relative;
+            right: 40px;
+    
+            &__title{
+                position: relative;
+                left: 360px;
+            }
+    
+            &__text{
+                position: relative;
+                top: 30px;
+                left: 200px;
+                width: 600px;
+            }
+        }
+    
+        .project-slider{
+            position: relative;
+            top: 400px;
+            right: 400px;
+
+            &__navigation{
+                position: relative;
+                left: 400px;
+                bottom: 50px;
+            }
+        }
+
+        .footer{
+
+            .footer-top{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-mid{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-bot{
+                position: relative;
+                right: 160px;
+            }
+
+            .copyright{
+                position: relative;
+                right: 340px;
+            }
+        }
+    }
+
+    // * End of Projects-main.html code
+
+
+    // * Projects-page.html
+
+    .projects-page{
+        .projects-pages{
+            width: 375px;
+    
+            &__title{
+                position: relative;
+                top: 80px;
+                left: 200px;
+            }
+    
+            &__text{
+                p{
+                    position: relative;
+                    top: 25px;
+                    left: 200px;
+                }
+            }
+    
+            &__tools-and-links{
+                position: relative;
+                top: 150px;
+                left: 200px;
+            }
+
+            &__links-title{
+                position: relative;
+                left: 100px;
+            }
+
+            &__links-img{
+                position: relative;
+                left: 100px;
+            }
+        }
+    
+        .project-pages-slider{
+            position: relative;
+            top: 250px;
+            left: 80px;
+        }
+
+        .footer{
+
+            .container{
+
+                .footer-top{
+                    position: relative;
+                    right: 220px;
+                }
+        
+                .footer-mid{
+                    position: relative;
+                    right: 200px;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 210px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    right: 390px;
+                }
+            }
+        }
+    }
+    
+    // * End of Projects-page.html code
+
+
+    //* Contacts.html
+
+    .contacts{
+        width: 375px;
+
+        .contact-us{
+            .contact-us-images__media{
+                position: relative;
+                right: 200px;
+                bottom: 100px;
+            }
+        }
+
+        .footer{
+
+            .container{
+                .footer-top{
+                    position: relative;
+                    right: 320px;
+                    width: 600px;
+                }
+        
+                .footer-mid{
+                    position: relative;
+                    left: 140px;
+                    width: 600px;
+                    margin-left: 0;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 315px;
+                    width: 600px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    left: 110px;
+                    width: 600px;
+                }
+            }
+        }
+    }
+
+    // * End of Contacts.html code
+}

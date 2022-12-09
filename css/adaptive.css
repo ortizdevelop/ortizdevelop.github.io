@@ -238,6 +238,10 @@
   }
 }
 @media only screen and (max-width: 375px) {
+  html, body {
+    width: 375px;
+    height: 430px;
+  }
   html .projects-main, body .projects-main {
     height: 50px;
   }
@@ -250,7 +254,7 @@
     top: 2000px;
   }
   html .contacts .footer, body .contacts .footer {
-    width: 1100px;
+    width: 745px;
     position: absolute;
     top: 1300px;
   }
@@ -347,5 +351,31 @@
   }
   .contacts {
     width: 375px;
+  }
+  .contacts .contact-us .contact-us-images__media {
+    position: relative;
+    right: 200px;
+    bottom: 100px;
+  }
+  .contacts .footer .container .footer-top {
+    position: relative;
+    right: 320px;
+    width: 600px;
+  }
+  .contacts .footer .container .footer-mid {
+    position: relative;
+    left: 140px;
+    width: 600px;
+    margin-left: 0;
+  }
+  .contacts .footer .container .footer-bot {
+    position: relative;
+    right: 315px;
+    width: 600px;
+  }
+  .contacts .footer .container .copyright {
+    position: relative;
+    left: 110px;
+    width: 600px;
   }
 }

@@ -1336,7 +1336,6 @@ footer .copyright__title {
   }
   60%, 100% {
     left: 290px;
-    opacity: 0;
   }
 }
 
@@ -1346,7 +1345,6 @@ footer .copyright__title {
   }
   60%, 100% {
     left: 290px;
-    opacity: 0;
   }
 }
 @-webkit-keyframes copyright-anim {

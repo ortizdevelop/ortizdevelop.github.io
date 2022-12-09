@@ -1,0 +1,29 @@
+@media screen and (min-width:320px) and (max-width:480px){}
+
+@media screen and (min-width:481px) and (max-width:1024px){
+    html,body{
+        .main{
+            .footer{
+                position: absolute;
+            }
+        }
+
+        .projects-main{
+            .footer{
+                position: absolute;
+            }
+        }
+
+        .projects-page{
+            .footer{
+                position: absolute;
+            }
+        }
+
+        .contacts{
+            .footer{
+                position: absolute;
+            }
+        }
+    }
+}

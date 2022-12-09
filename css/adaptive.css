@@ -770,10 +770,28 @@
     position: absolute;
     top: 2000px;
   }
-  html .contacts .footer, body .contacts .footer {
-    width: 745px;
+  html .contacts .content .footer, body .contacts .content .footer {
+    width: 1100px;
     position: absolute;
-    top: 1300px;
+    top: 1400px;
+  }
+  html .contacts .content .footer .container, body .contacts .content .footer .container {
+    position: relative;
+  }
+  html .contacts .content .footer .container .footer-top, body .contacts .content .footer .container .footer-top {
+    position: relative;
+    right: 250px;
+  }
+  html .contacts .content .footer .container .footer-mid, body .contacts .content .footer .container .footer-mid {
+    position: relative;
+    left: 200px;
+  }
+  html .contacts .content .footer .container .footer-bot, body .contacts .content .footer .container .footer-bot {
+    position: relative;
+    left: -250px;
+  }
+  html .contacts .content .footer .container .copyright, body .contacts .content .footer .container .copyright {
+    left: 180px;
   }
   .about {
     width: 375px;

@@ -261,6 +261,50 @@
   .about {
     width: 375px;
   }
+  .about .about .header {
+    position: absolute;
+    top: 0px;
+    left: 500px;
+  }
+  .about .about-head__body {
+    background: url("/img/main/bg-logo.png") 50px -100px no-repeat;
+  }
+  .about .about-head__title {
+    position: relative;
+    right: 100px;
+  }
+  .about .about-head__subtitle {
+    position: relative;
+    right: 100px;
+  }
+  .about .about-head__button {
+    position: relative;
+    right: 100px;
+  }
+  .about .about-head__line {
+    position: relative;
+    right: 350px;
+  }
+  .about .about-head .second-text {
+    position: relative;
+  }
+  .about .about-head .second-text::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 20px;
+    width: 194px;
+    height: 64px;
+    background-color: #191F28;
+    border-left: 1px solid #EE6C4D;
+    -webkit-animation: title-anim 3.9s steps(12) infinite;
+            animation: title-anim 3.9s steps(12) infinite;
+  }
+  .about .about-head #progress {
+    position: fixed;
+    bottom: 20px;
+    left: 880px;
+  }
   .projects-main .projects {
     width: 375px;
     position: relative;

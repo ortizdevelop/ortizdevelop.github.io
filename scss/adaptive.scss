@@ -385,6 +385,143 @@ $bd1: 1px solid $color1;
 
     .about{
         width: 375px;
+
+        .about {
+            .header{
+                position: absolute;
+                top: 0px;
+                left: 500px;
+            }
+        }
+        .about-head {
+        
+            &__body {
+                background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
+            }
+    
+            &__content {
+            }
+    
+            &__title {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__subtitle {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__button {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__line {
+                position: relative;
+                right: 350px;
+            }
+
+            .text {
+            }
+            .first-text {
+            }
+            .second-text {
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 20px;
+                    width: 194px;
+                    height: 64px;
+                    background-color: $color4;
+                    border-left: $bd1;
+                    animation: title-anim 3.9s steps(12) infinite;
+                }
+            }
+    
+            .third-text {
+            }
+            #progress {
+                position: fixed;
+                bottom: 20px;
+                left: 880px;
+            }
+        }
+        
+        .about-middle {
+        
+                &__body {
+                }
+        
+                &__content {
+                }
+        
+                &__title {
+                }
+        
+                &__subtitle {
+                }
+        
+                &__tools {
+                }
+        
+                &__tools-column {
+                }
+        
+                &__tools-list {
+                }
+        
+                &__tools-js {
+                }
+        
+                &__img {
+                }
+        
+                &__column {
+                }
+        
+                &__list {
+                }
+        
+                &__box {
+                }
+        }
+        .list-line1 {
+        }
+        .list-line2 {
+        }
+        .about-bottom {
+        
+                &__body {
+                }
+        
+                &__content {
+                }
+        
+                &__banner {
+                }
+        
+                &__title {
+                }
+        
+                &__btn {
+                }
+        
+                &__button {
+                }
+        
+                &__line {
+                }
+        
+                &__text {
+                }
+        
+                &__contact {
+                }
+        }
+        
     }
 
     // * End of Index.html code
@@ -522,7 +659,7 @@ $bd1: 1px solid $color1;
     
     // * End of Projects-page.html code
 
-    
+
     //* Contacts.html
 
     .contacts{

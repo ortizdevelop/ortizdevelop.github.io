@@ -116,79 +116,6 @@ $bd1: 1px solid $color1;
                 left: 880px;
             }
         }
-        
-        .about-middle {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__title {
-                }
-        
-                &__subtitle {
-                }
-        
-                &__tools {
-                }
-        
-                &__tools-column {
-                }
-        
-                &__tools-list {
-                }
-        
-                &__tools-js {
-                }
-        
-                &__img {
-                }
-        
-                &__column {
-                }
-        
-                &__list {
-                }
-        
-                &__box {
-                }
-        }
-        .list-line1 {
-        }
-        .list-line2 {
-        }
-        .about-bottom {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__banner {
-                }
-        
-                &__title {
-                }
-        
-                &__btn {
-                }
-        
-                &__button {
-                }
-        
-                &__line {
-                }
-        
-                &__text {
-                }
-        
-                &__contact {
-                }
-        }
-        
     }
 
     // * End of Index.html code
@@ -475,80 +402,7 @@ $bd1: 1px solid $color1;
                 bottom: 20px;
                 left: 880px;
             }
-        }
-        
-        .about-middle {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__title {
-                }
-        
-                &__subtitle {
-                }
-        
-                &__tools {
-                }
-        
-                &__tools-column {
-                }
-        
-                &__tools-list {
-                }
-        
-                &__tools-js {
-                }
-        
-                &__img {
-                }
-        
-                &__column {
-                }
-        
-                &__list {
-                }
-        
-                &__box {
-                }
-        }
-        .list-line1 {
-        }
-        .list-line2 {
-        }
-        .about-bottom {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__banner {
-                }
-        
-                &__title {
-                }
-        
-                &__btn {
-                }
-        
-                &__button {
-                }
-        
-                &__line {
-                }
-        
-                &__text {
-                }
-        
-                &__contact {
-                }
-        }
-        
+        } 
     }
 
     // * End of Index.html code
@@ -835,80 +689,7 @@ $bd1: 1px solid $color1;
                 bottom: 20px;
                 left: 880px;
             }
-        }
-        
-        .about-middle {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__title {
-                }
-        
-                &__subtitle {
-                }
-        
-                &__tools {
-                }
-        
-                &__tools-column {
-                }
-        
-                &__tools-list {
-                }
-        
-                &__tools-js {
-                }
-        
-                &__img {
-                }
-        
-                &__column {
-                }
-        
-                &__list {
-                }
-        
-                &__box {
-                }
-        }
-        .list-line1 {
-        }
-        .list-line2 {
-        }
-        .about-bottom {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__banner {
-                }
-        
-                &__title {
-                }
-        
-                &__btn {
-                }
-        
-                &__button {
-                }
-        
-                &__line {
-                }
-        
-                &__text {
-                }
-        
-                &__contact {
-                }
-        }
-        
+        } 
     }
 
     // * End of Index.html code
@@ -1201,80 +982,314 @@ $bd1: 1px solid $color1;
                 bottom: 20px;
                 left: 880px;
             }
+        } 
+    }
+
+    // * End of Index.html code
+
+
+    // * Projects-main.html
+
+    .projects-main{
+        .projects{
+            width: 375px;
+            position: relative;
+            right: 40px;
+    
+            &__title{
+                position: relative;
+                left: 360px;
+            }
+    
+            &__text{
+                position: relative;
+                top: 30px;
+                left: 200px;
+                width: 600px;
+            }
         }
-        
-        .about-middle {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__title {
-                }
-        
-                &__subtitle {
-                }
-        
-                &__tools {
-                }
-        
-                &__tools-column {
-                }
-        
-                &__tools-list {
-                }
-        
-                &__tools-js {
-                }
-        
-                &__img {
-                }
-        
-                &__column {
-                }
-        
-                &__list {
-                }
-        
-                &__box {
-                }
+    
+        .project-slider{
+            position: relative;
+            top: 400px;
+            right: 400px;
+
+            &__navigation{
+                position: relative;
+                left: 400px;
+                bottom: 50px;
+            }
         }
-        .list-line1 {
+
+        .footer{
+            position: relative;
+            top: 400px;
+
+            .footer-top{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-mid{
+                position: relative;
+                right: 160px;
+            }
+
+            .footer-bot{
+                position: relative;
+                right: 160px;
+            }
+
+            .copyright{
+                position: relative;
+                right: 340px;
+            }
         }
-        .list-line2 {
+    }
+
+    // * End of Projects-main.html code
+
+
+    // * Projects-page.html
+
+    .projects-page{
+        .projects-pages{
+            width: 375px;
+    
+            &__title{
+                position: relative;
+                top: 80px;
+                left: 200px;
+            }
+    
+            &__text{
+                p{
+                    position: relative;
+                    top: 25px;
+                    left: 200px;
+                }
+            }
+    
+            &__tools-and-links{
+                position: relative;
+                top: 150px;
+                left: 200px;
+            }
+
+            &__links-title{
+                position: relative;
+                left: 100px;
+            }
+
+            &__links-img{
+                position: relative;
+                left: 100px;
+            }
         }
-        .about-bottom {
-        
-                &__body {
-                }
-        
-                &__content {
-                }
-        
-                &__banner {
-                }
-        
-                &__title {
-                }
-        
-                &__btn {
-                }
-        
-                &__button {
-                }
-        
-                &__line {
-                }
-        
-                &__text {
-                }
-        
-                &__contact {
-                }
+    
+        .project-pages-slider{
+            position: relative;
+            top: 250px;
+            left: 80px;
         }
+
+        .footer{
+
+            .container{
+
+                .footer-top{
+                    position: relative;
+                    right: 220px;
+                }
         
+                .footer-mid{
+                    position: relative;
+                    right: 200px;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 210px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    right: 390px;
+                }
+            }
+        }
+    }
+    
+    // * End of Projects-page.html code
+
+
+    //* Contacts.html
+
+    .contacts{
+        width: 375px;
+
+        .contact-us{
+            .contact-us-images__media{
+                position: relative;
+                right: 200px;
+                bottom: 100px;
+            }
+        }
+
+        .footer{
+
+            .container{
+                .footer-top{
+                    position: relative;
+                    right: 320px;
+                    width: 600px;
+                }
+        
+                .footer-mid{
+                    position: relative;
+                    left: 140px;
+                    width: 600px;
+                    margin-left: 0;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 315px;
+                    width: 600px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    left: 110px;
+                    width: 600px;
+                }
+            }
+        }
+    }
+
+    // * End of Contacts.html code
+}
+
+@media only screen and (max-width: 480px){
+    html, body{
+        width: 375px;
+        height: 430px;
+
+        .main{}
+
+        .projects-main{
+            
+            .content{
+                .footer{
+                    width: 1100px;
+                    position: relative;
+                    top: 700px;
+    
+                    .container{
+                        position: relative;
+
+                        .footer-top{}
+
+                        .footer-mid{
+                            left: 140px;
+                        }
+
+                        .footer-bot{}
+
+                        .copyright{
+                            left: -30px;
+                        }
+                    }
+                }
+            }
+         }
+     
+         .projects-page{
+             .footer{
+                 position: absolute;
+                 top: 2000px;
+             }
+         }
+
+         .contacts{
+
+            .footer{
+                width: 745px;
+                position: absolute;
+                top: 1300px;
+            }
+         }
+    }
+
+
+    //* Index.html
+
+    .about{
+        width: 375px;
+
+        .about {
+            .header{
+                position: absolute;
+                top: 0px;
+                left: 500px;
+            }
+        }
+        .about-head {
+        
+            &__body {
+                background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
+            }
+    
+            &__content {
+            }
+    
+            &__title {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__subtitle {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__button {
+                position: relative;
+                right: 100px;
+            }
+    
+            &__line {
+                position: relative;
+                right: 350px;
+            }
+
+            .text {
+            }
+            .first-text {
+            }
+            .second-text {
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0px;
+                    top: 20px;
+                    width: 194px;
+                    height: 64px;
+                    background-color: $color4;
+                    border-left: $bd1;
+                    animation: title-anim 3.9s steps(12) infinite;
+                }
+            }
+    
+            .third-text {
+            }
+            #progress {
+                position: fixed;
+                bottom: 20px;
+                left: 880px;
+            }
+        } 
     }
 
     // * End of Index.html code

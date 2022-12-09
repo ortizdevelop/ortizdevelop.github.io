@@ -19,109 +19,113 @@ $bd1: 1px solid $color1;
         //* JS Script Classes
         .header{
             position: absolute;
+            top: -40px;
+            left: -75px;
 
-        &__links{
-            padding-top: 20px;
-            padding-left: 5px;
-            width: 180px;
-            height: 10px;
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(5, 1fr);
-            grid-column-gap: 0px;
-            grid-row-gap: 30px;
-            background-color: $color4;
-            text-align: left;
-            align-items: flex-start;
-            border-radius: 5px;
-            border: 1px solid $color4;
-        }
+            &__links{
+                padding-top: 20px;
+                padding-left: 5px;
+                width: 180px;
+                height: 10px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5, 1fr);
+                grid-column-gap: 0px;
+                grid-row-gap: 30px;
+                background-color: $color4;
+                text-align: left;
+                align-items: flex-start;
+                border-radius: 5px;
+                border: 1px solid $color4;
+            }
 
-        &__link-about{
-            position: absolute;
-            top: -30px;
-            opacity: 0;
-        }
+            &__link-about{
+                position: absolute;
+                top: -30px;
+                opacity: 0;
+            }
 
-        &__link-projects{
-            position: absolute;
-            top: -30px;
-            margin-right: 0;
-            opacity: 0;
-        }
+            &__link-projects{
+                position: absolute;
+                top: -30px;
+                margin-right: 0;
+                opacity: 0;
+            }
+            
+            &__contact{
+                position: absolute;
+                top: -30px;
+                opacity: 0;
+            }
+
+            &__logo{
+                grid-area: 1 / 1 / 2 / 2;
+                margin-right: 0;
+            }
+
+            
+        } 
         
-        &__contact{
-            position: absolute;
-            top: -30px;
-            opacity: 0;
-        }
-
-        &__logo{
-            grid-area: 1 / 1 / 2 / 2;
-            margin-right: 0;
-        }
-
-            .activeBurgerMenu{
+        .activeBurgerMenu{
+            transition: 0.3s;
+        
+            .header{
                 transition: 0.3s;
+        
+                &__links{
+                    position: relative;
+                    bottom: 50px;
+                    right: 150px;
+                    background-color: $color5;
+                    border: 1px solid $color1;
+                    height: 310px;
+        
+                    a{
+                        transition: 0.35s;
             
-                .header{
-                    transition: 0.3s;
-            
-                    &__links{
-                        position: relative;
-                        bottom: 50px;
-                        right: 50px;
-                        background-color: $color5;
-                        border: 1px solid $color1;
-                        height: 310px;
-            
-                        a{
-                            transition: 0.35s;
+                        span{
                 
-                            span{
-                    
-                                &:hover{
-                                    border: none;
-                                    transition: 0.35s;
-                                }
-                
-                                &:active{
-                                    transition: 0.35s;
-                                    background-color: $color4;
-                                    color: $color1;
-                                }
+                            &:hover{
+                                border: none;
+                                transition: 0.35s;
+                            }
+            
+                            &:active{
+                                transition: 0.35s;
+                                background-color: $color4;
+                                color: $color1;
                             }
                         }
                     }
-            
-                    &__link-about{
-                        position: absolute;
-                        transform: translateY(140px);
-                        opacity: 1;
-                        transition: 0.3s;
-                    }
-            
-                    &__link-projects{
-                        position: absolute;
-                        transform: translateY(200px);
-                        margin-right: 0;
-                        opacity: 1;
-                        transition: 0.3s;
-                    }
-            
-                    &__logo{
-                        border: none;
-                    }
-                    
-                    &__contact{
-                        position: absolute;
-                        transform: translateY(260px);
-                        opacity: 1;
-                        transition: 0.3s;
-                    }
                 }
-            } 
-        }    
+        
+                &__link-about{
+                    position: absolute;
+                    transform: translateY(140px);
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+        
+                &__link-projects{
+                    position: absolute;
+                    transform: translateY(200px);
+                    margin-right: 0;
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+        
+                &__logo{
+                    border: none;
+                }
+                
+                &__contact{
+                    position: absolute;
+                    transform: translateY(260px);
+                    opacity: 1;
+                    transition: 0.3s;
+                }
+            }
+        } 
 
         .main{
             .footer{
@@ -145,7 +149,15 @@ $bd1: 1px solid $color1;
         }
     }
 
-    .about{
+    .main{
+        .about{
+
+            .about-head{}
+    
+            .about-middle{}
+    
+            .about-bottom{}
+        }
     }
 
     .projects{

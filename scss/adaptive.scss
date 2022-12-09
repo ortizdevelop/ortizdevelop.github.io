@@ -1173,9 +1173,220 @@ $bd1: 1px solid $color1;
 @media only screen and (max-width: 480px){
     html, body{
         width: 375px;
-        height: 430px;
 
-        .main{}
+        .main{
+            .header{
+                position: absolute;
+                top: -50px;
+                left: -50px;
+            }
+
+            .footer{
+                width: 480px;
+                position: absolute;
+                top: 4700px;
+
+                .container{
+
+                    .footer-top{
+                        position: relative;
+                        right: 460px;
+                        width: 450px;
+                    }
+
+                    .footer-mid{
+
+                        &__links{
+                            width: 300px;
+                            position: relative;
+                            left: 50px;
+                        }
+
+                        &__link{
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .footer-bot{
+                        position: relative;
+                        left: 160px;
+                        margin-left: 0;
+                    }
+                    
+                    .copyright{
+                        position: relative;
+                        left: 25px;
+                    }
+                }
+            }
+
+            .about{
+                
+                .about-head{
+
+                    &__content{
+                        position: relative;
+                        top: 660px;
+                    }
+
+                    &__body {
+                        background: url('/img/main/bg-logo.png') -440px -50px no-repeat;
+                    }
+
+                    &__title{
+                        position: relative;
+                        right: 115px;
+                        font-size: 54px;
+
+                        .second-text{
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                left: -30px;
+                                top: 5px;
+                                width: 194px;
+                                height: 64px;
+                                background-color: $color4;
+                                border-left: $bd1;
+                                animation: title-anim 3.9s steps(12) infinite;
+                            }
+                        }
+                    }
+
+                    &__subtitle{
+                        position: relative;
+                        right: 115px;
+                        width: 400px;
+                    }
+
+                    &__line{
+                        position: relative;
+                        right: 680px;
+                    }
+                }
+
+                .about-middle{
+
+                    &__body{
+                        position: relative;
+                        top: 600px;
+                        right: 70px;
+                    }
+
+                    &__tools-column{
+                        position: relative;
+                        top: 160px;
+                        right: 770px;
+                        width: 500px;
+
+                        li{
+                            position: relative;
+                            left: 20px;
+                            margin-right: 18px;
+                        }
+                    }
+
+                    &__column{
+                        position: relative;
+                        top: 550px;
+                        right: 665px;
+
+                        
+                    }
+
+                    &__list{
+                        
+                        p{
+                            &:nth-child(2){
+                                width: 330px;
+                            }
+
+                            &:nth-child(3){
+                                position: relative;
+                                top: 30px;
+                            }
+                        }
+
+                        .list-line1{
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 259px;
+                                height: 0px;
+                                left: 5px;
+                                top: 250px;
+                                border: $bd1;
+                            }
+                        }
+                
+                        .list-line2{
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 259px;
+                                height: 0px;
+                                left: 5px;
+                                top: 270px;
+                                border: $bd1;
+                            }
+                        }
+                    }
+
+                    &__img{
+                        position: relative;
+                        left: 180px;
+                    }
+
+                    &__box{
+                        width: 470px;
+                        height: 730px;
+                    }
+                }
+
+                .about-bottom{
+                    position: relative;
+                    top: 1100px;
+                    width: 480px;
+
+                    &__banner{
+                        position: relative;
+                        right: 280px;
+                        img{
+                            width: 800px;
+                        }
+                    }
+
+                    &__button{
+                        position: relative;
+                        top: 100px;
+                        right: 100px;
+                        padding: 10px;
+                    }
+
+                    &__title{
+                        width: 200px;
+                        position: relative;
+                        top: 450px;
+                        left: 200px;
+
+                        span{
+                            color: $color1;
+                        }
+                    }
+
+                    &__line{
+                        position: relative;
+                        right: 470px;
+                    }
+
+                    &__contact{
+                        position: relative;
+                        right: 850px;
+                        top: 200px;
+                    }
+                }
+            }
+        }
 
         .projects-main{
             
@@ -1214,6 +1425,56 @@ $bd1: 1px solid $color1;
          .contacts{
 
             .content{
+
+                .header{
+                    position: absolute;
+                    top: -50px;
+                    left: -50px;
+                }
+
+                .contact-us{
+                    &__title{
+                        position: relative;
+                        bottom: 20px;
+                        right: 70px;
+                    }
+
+                    &__subtitle{
+                        position: relative;
+                        bottom: 20px;
+                        right: 70px;
+                    }
+                }
+
+                .contact-us-images{
+                    
+                    &__column{
+                        width: 350px;
+                    }
+
+                    &__list{
+                        display: inline;
+                        margin-right: 40px;
+                        position: relative;
+                        right: 100px;
+                        top: 575px;
+
+                        &:hover{
+                            span{
+                                transform: translateY(-55px);
+                                transition: 0.35s;
+                                opacity: 1;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    &__bg{
+                        position: relative;
+                        top: 455px;
+                    }
+                }
+
                 .footer{
                     width: 1100px;
                     position: absolute;
@@ -1224,21 +1485,26 @@ $bd1: 1px solid $color1;
 
                         .footer-top{
                             position: relative;
-                            right: 250px;
+                            right: 460px;
+                            width: 450px;
                         }
 
                         .footer-mid{
                             position: relative;
-                            left: 200px;
+                            left: -25px;
+                            
+                            &__link{
+                                margin-right: 40px;
+                            }
                         }
 
                         .footer-bot{
                             position: relative;
-                            left: -250px;
+                            left: -450px;
                         }
 
                         .copyright{
-                            left: 180px;
+                            left: -30px;
                         }
                     }
                 }
@@ -1414,39 +1680,67 @@ $bd1: 1px solid $color1;
     
             &__title{
                 position: relative;
-                top: 80px;
-                left: 200px;
+                top: -10px;
+                left: 0px;
             }
     
             &__text{
                 p{
                     position: relative;
-                    top: 25px;
-                    left: 200px;
+                    top: -80px;
+                    right: 15px;
+                    width: 480px;
+                    font-size: 20px;
                 }
             }
     
             &__tools-and-links{
                 position: relative;
-                top: 150px;
-                left: 200px;
+                top: 100px;
+                left: 50px;
+            }
+
+            &__tools-title{
+                font-size: 28px;
             }
 
             &__links-title{
                 position: relative;
-                left: 100px;
+                left: -100px;
+                font-size: 28px;
+            }
+
+            &__tools-img{
+                li{
+                    position: relative;
+                    left: 80px;
+                    width: 45px;
+                    height: 45px;
+                    margin-right: 5px;
+                }
             }
 
             &__links-img{
                 position: relative;
-                left: 100px;
+                left: 0px;
+                top: 10px;
             }
         }
     
         .project-pages-slider{
             position: relative;
             top: 250px;
-            left: 80px;
+            left: -170px;
+
+            &__slide{
+                width: 25%;
+            }
+
+            &__slider-body{
+                width: 600px;
+                position: relative;
+                left: 90px;
+            }
         }
 
         .footer{
@@ -1455,22 +1749,24 @@ $bd1: 1px solid $color1;
 
                 .footer-top{
                     position: relative;
-                    right: 220px;
+                    right: 470px;
                 }
         
                 .footer-mid{
-                    position: relative;
-                    right: 200px;
+                    &__links{
+                        position: relative;
+                        right: 135px;
+                    }
                 }
         
                 .footer-bot{
                     position: relative;
-                    right: 210px;
+                    right: 10px;
                 }
         
                 .copyright{
                     position: relative;
-                    right: 390px;
+                    right: 360px;
                 }
             }
         }
@@ -1487,7 +1783,7 @@ $bd1: 1px solid $color1;
         .contact-us{
             .contact-us-images__media{
                 position: relative;
-                right: 200px;
+                right: 600px;
                 bottom: 100px;
             }
         }

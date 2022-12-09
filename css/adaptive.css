@@ -438,7 +438,7 @@
     bottom: 20px;
     left: 880px;
   }
-  .main .footer .footer-mid {
+  .main .footer .footer-mid__links {
     border: 1px solid red;
   }
   .projects-main .projects {
@@ -1124,37 +1124,37 @@
   html .contacts .content .footer .container .copyright, body .contacts .content .footer .container .copyright {
     left: -50px;
   }
-  .about {
+  .main .about {
     width: 375px;
   }
-  .about .about .header {
+  .main .about .about .header {
     position: absolute;
     top: 0px;
     left: 500px;
   }
-  .about .about-head__body {
+  .main .about .about-head__body {
     background: url("/img/main/bg-logo.png") 50px -100px no-repeat;
   }
-  .about .about-head__title {
+  .main .about .about-head__title {
     position: relative;
     right: 100px;
   }
-  .about .about-head__subtitle {
+  .main .about .about-head__subtitle {
     position: relative;
     right: 100px;
   }
-  .about .about-head__button {
+  .main .about .about-head__button {
     position: relative;
     right: 100px;
   }
-  .about .about-head__line {
+  .main .about .about-head__line {
     position: relative;
     right: 350px;
   }
-  .about .about-head .second-text {
+  .main .about .about-head .second-text {
     position: relative;
   }
-  .about .about-head .second-text::before {
+  .main .about .about-head .second-text::before {
     content: "";
     position: absolute;
     left: 0px;
@@ -1166,7 +1166,7 @@
     -webkit-animation: title-anim 3.9s steps(12) infinite;
             animation: title-anim 3.9s steps(12) infinite;
   }
-  .about .about-head #progress {
+  .main .about .about-head #progress {
     position: fixed;
     bottom: 20px;
     left: 880px;

@@ -924,6 +924,41 @@
     position: absolute;
     top: 2000px;
   }
+  html .contacts .content .header, body .contacts .content .header {
+    position: absolute;
+    top: -50px;
+    left: -50px;
+  }
+  html .contacts .content .contact-us__title, body .contacts .content .contact-us__title {
+    position: relative;
+    bottom: 20px;
+    right: 70px;
+  }
+  html .contacts .content .contact-us__subtitle, body .contacts .content .contact-us__subtitle {
+    position: relative;
+    bottom: 20px;
+    right: 70px;
+  }
+  html .contacts .content .contact-us-images__column, body .contacts .content .contact-us-images__column {
+    width: 350px;
+  }
+  html .contacts .content .contact-us-images__list, body .contacts .content .contact-us-images__list {
+    display: inline;
+    margin-right: 40px;
+    position: relative;
+    right: 100px;
+    top: 575px;
+  }
+  html .contacts .content .contact-us-images__list:hover span, body .contacts .content .contact-us-images__list:hover span {
+    transform: translateY(-55px);
+    transition: 0.35s;
+    opacity: 1;
+    font-weight: bold;
+  }
+  html .contacts .content .contact-us-images__bg, body .contacts .content .contact-us-images__bg {
+    position: relative;
+    top: 455px;
+  }
   html .contacts .content .footer, body .contacts .content .footer {
     width: 1100px;
     position: absolute;
@@ -934,18 +969,22 @@
   }
   html .contacts .content .footer .container .footer-top, body .contacts .content .footer .container .footer-top {
     position: relative;
-    right: 250px;
+    right: 460px;
+    width: 450px;
   }
   html .contacts .content .footer .container .footer-mid, body .contacts .content .footer .container .footer-mid {
     position: relative;
-    left: 200px;
+    left: -25px;
+  }
+  html .contacts .content .footer .container .footer-mid__link, body .contacts .content .footer .container .footer-mid__link {
+    margin-right: 40px;
   }
   html .contacts .content .footer .container .footer-bot, body .contacts .content .footer .container .footer-bot {
     position: relative;
-    left: -250px;
+    left: -450px;
   }
   html .contacts .content .footer .container .copyright, body .contacts .content .footer .container .copyright {
-    left: 180px;
+    left: -30px;
   }
   .about {
     width: 375px;
@@ -1103,7 +1142,7 @@
   }
   .contacts .contact-us .contact-us-images__media {
     position: relative;
-    right: 200px;
+    right: 600px;
     bottom: 100px;
   }
   .contacts .footer .container .footer-top {

@@ -578,37 +578,39 @@
     position: absolute;
     top: 1300px;
   }
-  .about {
+  .main .about {
     width: 375px;
   }
-  .about .about .header {
-    position: absolute;
-    top: 0px;
-    left: 500px;
-  }
-  .about .about-head__body {
+  .main .about .about-head__body {
     background: url("/img/main/bg-logo.png") 50px -100px no-repeat;
   }
-  .about .about-head__title {
-    position: relative;
-    right: 100px;
-  }
-  .about .about-head__subtitle {
-    position: relative;
-    right: 100px;
-  }
-  .about .about-head__button {
-    position: relative;
-    right: 100px;
-  }
-  .about .about-head__line {
-    position: relative;
-    right: 350px;
-  }
-  .about .about-head .second-text {
+  .main .about .about-head__title {
     position: relative;
   }
-  .about .about-head .second-text::before {
+  .main .about .about-head__title p {
+    position: relative;
+    right: 30px;
+  }
+  .main .about .about-head__subtitle {
+    position: relative;
+  }
+  .main .about .about-head__subtitle p {
+    position: relative;
+    right: 30px;
+  }
+  .main .about .about-head__button {
+    width: 390px;
+    position: relative;
+    left: -140px;
+  }
+  .main .about .about-head__line {
+    position: relative;
+    left: -710px;
+  }
+  .main .about .about-head .second-text {
+    position: relative;
+  }
+  .main .about .about-head .second-text::before {
     content: "";
     position: absolute;
     left: 0px;
@@ -620,10 +622,97 @@
     -webkit-animation: title-anim 3.9s steps(12) infinite;
             animation: title-anim 3.9s steps(12) infinite;
   }
-  .about .about-head #progress {
+  .main .about .about-head #progress {
     position: fixed;
     bottom: 20px;
     left: 880px;
+  }
+  .main .about .about-middle__subtitle {
+    left: -170px;
+  }
+  .main .about .about-middle__subtitle p {
+    width: 400px;
+  }
+  .main .about .about-middle__subtitle span {
+    color: #EE6C4D;
+  }
+  .main .about .about-middle__subtitle span:nth-child(2)::before {
+    content: "";
+    position: absolute;
+    width: 259px;
+    height: 0px;
+    left: 0px;
+    top: 150px;
+    border: 1px solid #EE6C4D;
+  }
+  .main .about .about-middle__tools-column {
+    position: relative;
+    left: -690px;
+  }
+  .main .about .about-middle__column {
+    position: relative;
+    left: -570px;
+  }
+  .main .about .about-middle__column img {
+    position: relative;
+    left: 25px;
+  }
+  .main .about .about-bottom__button {
+    position: relative;
+    left: -120px;
+  }
+  .main .about .about-bottom__title {
+    position: relative;
+  }
+  .main .about .about-bottom__title p {
+    position: relative;
+    right: 50px;
+  }
+  .main .about .about-bottom__line img {
+    position: relative;
+    right: 20px;
+  }
+  .main .about .about-bottom__text {
+    text-align: center;
+  }
+  .main .about .about-bottom__text p {
+    position: relative;
+    left: -120px;
+  }
+  .main .about .about-bottom__contact {
+    position: relative;
+    left: -880px;
+  }
+  .main .footer {
+    width: 425px;
+  }
+  .main .footer .container {
+    width: 425px;
+  }
+  .main .footer .container .footer-top {
+    width: 100%;
+    position: relative;
+    left: -480px;
+  }
+  .main .footer .container .footer-top__subtitle {
+    width: 300px;
+    position: relative;
+    right: 25px;
+  }
+  .main .footer .container .footer-mid__links {
+    right: -350px;
+  }
+  .main .footer .container .footer-mid__link {
+    position: relative;
+    right: 10px;
+  }
+  .main .footer .container .footer-bot__images {
+    position: relative;
+    right: 15px;
+  }
+  .main .footer .container .copyright__title {
+    position: relative;
+    left: 15px;
   }
   .projects-main .projects {
     width: 375px;
@@ -636,8 +725,8 @@
   }
   .projects-main .projects__text {
     position: relative;
-    top: 30px;
-    left: 200px;
+    top: -20px;
+    left: -60px;
     width: 600px;
   }
   .projects-main .project-slider {
@@ -646,9 +735,8 @@
     right: 400px;
   }
   .projects-main .project-slider__navigation {
-    position: relative;
-    left: 400px;
-    bottom: 50px;
+    left: 380px;
+    background: none;
   }
   .projects-main .footer {
     position: relative;
@@ -656,19 +744,36 @@
   }
   .projects-main .footer .footer-top {
     position: relative;
-    right: 160px;
+    right: 480px;
+  }
+  .projects-main .footer .footer-top__subtitle {
+    position: relative;
+    right: 25px;
   }
   .projects-main .footer .footer-mid {
     position: relative;
-    right: 160px;
+    margin-left: 0;
+  }
+  .projects-main .footer .footer-mid__links {
+    position: relative;
+    margin: 0;
+    right: 150px;
+  }
+  .projects-main .footer .footer-mid__link {
+    position: relative;
+    right: 110px;
+    margin-left: 0;
   }
   .projects-main .footer .footer-bot {
     position: relative;
-    right: 160px;
+    right: 20px;
   }
   .projects-main .footer .copyright {
     position: relative;
-    right: 340px;
+  }
+  .projects-main .footer .copyright__title {
+    position: relative;
+    right: 30px;
   }
   .projects-page .projects-pages {
     width: 375px;
@@ -676,12 +781,13 @@
   .projects-page .projects-pages__title {
     position: relative;
     top: 80px;
-    left: 200px;
   }
   .projects-page .projects-pages__text p {
     position: relative;
+    width: 100px;
     top: 25px;
-    left: 200px;
+    left: -15px;
+    font-size: 18px;
   }
   .projects-page .projects-pages__tools-and-links {
     position: relative;
@@ -696,26 +802,49 @@
     position: relative;
     left: 100px;
   }
-  .projects-page .project-pages-slider {
+  .projects-page .projects-pages .project-pages-slider {
     position: relative;
     top: 250px;
-    left: 80px;
+    left: -18.5px;
+  }
+  .projects-page .projects-pages .project-pages-slider__slider-body {
+    width: 425px;
+    position: relative;
+    left: 0;
+  }
+  .projects-page .projects-pages .project-pages-slider__navigation {
+    transform: translate(85.5px, -160px);
   }
   .projects-page .footer .container .footer-top {
     position: relative;
-    right: 220px;
+    margin-left: 0;
+    left: 10px;
+    align-items: center;
+  }
+  .projects-page .footer .container .footer-top p {
+    font-size: 17.5px;
   }
   .projects-page .footer .container .footer-mid {
     position: relative;
-    right: 200px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .projects-page .footer .container .footer-mid__links {
+    position: relative;
+  }
+  .projects-page .footer .container .footer-mid__link {
+    position: relative;
+    right: 360px;
+    margin-left: 40px;
+    margin-right: 0;
   }
   .projects-page .footer .container .footer-bot {
     position: relative;
-    right: 210px;
+    margin-left: 590px;
   }
-  .projects-page .footer .container .copyright {
+  .projects-page .footer .container .copyright__title {
     position: relative;
-    right: 390px;
+    right: 290px;
   }
   .contacts {
     width: 375px;
@@ -941,6 +1070,8 @@
   }
   html .contacts .content .contact-us-images__column, body .contacts .content .contact-us-images__column {
     width: 350px;
+    position: relative;
+    right: 30px;
   }
   html .contacts .content .contact-us-images__list, body .contacts .content .contact-us-images__list {
     display: inline;
@@ -969,22 +1100,26 @@
   }
   html .contacts .content .footer .container .footer-top, body .contacts .content .footer .container .footer-top {
     position: relative;
-    right: 460px;
+    right: 480px;
     width: 450px;
+  }
+  html .contacts .content .footer .container .footer-top__subtitle, body .contacts .content .footer .container .footer-top__subtitle {
+    position: relative;
+    right: 25px;
   }
   html .contacts .content .footer .container .footer-mid, body .contacts .content .footer .container .footer-mid {
     position: relative;
-    left: -25px;
+    left: -45px;
   }
   html .contacts .content .footer .container .footer-mid__link, body .contacts .content .footer .container .footer-mid__link {
     margin-right: 40px;
   }
   html .contacts .content .footer .container .footer-bot, body .contacts .content .footer .container .footer-bot {
     position: relative;
-    left: -450px;
+    left: -470px;
   }
   html .contacts .content .footer .container .copyright, body .contacts .content .footer .container .copyright {
-    left: -30px;
+    left: -50px;
   }
   .about {
     width: 375px;
@@ -1061,7 +1196,7 @@
   }
   .projects-main .project-slider__navigation {
     position: relative;
-    left: 400px;
+    left: 370px;
     bottom: 50px;
   }
   .projects-main .footer {
@@ -1070,14 +1205,14 @@
   }
   .projects-main .footer .footer-top {
     position: relative;
-    right: 460px;
+    right: 480px;
   }
   .projects-main .footer .footer-top__subtitle {
     width: 150px;
   }
   .projects-main .footer .footer-mid__links {
     position: relative;
-    right: 125px;
+    right: 145px;
   }
   .projects-main .footer .footer-mid__links a {
     margin-right: 40px;
@@ -1088,7 +1223,7 @@
   }
   .projects-main .footer .copyright__title {
     position: relative;
-    right: 255px;
+    right: 275px;
   }
   .projects-page .projects-pages {
     width: 375px;

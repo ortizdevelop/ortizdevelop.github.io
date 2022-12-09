@@ -917,72 +917,203 @@ $bd1: 1px solid $color1;
 
     //* Index.html
 
-    .about{
-        width: 375px;
-
-        .about {
-            .header{
-                position: absolute;
-                top: 0px;
-                left: 500px;
-            }
-        }
-        .about-head {
+    .main{
+        .about{
+            width: 375px;
+    
+            .about-head {
         
-            &__body {
-                background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
-            }
+                &__body {
+                    background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
+                }
+        
+                &__content {
+                }
+        
+                &__title {
+                    position: relative;
+                    
+                    p{
+                        position: relative;
+                        right: 30px;
+                    }
+                }
+        
+                &__subtitle {
+                    position: relative;
     
-            &__content {
-            }
+                    p{
+                        position: relative;
+                        right: 30px;
+                    }
+                }
+        
+                &__button {
+                    width: 390px;
+                    position: relative;
+                    left: -140px;
+                }
+        
+                &__line {
+                    position: relative;
+                    left: -710px;
+                }
     
-            &__title {
-                position: relative;
-                right: 100px;
-            }
+                .text {
+                }
+                .first-text {
+                }
+                .second-text {
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0px;
+                        top: 20px;
+                        width: 194px;
+                        height: 64px;
+                        background-color: $color4;
+                        border-left: $bd1;
+                        animation: title-anim 3.9s steps(12) infinite;
+                    }
+                }
+        
+                .third-text {
+                }
+                #progress {
+                    position: fixed;
+                    bottom: 20px;
+                    left: 880px;
+                }
+            } 
     
-            &__subtitle {
-                position: relative;
-                right: 100px;
-            }
+            .about-middle{
+                
+                &__subtitle{
+                    left: -170px;
     
-            &__button {
-                position: relative;
-                right: 100px;
-            }
+                    p{
+                        width: 400px;
+                    }
     
-            &__line {
-                position: relative;
-                right: 350px;
-            }
-
-            .text {
-            }
-            .first-text {
-            }
-            .second-text {
-                position: relative;
-                &::before{
-                    content: '';
-                    position: absolute;
-                    left: 0px;
-                    top: 20px;
-                    width: 194px;
-                    height: 64px;
-                    background-color: $color4;
-                    border-left: $bd1;
-                    animation: title-anim 3.9s steps(12) infinite;
+                    span{
+                        color: $color1;
+                        
+                        &:nth-child(2){
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 259px;
+                                height: 0px;
+                                left: 0px;
+                                top: 150px;
+                                border: $bd1;
+                            }
+                        }
+                    }
+                }
+    
+                &__tools-column{
+                    position: relative;
+                    left: -690px;
+                }
+    
+                &__column{
+                    position: relative;
+                    left: -570px;
+    
+                    img{
+                        position: relative;
+                        left: 25px;
+                    }
                 }
             }
     
-            .third-text {
+            .about-bottom{
+                &__button{
+                    position: relative;
+                    left: -120px;
+                }
+    
+                &__title{
+                    position: relative;
+    
+                    p{
+                        position: relative;
+                        right: 50px;
+                    }
+                }
+    
+                &__line{
+                    img{
+                        position: relative;
+                        right: 20px;
+                    }
+                }
+    
+                &__text{
+                    text-align: center;
+    
+                    p{
+                        position: relative;
+                        left: -120px;
+                    }
+                }
+    
+                &__contact{
+                    position: relative;
+                    left: -880px;
+                }
             }
-            #progress {
-                position: fixed;
-                bottom: 20px;
-                left: 880px;
+        }
+
+        .footer{
+            width: 425px;
+
+            .container{
+                width: 425px;
+
+                .footer-top{
+                    width: 100%;
+                    position: relative;
+                    left: -480px;
+
+                    &__subtitle{
+                        width: 300px;
+                        position: relative;
+                        right: 25px;
+                    }
+                }
+
+                .footer-mid{
+
+                    &__links{
+                        right: -350px;
+                    }
+
+                    &__link{
+                        position: relative;
+                        right: 10px;
+                    }
+                }
+
+                .footer-bot{
+
+                    &__images{
+                        position: relative;
+                        right: 15px;
+                    }
+                }
+
+                .copyright{
+
+                    &__title{
+                        position: relative;
+                        left: 15px;
+                    }
+                }
             }
-        } 
+        }
     }
 
     // * End of Index.html code
@@ -1003,8 +1134,8 @@ $bd1: 1px solid $color1;
     
             &__text{
                 position: relative;
-                top: 30px;
-                left: 200px;
+                top: -20px;
+                left: -60px;
                 width: 600px;
             }
         }
@@ -1015,9 +1146,8 @@ $bd1: 1px solid $color1;
             right: 400px;
 
             &__navigation{
-                position: relative;
-                left: 400px;
-                bottom: 50px;
+                left: 380px;
+                background: none;
             }
         }
 
@@ -1027,22 +1157,43 @@ $bd1: 1px solid $color1;
 
             .footer-top{
                 position: relative;
-                right: 160px;
+                right: 480px;
+
+                &__subtitle{
+                    position: relative;
+                    right: 25px;
+                }
             }
 
             .footer-mid{
                 position: relative;
-                right: 160px;
+                margin-left: 0;
+                
+                &__links{
+                    position: relative;
+                    margin: 0;
+                    right: 150px;
+                }
+
+                &__link{
+                    position: relative;
+                    right: 110px;
+                    margin-left: 0;
+                }
             }
 
             .footer-bot{
                 position: relative;
-                right: 160px;
+                right: 20px;
             }
 
             .copyright{
                 position: relative;
-                right: 340px;
+                
+                &__title{
+                    position: relative;
+                    right: 30px;
+                }
             }
         }
     }
@@ -1059,14 +1210,15 @@ $bd1: 1px solid $color1;
             &__title{
                 position: relative;
                 top: 80px;
-                left: 200px;
             }
     
             &__text{
                 p{
                     position: relative;
+                    width: 100px;
                     top: 25px;
-                    left: 200px;
+                    left: -15px;
+                    font-size: 18px;
                 }
             }
     
@@ -1085,13 +1237,27 @@ $bd1: 1px solid $color1;
                 position: relative;
                 left: 100px;
             }
-        }
+
+            .project-pages-slider{
+                position: relative;
+                top: 250px;
+                left: -18.5px;
     
-        .project-pages-slider{
-            position: relative;
-            top: 250px;
-            left: 80px;
+                &__slider-body{
+                    width: 425px;
+                    position: relative;
+                    left: 0;
+                }
+
+                &__navigation{
+                    transform: translate(85.5px,-160px);
+                }
+            }
         }
+
+        
+    
+        
 
         .footer{
 
@@ -1099,22 +1265,43 @@ $bd1: 1px solid $color1;
 
                 .footer-top{
                     position: relative;
-                    right: 220px;
+                    margin-left: 0;
+                    left: 10px;
+                    align-items: center;
+
+                    p{
+                        font-size: 17.5px;
+                    }
                 }
         
                 .footer-mid{
                     position: relative;
-                    right: 200px;
+                    margin-left: 0;
+                    margin-right: 0;
+
+                    &__links{
+                        position: relative;
+                    }
+
+                    &__link{
+                        position: relative;
+                        right: 360px;
+                        margin-left: 40px;
+                        margin-right: 0;
+                    }
                 }
         
                 .footer-bot{
                     position: relative;
-                    right: 210px;
+                    margin-left: 590px;
                 }
         
                 .copyright{
-                    position: relative;
-                    right: 390px;
+                    
+                    &__title{
+                        position: relative;
+                        right: 290px;
+                    }
                 }
             }
         }
@@ -1450,6 +1637,8 @@ $bd1: 1px solid $color1;
                     
                     &__column{
                         width: 350px;
+                        position: relative;
+                        right: 30px;
                     }
 
                     &__list{
@@ -1485,13 +1674,18 @@ $bd1: 1px solid $color1;
 
                         .footer-top{
                             position: relative;
-                            right: 460px;
+                            right: 480px;
                             width: 450px;
+
+                            &__subtitle{
+                                position: relative;
+                                right: 25px;
+                            }
                         }
 
                         .footer-mid{
                             position: relative;
-                            left: -25px;
+                            left: -45px;
                             
                             &__link{
                                 margin-right: 40px;
@@ -1500,11 +1694,11 @@ $bd1: 1px solid $color1;
 
                         .footer-bot{
                             position: relative;
-                            left: -450px;
+                            left: -470px;
                         }
 
                         .copyright{
-                            left: -30px;
+                            left: -50px;
                         }
                     }
                 }
@@ -1622,7 +1816,7 @@ $bd1: 1px solid $color1;
 
             &__navigation{
                 position: relative;
-                left: 400px;
+                left: 370px;
                 bottom: 50px;
             }
         }
@@ -1633,7 +1827,7 @@ $bd1: 1px solid $color1;
 
             .footer-top{
                 position: relative;
-                right: 460px;
+                right: 480px;
 
                 &__subtitle{
                     width: 150px;
@@ -1643,7 +1837,7 @@ $bd1: 1px solid $color1;
             .footer-mid{
                 &__links{
                     position: relative;
-                    right: 125px;
+                    right: 145px;
                     
                     a{
                         margin-right: 40px;
@@ -1663,7 +1857,7 @@ $bd1: 1px solid $color1;
                 
                 &__title{
                     position: relative;
-                    right: 255px;
+                    right: 275px;
                 }
             }
         }

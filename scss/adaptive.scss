@@ -624,72 +624,84 @@ $bd1: 1px solid $color1;
 
     //* Index.html
 
-    .about{
-        width: 375px;
-
-        .about {
-            .header{
-                position: absolute;
-                top: 0px;
-                left: 500px;
-            }
-        }
-        .about-head {
-        
-            &__body {
-                background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
-            }
+    .main{
+        .about{
+            width: 375px;
     
-            &__content {
-            }
-    
-            &__title {
-                position: relative;
-                right: 100px;
-            }
-    
-            &__subtitle {
-                position: relative;
-                right: 100px;
-            }
-    
-            &__button {
-                position: relative;
-                right: 100px;
-            }
-    
-            &__line {
-                position: relative;
-                right: 350px;
-            }
-
-            .text {
-            }
-            .first-text {
-            }
-            .second-text {
-                position: relative;
-                &::before{
-                    content: '';
+            .about {
+                .header{
                     position: absolute;
-                    left: 0px;
-                    top: 20px;
-                    width: 194px;
-                    height: 64px;
-                    background-color: $color4;
-                    border-left: $bd1;
-                    animation: title-anim 3.9s steps(12) infinite;
+                    top: 0px;
+                    left: 500px;
                 }
             }
+            .about-head {
+            
+                &__body {
+                    background: url('/img/main/bg-logo.png') 50px -100px no-repeat;
+                }
+        
+                &__content {
+                }
+        
+                &__title {
+                    position: relative;
+                    right: 100px;
+                }
+        
+                &__subtitle {
+                    position: relative;
+                    right: 100px;
+                }
+        
+                &__button {
+                    position: relative;
+                    right: 100px;
+                }
+        
+                &__line {
+                    position: relative;
+                    right: 350px;
+                }
     
-            .third-text {
+                .text {
+                }
+                .first-text {
+                }
+                .second-text {
+                    position: relative;
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0px;
+                        top: 20px;
+                        width: 194px;
+                        height: 64px;
+                        background-color: $color4;
+                        border-left: $bd1;
+                        animation: title-anim 3.9s steps(12) infinite;
+                    }
+                }
+        
+                .third-text {
+                }
+                #progress {
+                    position: fixed;
+                    bottom: 20px;
+                    left: 880px;
+                }
+            } 
+        }
+
+        .footer{
+            .footer-top{}
+
+            .footer-mid{
+                border: 1px solid red;
             }
-            #progress {
-                position: fixed;
-                bottom: 20px;
-                left: 880px;
-            }
-        } 
+
+            .footer-bot{}
+        }
     }
 
     // * End of Index.html code

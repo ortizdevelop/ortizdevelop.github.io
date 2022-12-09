@@ -840,6 +840,11 @@
     bottom: 20px;
     left: 880px;
   }
+  .projects-main header {
+    position: absolute;
+    left: -100px;
+    top: -50px;
+  }
   .projects-main .projects {
     width: 375px;
     position: relative;
@@ -847,18 +852,19 @@
   }
   .projects-main .projects__title {
     position: relative;
-    left: 360px;
+    left: 45px;
+    bottom: 50px;
   }
   .projects-main .projects__text {
     position: relative;
-    top: 30px;
-    left: 200px;
-    width: 600px;
+    bottom: 0px;
+    right: 45px;
+    width: 400px;
   }
   .projects-main .project-slider {
     position: relative;
-    top: 400px;
-    right: 400px;
+    top: 350px;
+    right: 700px;
   }
   .projects-main .project-slider__navigation {
     position: relative;
@@ -871,19 +877,25 @@
   }
   .projects-main .footer .footer-top {
     position: relative;
-    right: 160px;
+    right: 460px;
   }
-  .projects-main .footer .footer-mid {
-    position: relative;
-    right: 160px;
+  .projects-main .footer .footer-top__subtitle {
+    width: 150px;
   }
-  .projects-main .footer .footer-bot {
+  .projects-main .footer .footer-mid__links {
     position: relative;
-    right: 160px;
+    right: 125px;
   }
-  .projects-main .footer .copyright {
+  .projects-main .footer .footer-mid__links a {
+    margin-right: 40px;
+  }
+  .projects-main .footer .footer-bot__images {
     position: relative;
-    right: 340px;
+    right: 455px;
+  }
+  .projects-main .footer .copyright__title {
+    position: relative;
+    right: 255px;
   }
   .projects-page .projects-pages {
     width: 375px;

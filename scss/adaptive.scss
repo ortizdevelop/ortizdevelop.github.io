@@ -1323,6 +1323,13 @@ $bd1: 1px solid $color1;
     // * Projects-main.html
 
     .projects-main{
+        
+        header{
+            position: absolute;
+            left: -100px;
+            top: -50px;
+        }
+
         .projects{
             width: 375px;
             position: relative;
@@ -1330,21 +1337,22 @@ $bd1: 1px solid $color1;
     
             &__title{
                 position: relative;
-                left: 360px;
+                left: 45px;
+                bottom: 50px;
             }
     
             &__text{
                 position: relative;
-                top: 30px;
-                left: 200px;
-                width: 600px;
+                bottom: 00px;
+                right: 45px;
+                width: 400px;
             }
         }
     
         .project-slider{
             position: relative;
-            top: 400px;
-            right: 400px;
+            top: 350px;
+            right: 700px;
 
             &__navigation{
                 position: relative;
@@ -1359,22 +1367,38 @@ $bd1: 1px solid $color1;
 
             .footer-top{
                 position: relative;
-                right: 160px;
+                right: 460px;
+
+                &__subtitle{
+                    width: 150px;
+                }
             }
 
             .footer-mid{
-                position: relative;
-                right: 160px;
+                &__links{
+                    position: relative;
+                    right: 125px;
+                    
+                    a{
+                        margin-right: 40px;
+                    }
+                }
             }
 
             .footer-bot{
-                position: relative;
-                right: 160px;
+                
+                &__images{
+                    position: relative;
+                    right: 455px;
+                }
             }
 
             .copyright{
-                position: relative;
-                right: 340px;
+                
+                &__title{
+                    position: relative;
+                    right: 255px;
+                }
             }
         }
     }

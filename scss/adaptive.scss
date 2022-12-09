@@ -1214,6 +1214,56 @@ $bd1: 1px solid $color1;
          .contacts{
 
             .content{
+
+                .header{
+                    position: absolute;
+                    top: -50px;
+                    left: -50px;
+                }
+
+                .contact-us{
+                    &__title{
+                        position: relative;
+                        bottom: 20px;
+                        right: 70px;
+                    }
+
+                    &__subtitle{
+                        position: relative;
+                        bottom: 20px;
+                        right: 70px;
+                    }
+                }
+
+                .contact-us-images{
+                    
+                    &__column{
+                        width: 350px;
+                    }
+
+                    &__list{
+                        display: inline;
+                        margin-right: 40px;
+                        position: relative;
+                        right: 100px;
+                        top: 575px;
+
+                        &:hover{
+                            span{
+                                transform: translateY(-55px);
+                                transition: 0.35s;
+                                opacity: 1;
+                                font-weight: bold;
+                            }
+                        }
+                    }
+
+                    &__bg{
+                        position: relative;
+                        top: 455px;
+                    }
+                }
+
                 .footer{
                     width: 1100px;
                     position: absolute;
@@ -1224,21 +1274,26 @@ $bd1: 1px solid $color1;
 
                         .footer-top{
                             position: relative;
-                            right: 250px;
+                            right: 460px;
+                            width: 450px;
                         }
 
                         .footer-mid{
                             position: relative;
-                            left: 200px;
+                            left: -25px;
+                            
+                            &__link{
+                                margin-right: 40px;
+                            }
                         }
 
                         .footer-bot{
                             position: relative;
-                            left: -250px;
+                            left: -450px;
                         }
 
                         .copyright{
-                            left: 180px;
+                            left: -30px;
                         }
                     }
                 }
@@ -1487,7 +1542,7 @@ $bd1: 1px solid $color1;
         .contact-us{
             .contact-us-images__media{
                 position: relative;
-                right: 200px;
+                right: 600px;
                 bottom: 100px;
             }
         }

@@ -363,7 +363,7 @@ $bd1: 1px solid $color1;
          .projects-page{
              .footer{
                  position: absolute;
-                 top: 1100px;
+                 top: 2000px;
              }
          }
 
@@ -442,9 +442,75 @@ $bd1: 1px solid $color1;
     // * End of Projects-main.html code
 
     // * Projects-page.html
-    .projects-pages{
-        width: 375px;
+
+    .projects-page{
+        .projects-pages{
+            width: 375px;
+    
+            &__title{
+                position: relative;
+                top: 80px;
+                left: 200px;
+            }
+    
+            &__text{
+                p{
+                    position: relative;
+                    top: 25px;
+                    left: 200px;
+                }
+            }
+    
+            &__tools-and-links{
+                position: relative;
+                top: 150px;
+                left: 200px;
+            }
+
+            &__links-title{
+                position: relative;
+                left: 100px;
+            }
+
+            &__links-img{
+                position: relative;
+                left: 100px;
+            }
+        }
+    
+        .project-pages-slider{
+            position: relative;
+            top: 250px;
+            left: 80px;
+        }
+
+        .footer{
+
+            .container{
+
+                .footer-top{
+                    position: relative;
+                    right: 220px;
+                }
+        
+                .footer-mid{
+                    position: relative;
+                    right: 200px;
+                }
+        
+                .footer-bot{
+                    position: relative;
+                    right: 210px;
+                }
+        
+                .copyright{
+                    position: relative;
+                    right: 390px;
+                }
+            }
+        }
     }
+    
     // * End of Projects-page.html code
 
     //* Contacts.html

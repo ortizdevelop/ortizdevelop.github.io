@@ -247,7 +247,7 @@
   }
   html .projects-page .footer, body .projects-page .footer {
     position: absolute;
-    top: 1100px;
+    top: 2000px;
   }
   html .contacts .footer, body .contacts .footer {
     width: 1100px;
@@ -298,8 +298,52 @@
     position: relative;
     right: 340px;
   }
-  .projects-pages {
+  .projects-page .projects-pages {
     width: 375px;
+  }
+  .projects-page .projects-pages__title {
+    position: relative;
+    top: 80px;
+    left: 200px;
+  }
+  .projects-page .projects-pages__text p {
+    position: relative;
+    top: 25px;
+    left: 200px;
+  }
+  .projects-page .projects-pages__tools-and-links {
+    position: relative;
+    top: 150px;
+    left: 200px;
+  }
+  .projects-page .projects-pages__links-title {
+    position: relative;
+    left: 100px;
+  }
+  .projects-page .projects-pages__links-img {
+    position: relative;
+    left: 100px;
+  }
+  .projects-page .project-pages-slider {
+    position: relative;
+    top: 250px;
+    left: 80px;
+  }
+  .projects-page .footer .container .footer-top {
+    position: relative;
+    right: 220px;
+  }
+  .projects-page .footer .container .footer-mid {
+    position: relative;
+    right: 200px;
+  }
+  .projects-page .footer .container .footer-bot {
+    position: relative;
+    right: 210px;
+  }
+  .projects-page .footer .container .copyright {
+    position: relative;
+    right: 390px;
   }
   .contacts {
     width: 375px;

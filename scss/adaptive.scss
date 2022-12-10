@@ -1,4 +1,4 @@
-//* Шаблоны
+//* Templates
 $border1: 2px solid red;
 $border2: 2px solid blue;
 $border3: 2px solid pink;
@@ -13,6 +13,8 @@ $color5: #1D1D1D;
 $color6: #EC5A64;
 
 $bd1: 1px solid $color1;
+
+@import url('/scss/templates.scss');
 
 @media screen and (min-width: 320px) and (max-width: 480px){
     // * Main HTML Settings

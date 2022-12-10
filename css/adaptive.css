@@ -1,8 +1,8 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   html .header, body .header {
     position: absolute;
-    top: -40px;
-    left: -75px;
+    top: -55px;
+    left: -90px;
   }
   html .header__links, body .header__links {
     padding-top: 20px;
@@ -103,6 +103,10 @@
   html .contacts .footer, body .contacts .footer {
     position: absolute;
     top: 1289px;
+  }
+  .main .about {
+    position: relative;
+    top: 35px;
   }
   .main .about .about-head__body {
     position: relative;

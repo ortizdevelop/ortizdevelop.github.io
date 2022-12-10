@@ -102,7 +102,7 @@
   }
   html .contacts .footer, body .contacts .footer {
     position: absolute;
-    top: 1110px;
+    top: 1289px;
   }
   .main .about .about-head__body {
     position: relative;
@@ -334,6 +334,89 @@
     left: 150px;
   }
   .projects-page footer .copyright {
+    transform: translateX(0px);
+  }
+  .contacts .contact-us__body {
+    transform: translate(0px, 380px);
+    width: 100%;
+  }
+  .contacts .contact-us .contact-us-form__body {
+    display: none;
+  }
+  .contacts .contact-us .contact-us-images {
+    width: 100%;
+    transform: translate(0px, 0px);
+  }
+  .contacts .contact-us .contact-us-images__body {
+    width: 100%;
+    transform: translate(0px, 100px);
+  }
+  .contacts .contact-us .contact-us-images__bg {
+    position: relative;
+    top: 500px;
+    z-index: 1;
+  }
+  .contacts .contact-us .contact-us-images__bg span {
+    position: absolute;
+    width: 141%;
+    background: url("/img/contacts/bg.png");
+    transform: translate(-200px, -800px);
+  }
+  .contacts .contact-us .contact-us-images__media {
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    transform: translate(0px, 550px);
+    text-align: center;
+  }
+  .contacts .contact-us .contact-us-images__media ul li {
+    display: inline;
+  }
+  .contacts .contact-us .contact-us-images__media ul li:nth-child(2) {
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+  .contacts .contact-us .contact-us-images__media ul li:hover img {
+    filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+    transition: 0.35s;
+  }
+  .contacts .contact-us .contact-us-images__media ul li:hover span {
+    transform: translateY(-45px);
+    transition: 0.35s;
+    opacity: 1;
+    font-weight: bold;
+  }
+  .contacts footer {
+    width: 100%;
+    text-align: center;
+  }
+  .contacts footer .footer-top {
+    position: relative;
+    left: 10px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .contacts footer .footer-mid {
+    position: relative;
+    left: 20px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .contacts footer .footer-mid__link {
+    width: 100%;
+    margin-right: 50px;
+  }
+  .contacts footer .footer-bot {
+    margin-left: 0;
+    width: 100%;
+  }
+  .contacts footer .footer-bot__images {
+    position: relative;
+    left: 150px;
+  }
+  .contacts footer .copyright {
     transform: translateX(0px);
   }
 }

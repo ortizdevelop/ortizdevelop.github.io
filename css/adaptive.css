@@ -1,6 +1,8 @@
 @media screen and (min-width: 320px) and (max-width: 480px) {
   html .header, body .header {
     position: absolute;
+    top: -40px;
+    left: -75px;
   }
   html .header__links, body .header__links {
     padding-top: 20px;
@@ -38,49 +40,49 @@
     grid-area: 1/1/2/2;
     margin-right: 0;
   }
-  html .header .activeBurgerMenu, body .header .activeBurgerMenu {
+  html .activeBurgerMenu, body .activeBurgerMenu {
     transition: 0.3s;
   }
-  html .header .activeBurgerMenu .header, body .header .activeBurgerMenu .header {
+  html .activeBurgerMenu .header, body .activeBurgerMenu .header {
     transition: 0.3s;
   }
-  html .header .activeBurgerMenu .header__links, body .header .activeBurgerMenu .header__links {
+  html .activeBurgerMenu .header__links, body .activeBurgerMenu .header__links {
     position: relative;
     bottom: 50px;
-    right: 50px;
+    right: 150px;
     background-color: #1D1D1D;
     border: 1px solid #EE6C4D;
     height: 310px;
   }
-  html .header .activeBurgerMenu .header__links a, body .header .activeBurgerMenu .header__links a {
+  html .activeBurgerMenu .header__links a, body .activeBurgerMenu .header__links a {
     transition: 0.35s;
   }
-  html .header .activeBurgerMenu .header__links a span:hover, body .header .activeBurgerMenu .header__links a span:hover {
+  html .activeBurgerMenu .header__links a span:hover, body .activeBurgerMenu .header__links a span:hover {
     border: none;
     transition: 0.35s;
   }
-  html .header .activeBurgerMenu .header__links a span:active, body .header .activeBurgerMenu .header__links a span:active {
+  html .activeBurgerMenu .header__links a span:active, body .activeBurgerMenu .header__links a span:active {
     transition: 0.35s;
     background-color: #191F28;
     color: #EE6C4D;
   }
-  html .header .activeBurgerMenu .header__link-about, body .header .activeBurgerMenu .header__link-about {
+  html .activeBurgerMenu .header__link-about, body .activeBurgerMenu .header__link-about {
     position: absolute;
     transform: translateY(140px);
     opacity: 1;
     transition: 0.3s;
   }
-  html .header .activeBurgerMenu .header__link-projects, body .header .activeBurgerMenu .header__link-projects {
+  html .activeBurgerMenu .header__link-projects, body .activeBurgerMenu .header__link-projects {
     position: absolute;
     transform: translateY(200px);
     margin-right: 0;
     opacity: 1;
     transition: 0.3s;
   }
-  html .header .activeBurgerMenu .header__logo, body .header .activeBurgerMenu .header__logo {
+  html .activeBurgerMenu .header__logo, body .activeBurgerMenu .header__logo {
     border: none;
   }
-  html .header .activeBurgerMenu .header__contact, body .header .activeBurgerMenu .header__contact {
+  html .activeBurgerMenu .header__contact, body .activeBurgerMenu .header__contact {
     position: absolute;
     transform: translateY(260px);
     opacity: 1;
@@ -88,7 +90,7 @@
   }
   html .main .footer, body .main .footer {
     position: absolute;
-    top: 1110px;
+    top: 4110px;
   }
   html .projects-main .footer, body .projects-main .footer {
     position: absolute;
@@ -97,6 +99,136 @@
   html .contacts .footer, body .contacts .footer {
     position: absolute;
     top: 1110px;
+  }
+  .main .about .about-head__body {
+    position: relative;
+    right: 150px;
+  }
+  .main .about .about-head__subtitle {
+    width: 480px;
+  }
+  .main .about .about-head__button {
+    position: relative;
+    left: 40px;
+  }
+  .main .about .about-head__line {
+    position: relative;
+    right: 530px;
+  }
+  .main .about .about-middle__body {
+    position: relative;
+    right: 180px;
+    bottom: 130px;
+  }
+  .main .about .about-middle__tools-column {
+    position: relative;
+    top: 150px;
+    right: 720px;
+    width: 550px;
+  }
+  .main .about .about-middle__tools-column li {
+    margin-right: 20px;
+  }
+  .main .about .about-middle__img {
+    position: relative;
+    top: 50px;
+    left: 230px;
+  }
+  .main .about .about-middle__column {
+    position: relative;
+    top: 660px;
+    right: 700px;
+  }
+  .main .about .about-middle__list p {
+    font-size: 22px;
+    width: 400px;
+  }
+  .main .about .about-middle__list img {
+    position: relative;
+    left: 40px;
+    bottom: 15px;
+    width: 54px;
+    height: 54px;
+  }
+  .main .about .about-middle__box {
+    position: relative;
+    bottom: 30px;
+    height: 730px;
+  }
+  .main .about .about-bottom__body {
+    position: relative;
+    top: 500px;
+    right: 200px;
+  }
+  .main .about .about-bottom__banner {
+    width: 480px;
+    position: relative;
+    right: 270px;
+  }
+  .main .about .about-bottom__banner img {
+    width: 780px;
+  }
+  .main .about .about-bottom__title {
+    position: relative;
+    top: 430px;
+    text-align: center;
+  }
+  .main .about .about-bottom__title span {
+    color: #EE6C4D;
+  }
+  .main .about .about-bottom__button {
+    position: relative;
+    top: 280px;
+    left: 33px;
+    padding: 15px;
+  }
+  .main .about .about-bottom__line {
+    position: relative;
+    top: 60px;
+    right: 480px;
+  }
+  .main .about .about-bottom__text {
+    position: relative;
+    left: 100px;
+    text-align: center;
+  }
+  .main .about .about-bottom__contact {
+    position: relative;
+    top: 200px;
+    right: 850px;
+  }
+  .main footer {
+    width: 100%;
+    text-align: center;
+  }
+  .main footer .footer-top {
+    position: relative;
+    left: 10px;
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .main footer .footer-mid {
+    position: relative;
+    left: 20px;
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .main footer .footer-mid__link {
+    width: 100%;
+    margin-right: 50px;
+  }
+  .main footer .footer-bot {
+    margin-left: 0;
+    width: 100%;
+  }
+  .main footer .footer-bot__images {
+    position: relative;
+    left: 150px;
+  }
+  .main footer .copyright {
+    transform: translateX(0px);
   }
 }
 @media screen and (min-width: 481px) and (max-width: 801px) {

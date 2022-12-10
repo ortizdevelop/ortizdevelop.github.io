@@ -144,7 +144,7 @@ $bd1: 1px solid $color1;
         .contacts{
             .footer{
                 position: absolute;
-                top: 1110px;
+                top: 1289px;
             }
         }
     }
@@ -328,7 +328,115 @@ $bd1: 1px solid $color1;
     .projects-pages{
     }
 
-    .contact-us{
+    .contacts{
+        .contact-us{
+            &__body {
+                transform: translate(0px, 380px);
+                width: 100%;
+            }
+
+            .contact-us-form{
+                &__body {
+                    display: none;
+                }
+            }
+
+            .contact-us-images{
+                width: 100%;
+                transform: translate(0px,0px);
+
+                &__body{
+                    width: 100%;
+                    transform: translate(0px,100px)
+                }
+
+                &__bg {
+                    position: relative;
+                    top: 500px;
+                    z-index: 1;
+            
+                    span{
+                        position: absolute;
+                        width: 141%;
+                        background: url('/img/contacts/bg.png');
+                        transform: translate(-200px,-800px);
+                    }
+                }
+
+                &__media {
+                    width: 100%;
+                    position: relative;
+                    z-index: 3;
+                    transform: translate(0px,550px);
+                    text-align: center;
+
+                    ul{
+                        li{
+                            display: inline;
+
+                            &:nth-child(2){
+                                margin-left: 75px;
+                                margin-right: 75px;
+                            }
+
+                            &:hover{
+                                img{
+                                    filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                                    transition: 0.35s;
+                                }
+                    
+                                span{
+                                    transform: translateY(-45px);
+                                    transition: 0.35s;
+                                    opacity: 1;
+                                    font-weight: bold;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        footer{
+            width: 100%;
+            text-align: center;
+
+            .footer-top{
+                position: relative;
+                left: 10px;
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-mid{
+                position: relative;
+                left: 20px;
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
+
+                &__link{
+                    width: 100%;
+                    margin-right: 50px;
+                }
+            }
+
+            .footer-bot{
+                margin-left: 0;
+                width: 100%;
+
+                &__images{
+                    position: relative;
+                    left: 150px;
+                }
+            }
+
+            .copyright{
+                transform: translateX(0px);
+            }
+        }
     }
 }
 

@@ -90,7 +90,7 @@
   }
   html .main .footer, body .main .footer {
     position: absolute;
-    top: 1110px;
+    top: 4110px;
   }
   html .projects-main .footer, body .projects-main .footer {
     position: absolute;
@@ -99,6 +99,103 @@
   html .contacts .footer, body .contacts .footer {
     position: absolute;
     top: 1110px;
+  }
+  .main .about .about-head__body {
+    position: relative;
+    right: 150px;
+  }
+  .main .about .about-head__subtitle {
+    width: 480px;
+  }
+  .main .about .about-head__button {
+    position: relative;
+    left: 40px;
+  }
+  .main .about .about-head__line {
+    position: relative;
+    right: 530px;
+  }
+  .main .about .about-middle__body {
+    position: relative;
+    right: 180px;
+    bottom: 130px;
+  }
+  .main .about .about-middle__tools-column {
+    position: relative;
+    top: 150px;
+    right: 720px;
+    width: 550px;
+  }
+  .main .about .about-middle__tools-column li {
+    margin-right: 20px;
+  }
+  .main .about .about-middle__img {
+    position: relative;
+    top: 50px;
+    left: 230px;
+  }
+  .main .about .about-middle__column {
+    position: relative;
+    top: 660px;
+    right: 700px;
+  }
+  .main .about .about-middle__list p {
+    font-size: 22px;
+    width: 400px;
+  }
+  .main .about .about-middle__list img {
+    position: relative;
+    left: 40px;
+    bottom: 15px;
+    width: 54px;
+    height: 54px;
+  }
+  .main .about .about-middle__box {
+    position: relative;
+    bottom: 30px;
+    height: 730px;
+  }
+  .main .about .about-bottom__body {
+    position: relative;
+    top: 500px;
+    right: 200px;
+  }
+  .main .about .about-bottom__banner {
+    width: 480px;
+    position: relative;
+    right: 270px;
+  }
+  .main .about .about-bottom__banner img {
+    width: 780px;
+  }
+  .main .about .about-bottom__title {
+    position: relative;
+    top: 430px;
+    text-align: center;
+  }
+  .main .about .about-bottom__title span {
+    color: #EE6C4D;
+  }
+  .main .about .about-bottom__button {
+    position: relative;
+    top: 280px;
+    left: 33px;
+    padding: 15px;
+  }
+  .main .about .about-bottom__line {
+    position: relative;
+    top: 60px;
+    right: 480px;
+  }
+  .main .about .about-bottom__text {
+    position: relative;
+    left: 100px;
+    text-align: center;
+  }
+  .main .about .about-bottom__contact {
+    position: relative;
+    top: 200px;
+    right: 850px;
   }
 }
 @media screen and (min-width: 481px) and (max-width: 801px) {

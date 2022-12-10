@@ -130,7 +130,7 @@ $bd1: 1px solid $color1;
         .main{
             .footer{
                 position: absolute;
-                top: 1110px;
+                top: 4110px;
             }
         }
 
@@ -150,14 +150,138 @@ $bd1: 1px solid $color1;
     }
 
     .main{
+            
         .about{
+            .about-head{
+                
+                &__body{
+                    position: relative;
+                    right: 150px;
+                }
 
-            .about-head{}
+                &__subtitle{
+                    width: 480px;
+                }
+
+                &__button{
+                    position: relative;
+                    left: 40px;
+                }
+
+                &__line{
+                    position: relative;
+                    right: 530px;
+                }
+            }
     
-            .about-middle{}
+            .about-middle{
+                &__body{
+                    position: relative;
+                    right: 180px;
+                    bottom: 130px;
+                }
+
+                &__tools-column{
+                    position: relative;
+                    top: 150px;
+                    right: 720px;
+                    width: 550px;
+
+                    li{
+                        margin-right: 20px;
+                    }
+                }
+
+                &__img{
+                    position: relative;
+                    top: 50px;
+                    left: 230px;
+                }
+
+                &__column{
+                    position: relative;
+                    top: 660px; 
+                    right: 700px;
+                }
+
+                &__list{
+                    p{
+                        font-size: 22px;
+                        width: 400px;
+                    }
+
+                    img{
+                        position: relative;
+                        left: 40px;
+                        bottom: 15px;
+                        width: 54px;
+                        height: 54px;
+                    }
+                }
+
+                &__box{
+                    position: relative;
+                    bottom: 30px;
+                    height: 730px;
+                }
+            }
     
-            .about-bottom{}
+            .about-bottom{
+                
+                &__body{
+                    position: relative;
+                    top: 500px;
+                    right: 200px;
+                }
+
+                &__banner{
+                    width: 480px;
+                    position: relative;
+                    right: 270px;
+
+                    img{
+                        width: 780px;
+                    }
+                }
+
+                &__title{
+                    position: relative;
+                    top: 430px;
+                    text-align: center;
+
+                    span{
+                        color: $color1;
+                    }
+                }
+
+                &__button{
+                    position: relative;
+                    top: 280px;
+                    left: 33px;
+                    padding: 15px;
+                }
+                
+                &__line{
+                    position: relative;
+                    top: 60px;
+                    right: 480px;
+                }
+
+                &__text{
+                    position: relative;
+                    left: 100px;
+                    text-align: center;
+                }
+
+                &__contact{
+                    position: relative;
+                    top: 200px;
+                    right: 850px;
+                }
+            }
         }
+
+        .footer{}
     }
 
     .projects{

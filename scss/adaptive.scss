@@ -150,7 +150,7 @@ $bd1: 1px solid $color1;
     }
 
     .main{
-            
+
         .about{
             .about-head{
                 
@@ -281,7 +281,45 @@ $bd1: 1px solid $color1;
             }
         }
 
-        .footer{}
+        footer{
+            width: 100%;
+            text-align: center;
+
+            .footer-top{
+                position: relative;
+                left: 10px;
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-mid{
+                position: relative;
+                left: 20px;
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
+
+                &__link{
+                    width: 100%;
+                    margin-right: 50px;
+                }
+            }
+
+            .footer-bot{
+                margin-left: 0;
+                width: 100%;
+
+                &__images{
+                    position: relative;
+                    left: 150px;
+                }
+            }
+
+            .copyright{
+                transform: translateX(0px);
+            }
+        }
     }
 
     .projects{

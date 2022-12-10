@@ -1,3 +1,6 @@
+/**
+ * When you click on the burger menu, the class 'activeBurgerMenu' is added to the element.
+ */
 const burgerMenu = document.querySelectorAll('.header');
 
 function DropDownMenuOn(){

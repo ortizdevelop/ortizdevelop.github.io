@@ -15,6 +15,7 @@ $color6: #EC5A64;
 $bd1: 1px solid $color1;
 
 @media screen and (min-width: 320px) and (max-width: 480px){
+    // * Main HTML Settings
     html, body{
         //* JS Script Classes
         .header{
@@ -137,7 +138,14 @@ $bd1: 1px solid $color1;
         .projects-main{
             .footer{
                 position: absolute;
-                top: 1110px;
+                top: 1310px;
+            }
+        }
+
+        .projects-page{
+            .footer{
+                position: absolute;
+                top: 1880px;
             }
         }
 
@@ -148,6 +156,7 @@ $bd1: 1px solid $color1;
             }
         }
     }
+    // *
 
     .main{
 
@@ -322,10 +331,140 @@ $bd1: 1px solid $color1;
         }
     }
 
-    .projects{
+    .projects-main{
+        .projects{
+            &__body {
+                transform: translate(22px,380px);
+            }
+        }
+
+        .project-slider{
+
+            &__slider-body{
+                width: 100%;
+                position: relative;
+                top: 50px;
+                transform: translate(-20px,0px);
+            }
+
+            &__navigation{
+                transform: translate(0px,0px);
+                position: absolute;
+                left: 10px;
+                bottom: -160px;
+            }
+        }
+
+        footer{
+            width: 100%;
+            text-align: center;
+
+            .footer-top{
+                position: relative;
+                left: 10px;
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-mid{
+                position: relative;
+                left: 20px;
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
+
+                &__link{
+                    width: 100%;
+                    margin-right: 50px;
+                }
+            }
+
+            .footer-bot{
+                margin-left: 0;
+                width: 100%;
+
+                &__images{
+                    position: relative;
+                    left: 150px;
+                }
+            }
+
+            .copyright{
+                transform: translateX(0px);
+            }
+        }
     }
 
-    .projects-pages{
+    .projects-page{
+
+        .projects-pages{
+            
+            &__body {
+                transform: translate(0px,550px);
+                width: 100%;
+            }
+        }
+
+        .project-pages-slider{
+            width: 100%;
+            position: relative;
+            top: 500px;
+            left: 0px;
+            
+            &__slider-body{
+                position: relative;
+                left: 0px;
+                top: 239px;
+                width: 100%;
+            }
+
+            &__navigation{
+                position: absolute;
+                left: -220px;
+                bottom: 16px;
+            }
+        }
+
+        footer{
+            width: 100%;
+            text-align: center;
+
+            .footer-top{
+                position: relative;
+                left: 10px;
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-mid{
+                position: relative;
+                left: 20px;
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
+
+                &__link{
+                    width: 100%;
+                    margin-right: 50px;
+                }
+            }
+
+            .footer-bot{
+                margin-left: 0;
+                width: 100%;
+
+                &__images{
+                    position: relative;
+                    left: 150px;
+                }
+            }
+
+            .copyright{
+                transform: translateX(0px);
+            }
+        }
     }
 
     .contact-us{

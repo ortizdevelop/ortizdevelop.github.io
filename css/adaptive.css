@@ -105,6 +105,102 @@
     position: absolute;
     top: 1289px;
   }
+  html footer, body footer {
+    width: 100%;
+    text-align: center;
+  }
+  html footer .footer-top, body footer .footer-top {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 34px;
+  }
+  html footer .footer-top__title, body footer .footer-top__title {
+    margin: 0;
+    font-size: 14px;
+  }
+  html footer .footer-top__logo, body footer .footer-top__logo {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  html footer .footer-top__subtitle, body footer .footer-top__subtitle {
+    margin: 0;
+    font-size: 14px;
+    width: 100px;
+  }
+  html footer .footer-mid, body footer .footer-mid {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42.5px;
+  }
+  html footer .footer-mid__links, body footer .footer-mid__links {
+    margin: 0;
+    text-align: center;
+  }
+  html footer .footer-mid__link, body footer .footer-mid__link {
+    margin: 0;
+    text-align: center;
+  }
+  html footer .footer-bot, body footer .footer-bot {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+  html footer .footer-bot__images, body footer .footer-bot__images {
+    text-align: center;
+    margin: 0;
+  }
+  html footer .footer-bot__images ul, body footer .footer-bot__images ul {
+    text-align: center;
+    width: 100%;
+  }
+  html footer .footer-bot__images ul li, body footer .footer-bot__images ul li {
+    text-align: center;
+    width: 100%;
+  }
+  html footer .footer-bot__images ul li a:hover img, body footer .footer-bot__images ul li a:hover img {
+    transform: translateY(-5px);
+    filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+    transition: 0.35s;
+  }
+  html footer .footer-bot__images ul li a:hover span, body footer .footer-bot__images ul li a:hover span {
+    transform: translateY(-30px);
+    transition: 0.35s;
+    opacity: 1;
+  }
+  html footer .footer-bot__images ul li a span, body footer .footer-bot__images ul li a span {
+    position: absolute;
+  }
+  html footer .footer-bot__images ul li a span:nth-child(1), body footer .footer-bot__images ul li a span:nth-child(1) {
+    margin: 0;
+  }
+  html footer .footer-bot__images ul li a span:nth-child(2), body footer .footer-bot__images ul li a span:nth-child(2) {
+    margin: 0;
+  }
+  html footer .footer-bot__images ul li a span:nth-child(3), body footer .footer-bot__images ul li a span:nth-child(3) {
+    margin: 0;
+  }
+  html footer .footer-bot__images img, body footer .footer-bot__images img {
+    margin: 0;
+  }
+  html footer .copyright, body footer .copyright {
+    width: 100%;
+    margin: 0;
+    transform: translateX(0px);
+    text-align: center;
+  }
+  html footer .copyright__title, body footer .copyright__title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
   .main .about {
     position: relative;
     top: 35px;
@@ -206,39 +302,6 @@
     top: 200px;
     right: 850px;
   }
-  .main footer {
-    width: 100%;
-    text-align: center;
-  }
-  .main footer .footer-top {
-    position: relative;
-    left: 10px;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .main footer .footer-mid {
-    position: relative;
-    left: 20px;
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .main footer .footer-mid__link {
-    width: 100%;
-    margin-right: 50px;
-  }
-  .main footer .footer-bot {
-    margin-left: 0;
-    width: 100%;
-  }
-  .main footer .footer-bot__images {
-    position: relative;
-    left: 150px;
-  }
-  .main footer .copyright {
-    transform: translateX(0px);
-  }
   .projects-main .projects__body {
     transform: translate(22px, 380px);
   }
@@ -253,39 +316,6 @@
     position: absolute;
     left: 10px;
     bottom: -160px;
-  }
-  .projects-main footer {
-    width: 100%;
-    text-align: center;
-  }
-  .projects-main footer .footer-top {
-    position: relative;
-    left: 10px;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .projects-main footer .footer-mid {
-    position: relative;
-    left: 20px;
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .projects-main footer .footer-mid__link {
-    width: 100%;
-    margin-right: 50px;
-  }
-  .projects-main footer .footer-bot {
-    margin-left: 0;
-    width: 100%;
-  }
-  .projects-main footer .footer-bot__images {
-    position: relative;
-    left: 150px;
-  }
-  .projects-main footer .copyright {
-    transform: translateX(0px);
   }
   .projects-page .projects-pages__body {
     transform: translate(0px, 550px);
@@ -307,39 +337,6 @@
     position: absolute;
     left: -220px;
     bottom: 16px;
-  }
-  .projects-page footer {
-    width: 100%;
-    text-align: center;
-  }
-  .projects-page footer .footer-top {
-    position: relative;
-    left: 10px;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .projects-page footer .footer-mid {
-    position: relative;
-    left: 20px;
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .projects-page footer .footer-mid__link {
-    width: 100%;
-    margin-right: 50px;
-  }
-  .projects-page footer .footer-bot {
-    margin-left: 0;
-    width: 100%;
-  }
-  .projects-page footer .footer-bot__images {
-    position: relative;
-    left: 150px;
-  }
-  .projects-page footer .copyright {
-    transform: translateX(0px);
   }
   .contacts .contact-us__body {
     transform: translate(0px, 380px);
@@ -390,39 +387,6 @@
     transition: 0.35s;
     opacity: 1;
     font-weight: bold;
-  }
-  .contacts footer {
-    width: 100%;
-    text-align: center;
-  }
-  .contacts footer .footer-top {
-    position: relative;
-    left: 10px;
-    margin-left: 0;
-    width: 100%;
-    text-align: center;
-  }
-  .contacts footer .footer-mid {
-    position: relative;
-    left: 20px;
-    margin-left: 0;
-    text-align: center;
-    width: 100%;
-  }
-  .contacts footer .footer-mid__link {
-    width: 100%;
-    margin-right: 50px;
-  }
-  .contacts footer .footer-bot {
-    margin-left: 0;
-    width: 100%;
-  }
-  .contacts footer .footer-bot__images {
-    position: relative;
-    left: 150px;
-  }
-  .contacts footer .copyright {
-    transform: translateX(0px);
   }
 }
 @media screen and (min-width: 481px) and (max-width: 801px) {

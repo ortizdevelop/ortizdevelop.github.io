@@ -158,7 +158,126 @@ $bd1: 1px solid $color1;
             }
         }
 
-        footer{}
+        footer{
+            width: 100%;
+            text-align: center;
+
+            .footer-top{
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 34px;
+
+                &__title{
+                    margin: 0;
+                    font-size: 14px;
+                }
+
+                &__logo{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    font-size: 14px;
+                }
+
+                &__subtitle{
+                    margin: 0;
+                    font-size: 14px;
+                    width: 100px;
+                }
+            }
+
+            .footer-mid{
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 42.5px;
+
+                &__links{
+                    margin: 0;
+                    text-align: center;
+                }
+
+                &__link{
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+
+            .footer-bot{
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 45px;
+
+                &__images{
+                    text-align: center;
+                    margin: 0;
+
+                    ul{
+                        text-align: center;
+                        width: 100%;
+
+                        li{
+                            text-align: center;
+                            width: 100%;
+
+                            a{
+                                &:hover{
+                                    img{
+                                        transform: translateY(-5px);
+                                        filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                                        transition: 0.35s;
+                                    }
+    
+                                    span{
+                                        transform: translateY(-30px);
+                                        transition: 0.35s;
+                                        opacity: 1;
+                                    }
+                                }
+
+                                span{
+                                    position: absolute;
+
+                                    &:nth-child(1){
+                                        margin: 0;
+                                    }
+
+                                    &:nth-child(2){
+                                        margin: 0;
+                                    }
+
+                                    &:nth-child(3){
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    img{
+                        margin: 0;
+                    }
+                }
+            }
+
+            .copyright{
+                width: 100%;
+                margin: 0;
+                transform: translateX(0px);
+                text-align: center;
+
+                &__title{
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
     }
     // *
 
@@ -295,47 +414,7 @@ $bd1: 1px solid $color1;
                     right: 850px;
                 }
             }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
-            }
-        }
+        } 
     }
 
     // * projects-main.html
@@ -360,46 +439,6 @@ $bd1: 1px solid $color1;
                 position: absolute;
                 left: 10px;
                 bottom: -160px;
-            }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
             }
         }
     }
@@ -432,46 +471,6 @@ $bd1: 1px solid $color1;
                 position: absolute;
                 left: -220px;
                 bottom: 16px;
-            }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
             }
         }
     }
@@ -544,46 +543,6 @@ $bd1: 1px solid $color1;
                         }
                     }
                 }
-            }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
             }
         }
     }

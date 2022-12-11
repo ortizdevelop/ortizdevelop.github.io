@@ -1310,7 +1310,7 @@ footer .copyright__title {
   position: relative;
   z-index: 1;
 }
-.contacts .contact-us-images__bg span {
+.contacts .contact-us-images__bg p {
   position: absolute;
   width: 1091.01px;
   height: 954px;

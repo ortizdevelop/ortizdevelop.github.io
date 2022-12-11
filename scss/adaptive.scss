@@ -157,45 +157,192 @@ $bd1: 1px solid $color1;
                 top: 1289px;
             }
         }
+
+        footer{
+            width: 100%;
+            text-align: center;
+
+            .footer-top{
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 34px;
+
+                &__title{
+                    margin: 0;
+                    font-size: 14px;
+                }
+
+                &__logo{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    font-size: 14px;
+                }
+
+                &__subtitle{
+                    margin: 0;
+                    font-size: 14px;
+                    width: 100px;
+                }
+            }
+
+            .footer-mid{
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                margin-bottom: 42.5px;
+
+                &__links{
+                    width: 100%;
+                    text-align: center;
+                }
+
+                &__link{
+                    margin: 0;
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+
+            .footer-bot{
+                width: 100%;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 45px;
+
+                &__images{
+                    text-align: center;
+                    margin: 0;
+
+                    ul{
+                        text-align: center;
+                        width: 100%;
+
+                        li{
+                            text-align: center;
+                            width: 100%;
+
+                            a{
+                                &:hover{
+                                    img{
+                                        transform: translateY(-5px);
+                                        filter: invert(52%) sepia(51%) saturate(1612%) hue-rotate(330deg) brightness(98%) contrast(89%);
+                                        transition: 0.35s;
+                                    }
+    
+                                    span{
+                                        transform: translateY(-30px);
+                                        transition: 0.35s;
+                                        opacity: 1;
+                                    }
+                                }
+
+                                span{
+                                    position: absolute;
+
+                                    &:nth-child(1){
+                                        margin: 0;
+                                    }
+
+                                    &:nth-child(2){
+                                        margin: 0;
+                                    }
+
+                                    &:nth-child(3){
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    img{
+                        margin: 0;
+                    }
+                }
+            }
+
+            .copyright{
+                width: 100%;
+                margin: 0;
+                transform: translateX(0px);
+                text-align: center;
+
+                &__title{
+                    width: 100%;
+                    margin: 0;
+                    text-align: center;
+                }
+            }
+        }
     }
     // *
 
     // * index.html
     .main{
-
+        width: 100%;
+        
         .about{
             position: relative;
             top: 35px;
+            width: 100%;
+            
             .about-head{
                 
                 &__body{
+                    width: 100%;
                     position: relative;
                     right: 150px;
                 }
 
                 &__subtitle{
-                    width: 480px;
+                    width: 100%;
                 }
 
                 &__button{
+                    width: 100%;
                     position: relative;
-                    left: 40px;
+
+                    a{
+                        span{
+                            padding: 15px;
+                            font-size: 18px;
+                        }
+                    }
                 }
 
                 &__line{
+                    width: 100%;
                     position: relative;
                     right: 530px;
                 }
             }
     
             .about-middle{
+                width: 100%;
+                
                 &__body{
+                    width: 100%;
                     position: relative;
                     right: 180px;
                     bottom: 130px;
                 }
 
+                &__title{
+                    width: 100%;
+                }
+
+                &__subtitle{
+                    width: 100%;
+                    
+                }
+
                 &__tools-column{
+                    width: 100%;
                     position: relative;
                     top: 150px;
                     right: 720px;
@@ -293,111 +440,72 @@ $bd1: 1px solid $color1;
                     right: 850px;
                 }
             }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
-            }
-        }
+        } 
     }
 
     // * projects-main.html
     .projects-main{
         .projects{
+            width: 100%;
+
             &__body {
-                transform: translate(22px,380px);
+                width: 100%;
+                transform: translate(0px,380px);
+            }
+
+            &__title{
+                width: 100%;
+                position: relative;
+                left: 22px;
+            }
+
+            &__text{
+                width: 100%;
+                position: relative;
+                left: 22px;
+
+                p, a{
+                    width: 100%;
+                }
             }
         }
 
         .project-slider{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+
+            &__body{
+                width: 100%;
+                text-align: center;
+                border: $bd1;
+            }
 
             &__slider-body{
                 width: 100%;
                 position: relative;
-                top: 50px;
-                transform: translate(-20px,0px);
+                transform: translate(0px,0px);
             }
 
             &__navigation{
                 transform: translate(0px,0px);
+                display: flex;
                 position: absolute;
-                left: 10px;
-                bottom: -160px;
-            }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
                 text-align: center;
+                bottom: -80px;
+                left: 0%;
+                width: 100%;
+                background: none;
             }
 
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
+            &__bar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
+                left: 15%;
+                right: 15%;
+                top: 0;
             }
         }
     }
@@ -408,8 +516,47 @@ $bd1: 1px solid $color1;
         .projects-pages{
             
             &__body {
-                transform: translate(0px,550px);
+                transform: translate(0px,450px);
                 width: 100%;
+                margin: 0;
+            }
+
+            &__title{
+                width: 100%;
+                margin: 0;
+                position: relative;
+                left: 20px;
+            }
+
+            &__text{
+                width: 100%;
+                position: absolute;
+                left: 20px;
+                top: 96px;
+            }
+
+            &__tools-and-links{
+                width: 100%;
+            }
+
+            &__tools-title{
+                position: relative;
+                left: 30px;
+            }
+
+            &__tools-img{
+                position: relative;
+                right: 10px;
+            }
+
+            &__links-title{
+                position: relative;
+                right: 50px;
+            }
+
+            &__links-img{
+                position: relative;
+                right: 50px;
             }
         }
 
@@ -430,46 +577,6 @@ $bd1: 1px solid $color1;
                 position: absolute;
                 left: -220px;
                 bottom: 16px;
-            }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
             }
         }
     }
@@ -502,9 +609,9 @@ $bd1: 1px solid $color1;
                     top: 500px;
                     z-index: 1;
             
-                    span{
+                    p{
                         position: absolute;
-                        width: 141%;
+                        width: 200%;
                         background: url('/img/contacts/bg.png');
                         transform: translate(-200px,-800px);
                     }
@@ -518,12 +625,15 @@ $bd1: 1px solid $color1;
                     text-align: center;
 
                     ul{
+                        width: 100%;
+
                         li{
+                            width: 100%;
                             display: inline;
 
                             &:nth-child(2){
-                                margin-left: 75px;
-                                margin-right: 75px;
+                                margin-left: 45px;
+                                margin-right: 45px;
                             }
 
                             &:hover{
@@ -542,46 +652,6 @@ $bd1: 1px solid $color1;
                         }
                     }
                 }
-            }
-        }
-
-        footer{
-            width: 100%;
-            text-align: center;
-
-            .footer-top{
-                position: relative;
-                left: 10px;
-                margin-left: 0;
-                width: 100%;
-                text-align: center;
-            }
-
-            .footer-mid{
-                position: relative;
-                left: 20px;
-                margin-left: 0;
-                text-align: center;
-                width: 100%;
-
-                &__link{
-                    width: 100%;
-                    margin-right: 50px;
-                }
-            }
-
-            .footer-bot{
-                margin-left: 0;
-                width: 100%;
-
-                &__images{
-                    position: relative;
-                    left: 150px;
-                }
-            }
-
-            .copyright{
-                transform: translateX(0px);
             }
         }
     }

@@ -197,12 +197,13 @@ $bd1: 1px solid $color1;
                 margin-bottom: 42.5px;
 
                 &__links{
-                    margin: 0;
+                    width: 100%;
                     text-align: center;
                 }
 
                 &__link{
                     margin: 0;
+                    width: 100%;
                     text-align: center;
                 }
             }
@@ -608,9 +609,9 @@ $bd1: 1px solid $color1;
                     top: 500px;
                     z-index: 1;
             
-                    span{
+                    p{
                         position: absolute;
-                        width: 141%;
+                        width: 200%;
                         background: url('/img/contacts/bg.png');
                         transform: translate(-200px,-800px);
                     }
@@ -624,12 +625,15 @@ $bd1: 1px solid $color1;
                     text-align: center;
 
                     ul{
+                        width: 100%;
+
                         li{
+                            width: 100%;
                             display: inline;
 
                             &:nth-child(2){
-                                margin-left: 75px;
-                                margin-right: 75px;
+                                margin-left: 45px;
+                                margin-right: 45px;
                             }
 
                             &:hover{

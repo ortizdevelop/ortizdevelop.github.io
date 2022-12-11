@@ -164,40 +164,65 @@ $bd1: 1px solid $color1;
 
     // * index.html
     .main{
-
+        width: 100%;
+        
         .about{
             position: relative;
             top: 35px;
+            width: 100%;
+            
             .about-head{
                 
                 &__body{
+                    width: 100%;
                     position: relative;
                     right: 150px;
                 }
 
                 &__subtitle{
-                    width: 480px;
+                    width: 100%;
                 }
 
                 &__button{
+                    width: 100%;
                     position: relative;
-                    left: 40px;
+
+                    a{
+                        span{
+                            padding: 15px;
+                            font-size: 18px;
+                        }
+                    }
                 }
 
                 &__line{
+                    width: 100%;
                     position: relative;
                     right: 530px;
                 }
             }
     
             .about-middle{
+                width: 100%;
+                
                 &__body{
+                    width: 100%;
                     position: relative;
                     right: 180px;
                     bottom: 130px;
                 }
 
+                &__title{
+                    width: 100%;
+                }
+
+                &__subtitle{
+                    width: 100%;
+                    
+                }
+
                 &__tools-column{
+                    width: 100%;
                     position: relative;
                     top: 150px;
                     right: 720px;
@@ -341,25 +366,66 @@ $bd1: 1px solid $color1;
     // * projects-main.html
     .projects-main{
         .projects{
+            width: 100%;
+
             &__body {
-                transform: translate(22px,380px);
+                width: 100%;
+                transform: translate(0px,380px);
+            }
+
+            &__title{
+                width: 100%;
+                position: relative;
+                left: 22px;
+            }
+
+            &__text{
+                width: 100%;
+                position: relative;
+                left: 22px;
+
+                p, a{
+                    width: 100%;
+                }
             }
         }
 
         .project-slider{
+            width: 100%;
+            text-align: center;
+            align-items: center;
+
+            &__body{
+                width: 100%;
+                text-align: center;
+                border: $bd1;
+            }
 
             &__slider-body{
                 width: 100%;
                 position: relative;
-                top: 50px;
-                transform: translate(-20px,0px);
+                transform: translate(0px,0px);
             }
 
             &__navigation{
                 transform: translate(0px,0px);
+                display: flex;
                 position: absolute;
-                left: 10px;
-                bottom: -160px;
+                text-align: center;
+                bottom: -80px;
+                left: 0%;
+                width: 100%;
+                background: none;
+            }
+
+            &__bar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                left: 15%;
+                right: 15%;
+                top: 0;
             }
         }
 
@@ -410,8 +476,47 @@ $bd1: 1px solid $color1;
         .projects-pages{
             
             &__body {
-                transform: translate(0px,550px);
+                transform: translate(0px,450px);
                 width: 100%;
+                margin: 0;
+            }
+
+            &__title{
+                width: 100%;
+                margin: 0;
+                position: relative;
+                left: 20px;
+            }
+
+            &__text{
+                width: 100%;
+                position: absolute;
+                left: 20px;
+                top: 96px;
+            }
+
+            &__tools-and-links{
+                width: 100%;
+            }
+
+            &__tools-title{
+                position: relative;
+                left: 30px;
+            }
+
+            &__tools-img{
+                position: relative;
+                right: 10px;
+            }
+
+            &__links-title{
+                position: relative;
+                right: 50px;
+            }
+
+            &__links-img{
+                position: relative;
+                right: 50px;
             }
         }
 

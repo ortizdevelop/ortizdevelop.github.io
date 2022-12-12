@@ -282,6 +282,16 @@ $bd1: 1px solid $color1;
     }
     // *
 
+    @keyframes title-anim{ //* Animation for website header
+        40%, 60%{
+            left: 350px;
+        }
+    
+        85%, 100%{
+            left: 240px;
+        }
+    } 
+
     // * index.html
     .main{
         width: 100%;
@@ -299,8 +309,27 @@ $bd1: 1px solid $color1;
                     right: 150px;
                 }
 
+                &__title{
+                    font-size: 40px;
+
+                    .second-text{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: 240px;
+                            top: 320px;
+                            width: 194px;
+                            height: 34px;
+                            background-color: $color4;
+                            border-left: $bd1;
+                            animation: title-anim 3.9s steps(12) infinite;
+                        }
+                    }
+                }
+
                 &__subtitle{
                     width: 100%;
+                    font-size: 20px;
                 }
 
                 &__button{
@@ -309,17 +338,38 @@ $bd1: 1px solid $color1;
 
                     a{
                         span{
-                            padding: 15px;
-                            font-size: 18px;
+                            padding: 10px;
+                            font-size: 14px;
                         }
                     }
                 }
 
                 &__line{
                     width: 100%;
-                    position: relative;
-                    right: 530px;
+
+                    img{
+                        text-align: center;
+                        width: 100%;
+                        position: absolute;
+                        top: 1px;
+                        left: 1px;
+                    }
                 }
+            }
+
+            #progress{
+                position: fixed;
+                bottom: 20px;
+                right: 90%;
+                height: 70px;
+                width: 70px;
+                display: none;
+                place-items: center;
+                border-radius: 50%;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                cursor: pointer;
+                transition: .3s;
+                z-index: 100;
             }
     
             .about-middle{
@@ -327,87 +377,172 @@ $bd1: 1px solid $color1;
                 
                 &__body{
                     width: 100%;
-                    position: relative;
-                    right: 180px;
-                    bottom: 130px;
+                    margin: 0;
+                }
+
+                &__content{
+                    width: 100%;
+                    margin: 0;
+                    display: flex;
+                    flex-direction: column;
                 }
 
                 &__title{
                     width: 100%;
+                    margin: 0;
+                    transform: translate(0px);
+                    font-size: 20px;
                 }
 
                 &__subtitle{
                     width: 100%;
-                    
+                    margin: 0;
+                    transform: translate(0px);
+                    font-size: 20px;
+
+                    p{
+                        width: 100%;
+                    }
+
+                    span{
+                        color: $color1;
+                        
+                        &:nth-child(2){
+                            &::before{
+                                content: '';
+                                position: absolute;
+                                width: 100%;
+                                height: 0px;
+                                left: 0px;
+                                top: 120px;
+                                border: $bd1;
+                            }
+                        }
+                    }
+                }
+
+                &__tools{
+                    width: 100%;
+                    margin: 50px 0px 0px 0px;
+                    transform: translate(0);
                 }
 
                 &__tools-column{
                     width: 100%;
-                    position: relative;
-                    top: 150px;
-                    right: 720px;
-                    width: 550px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 30px;
+                    background: none;
+                    border: $bd1;
+                    border-radius: 3px;
 
                     li{
-                        margin-right: 20px;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        margin-right: 30px;
+                        margin-bottom: 75px;
                     }
                 }
 
                 &__img{
+                    width: 100%;
                     position: relative;
-                    top: 50px;
-                    left: 230px;
+                    margin: 0;
+                    transform: translate(0);
+
+                    img{
+                        width: 100%;
+                    }
                 }
 
                 &__column{
-                    position: relative;
-                    top: 660px; 
-                    right: 700px;
+                    width: 100%;
+                    border: $bd1;
+                    margin: 0;
+                    transform: translate(0);
+                    border-radius: 3px;
+                    margin-top: 50px;
                 }
 
                 &__list{
+                    border-radius: 3px;
+                    
                     p{
-                        font-size: 22px;
-                        width: 400px;
+                        font-size: 17px;
+                        width: 100%;
+                        text-align: center;
+                        line-height: 30px;
                     }
 
                     img{
                         position: relative;
-                        left: 40px;
-                        bottom: 15px;
-                        width: 54px;
-                        height: 54px;
+                        left: 70%;
+                        top: 20px;
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    .list-line1{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 60%;
+                            height: 0px;
+                            left: 20%;
+                            top: 200px;
+                            border: $bd1;
+                        }
+                    }
+
+                    .list-line2{
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 60%;
+                            height: 0px;
+                            left: 20%;
+                            top: 455px;
+                            border: $bd1;
+                        }
                     }
                 }
 
                 &__box{
+                    display: none;
                     position: relative;
-                    bottom: 30px;
-                    height: 730px;
+                    width: 100%;
+                    border-radius: 3px;
+                    height: 0;
                 }
             }
     
             .about-bottom{
+                margin-top: 550px;
+                width: 100%;
                 
                 &__body{
-                    position: relative;
-                    top: 500px;
-                    right: 200px;
+                    width: 100%;
+                    margin: 0;
+                    transform: translate(0);
                 }
 
                 &__banner{
-                    width: 480px;
-                    position: relative;
-                    right: 270px;
+                    width: 100%;
+                    margin: 0px 0px 20px 0px;
+                    transform: translate(0);
 
                     img{
-                        width: 780px;
+                        width: 100%;
                     }
                 }
 
                 &__title{
-                    position: relative;
-                    top: 430px;
+                    width: 100%;
+                    margin: 0px 0px 40px 0px;
+                    transform: translate(0);
                     text-align: center;
 
                     span{
@@ -415,29 +550,45 @@ $bd1: 1px solid $color1;
                     }
                 }
 
+                &__btn{
+                    width: 100%;
+                    text-align: center;
+                    margin: 0;
+                    transform: translate(0);
+                }
+
                 &__button{
-                    position: relative;
-                    top: 280px;
-                    left: 33px;
+                    width: 50%;
+                    text-align: center;
+                    margin: 0;
+                    transform: translate(0);
                     padding: 15px;
                 }
                 
                 &__line{
-                    position: relative;
-                    top: 60px;
-                    right: 480px;
+                    width: 100%;
+                    margin: 50px 0px 0px 0px;
+                    transform: translate(0);
+
+                    img{
+                        margin: 0;
+                        transform: translate(0);
+                        width: 100%;
+                    }
                 }
 
                 &__text{
-                    position: relative;
-                    left: 100px;
+                    width: 100%;
+                    margin: 150px 0px 0px 0px;
+                    transform: translate(0);
                     text-align: center;
                 }
 
                 &__contact{
-                    position: relative;
-                    top: 200px;
-                    right: 850px;
+                    width: 100%;
+                    margin: 50px 0px 0px 0px;
+                    transform: translate(0);
+                    text-align: center;
                 }
             }
         } 

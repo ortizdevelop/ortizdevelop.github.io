@@ -99,7 +99,7 @@
   }
   html .projects-page .footer, body .projects-page .footer {
     position: absolute;
-    top: 1880px;
+    top: 1980px;
   }
   html .contacts .footer, body .contacts .footer {
     position: absolute;
@@ -546,34 +546,59 @@
     margin: 0;
   }
   .projects-page .projects-pages__tools-and-links {
+    position: relative;
     width: 100%;
     left: 0;
+    right: 0;
+    top: 0;
     margin: 55px 0px 0px 0px;
     justify-content: center;
     align-items: center;
     text-align: center;
+    flex-direction: column;
+  }
+  .projects-page .projects-pages__tools-and-links p {
+    width: 100%;
+    transform: translate(0);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .projects-page .projects-pages__tools-and-links ul {
+    width: 100%;
+    position: relative;
+    margin: 0;
   }
   .projects-page .projects-pages__tools-title {
+    width: 100%;
     position: relative;
-    left: 30px;
   }
   .projects-page .projects-pages__tools-img {
     position: relative;
-    right: 10px;
+    width: 100%;
+    margin: 0;
+    transform: translate(0);
+    top: 50px;
   }
   .projects-page .projects-pages__links-title {
     position: relative;
-    right: 50px;
+    width: 100%;
+    top: 15px;
   }
   .projects-page .projects-pages__links-img {
     position: relative;
-    right: 50px;
+    width: 100%;
+    margin: 0;
+    transform: translate(0);
+    top: 70px;
   }
   .projects-page .project-pages-slider {
     width: 100%;
     margin: 0;
     left: 0;
-    top: 500px;
+    top: 700px;
     transform: translate(0);
   }
   .projects-page .project-pages-slider__slider-body {

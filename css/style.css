@@ -169,10 +169,21 @@ footer .footer-top__subtitle {
 footer .footer-mid {
   margin-bottom: 53.5px;
   width: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+footer .footer-mid__links {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 footer .footer-mid__link {
   margin-right: 80px;
   transition: 0.2s;
+}
+footer .footer-mid__link:nth-last-child(1) {
+  margin-right: 0;
 }
 footer .footer-mid__link span {
   font-size: 15px;
@@ -196,6 +207,15 @@ footer .footer-mid__link span:active {
 footer .footer-bot {
   margin-bottom: 46px;
   width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-bot__images {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 footer .footer-bot__images ul {
   display: flex;
@@ -206,7 +226,11 @@ footer .footer-bot__images ul {
   transition: 0.2s;
 }
 footer .footer-bot__images ul li {
+  width: 5%;
   transition: 0.2s;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 footer .footer-bot__images ul li a {
   position: relative;
@@ -247,7 +271,20 @@ footer .footer-bot__images ul li a:hover span {
 footer .footer-bot__images img {
   margin-right: 47px;
 }
+footer .footer-mail {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+footer .footer-mail p, footer .footer-mail a {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #EE6C4D;
+  opacity: 85%;
+}
 footer .copyright {
+  position: relative;
   left: 0px;
   top: 0;
   width: 100%;
@@ -1103,7 +1140,6 @@ footer .copyright__title {
   width: 100%;
   position: relative;
   left: 0;
-  top: 0;
 }
 
 .contacts .contact-us__body {

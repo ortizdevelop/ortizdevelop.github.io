@@ -147,7 +147,7 @@ $bd1: 1px solid $color1;
         .projects-page{
             .footer{
                 position: absolute;
-                top: 1980px;
+                top: 2180px;
             }
         }
 
@@ -225,8 +225,19 @@ $bd1: 1px solid $color1;
                         li{
                             text-align: center;
                             width: 100%;
+                            
+                            &:nth-child(1){
+                                position: relative;
+                                left: 5 5px;
+                            }
+
+                            &:nth-child(4){
+                                position: relative;
+                                right: 5    5px;
+                            }
 
                             a{
+
                                 &:hover{
                                     img{
                                         transform: translateY(-5px);
@@ -758,8 +769,12 @@ $bd1: 1px solid $color1;
             width: 100%;
             margin: 0;
             left: 0;
-            top: 700px;
-            transform: translate(0);    
+            top: 960px;
+            transform: translate(0);
+            
+            &__body{
+                height: 1px;
+            }
             
             &__slider-body{
                 position: relative;
@@ -772,7 +787,7 @@ $bd1: 1px solid $color1;
                 position: absolute;
                 width: 100%;
                 left: 0px;
-                top: 650px;
+                top: 450px;
                 text-align: center;
                 align-items: center;
                 justify-content: center;
@@ -843,6 +858,11 @@ $bd1: 1px solid $color1;
                         li{
                             width: 100%;
                             display: inline;
+
+                            img{
+                                width: 52px;
+                                height: 52px;
+                            }
 
                             &:nth-child(2){
                                 margin-left: 45px;

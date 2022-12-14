@@ -99,7 +99,7 @@
   }
   html .projects-page .footer, body .projects-page .footer {
     position: absolute;
-    top: 1980px;
+    top: 2180px;
   }
   html .contacts .footer, body .contacts .footer {
     position: absolute;
@@ -165,6 +165,14 @@
   html footer .footer-bot__images ul li, body footer .footer-bot__images ul li {
     text-align: center;
     width: 100%;
+  }
+  html footer .footer-bot__images ul li:nth-child(1), body footer .footer-bot__images ul li:nth-child(1) {
+    position: relative;
+    left: 5 5px;
+  }
+  html footer .footer-bot__images ul li:nth-child(4), body footer .footer-bot__images ul li:nth-child(4) {
+    position: relative;
+    right: 5 5px;
   }
   html footer .footer-bot__images ul li a:hover img, body footer .footer-bot__images ul li a:hover img {
     transform: translateY(-5px);
@@ -598,8 +606,11 @@
     width: 100%;
     margin: 0;
     left: 0;
-    top: 700px;
+    top: 960px;
     transform: translate(0);
+  }
+  .projects-page .project-pages-slider__body {
+    height: 1px;
   }
   .projects-page .project-pages-slider__slider-body {
     position: relative;
@@ -611,7 +622,7 @@
     position: absolute;
     width: 100%;
     left: 0px;
-    top: 650px;
+    top: 450px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -668,6 +679,10 @@
   .contacts .contact-us .contact-us-images__media ul li {
     width: 100%;
     display: inline;
+  }
+  .contacts .contact-us .contact-us-images__media ul li img {
+    width: 52px;
+    height: 52px;
   }
   .contacts .contact-us .contact-us-images__media ul li:nth-child(2) {
     margin-left: 45px;

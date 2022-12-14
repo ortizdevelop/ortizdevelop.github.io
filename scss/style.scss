@@ -342,17 +342,39 @@ footer {
             }
     }
 
-    .footer-mail{
+    .footer-contacts{
         width: 100%;
         text-align: center;
         margin-bottom: 25px;
 
-        p,a{
-            font-size: 26px;
-            font-weight: 600;
-            line-height: 20px;
-            color: $color1;
-            opacity: 85%;
+        &__mail{
+            p,a{
+                font-size: 26px;
+                font-weight: 600;
+                line-height: 20px;
+                color: $color1;
+                opacity: 85%;
+            }
+    
+            p{
+                color: $color3;
+            }
+        }
+        
+        &__telegram{
+            margin-top: 20px;
+                
+            p,a{
+                font-size: 26px;
+                font-weight: 600;
+                line-height: 20px;
+                color: $color1;
+                opacity: 85%;
+            }
+    
+            p{
+                color: $color3;
+            }
         }
     }
 

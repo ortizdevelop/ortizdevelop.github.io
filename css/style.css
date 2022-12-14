@@ -271,17 +271,33 @@ footer .footer-bot__images ul li a:hover span {
 footer .footer-bot__images img {
   margin-right: 47px;
 }
-footer .footer-mail {
+footer .footer-contacts {
   width: 100%;
   text-align: center;
   margin-bottom: 25px;
 }
-footer .footer-mail p, footer .footer-mail a {
+footer .footer-contacts__mail p, footer .footer-contacts__mail a {
   font-size: 26px;
   font-weight: 600;
   line-height: 20px;
   color: #EE6C4D;
   opacity: 85%;
+}
+footer .footer-contacts__mail p {
+  color: #C4C4C4;
+}
+footer .footer-contacts__telegram {
+  margin-top: 20px;
+}
+footer .footer-contacts__telegram p, footer .footer-contacts__telegram a {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #EE6C4D;
+  opacity: 85%;
+}
+footer .footer-contacts__telegram p {
+  color: #C4C4C4;
 }
 footer .copyright {
   position: relative;

@@ -1107,7 +1107,7 @@ footer {
         width: 412px;
         position: absolute;
         bottom: 16px;
-        left: 39.5%;
+        left: 36.8%;
         display: flex;
         transform: translate(265px,-160px);
         background: url('/img/projects/slider/arrows.png') 0px 10px no-repeat;
@@ -1471,8 +1471,10 @@ footer {
 
             &__link{
                 position: relative;
-                left: 20px;
+                left: 0px;
             }
+
+            &__links{}
         }
 
         .footer-bot{

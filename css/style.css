@@ -842,7 +842,7 @@ footer .copyright__title {
   width: 412px;
   position: absolute;
   bottom: 16px;
-  left: 39.5%;
+  left: 36.8%;
   display: flex;
   transform: translate(265px, -160px);
   background: url("/img/projects/slider/arrows.png") 0px 10px no-repeat;
@@ -1146,7 +1146,7 @@ footer .copyright__title {
 }
 .projects-page footer .footer-mid__link {
   position: relative;
-  left: 20px;
+  left: 0px;
 }
 .projects-page footer .footer-bot {
   width: 100%;

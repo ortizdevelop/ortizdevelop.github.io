@@ -385,6 +385,8 @@
     top: 30px;
     width: 30px;
     height: 30px;
+    text-align: center;
+    align-items: center;
   }
   .main .about .about-middle__list .list-line1::before {
     content: "";

@@ -474,12 +474,16 @@
   .projects-main .projects__title {
     width: 100%;
     position: relative;
-    left: 22px;
+    left: 0;
+    top: 0;
+    align-items: center;
   }
   .projects-main .projects__text {
     width: 100%;
     position: relative;
-    left: 22px;
+    left: 0;
+    top: 0;
+    margin: 0;
   }
   .projects-main .projects__text p, .projects-main .projects__text a {
     width: 100%;
@@ -525,18 +529,22 @@
   }
   .projects-page .projects-pages__title {
     width: 100%;
-    margin: 0;
+    margin: 0px 0px 56px 0px;
     position: relative;
-    left: 20px;
+    text-align: center;
+    left: 0;
+    top: 0;
   }
   .projects-page .projects-pages__text {
     width: 100%;
-    position: absolute;
-    left: 20px;
-    top: 96px;
+    position: relative;
+    top: 0;
+    left: 0;
   }
   .projects-page .projects-pages__tools-and-links {
     width: 100%;
+    text-align: center;
+    align-items: center;
   }
   .projects-page .projects-pages__tools-title {
     position: relative;
@@ -547,17 +555,25 @@
     right: 10px;
   }
   .projects-page .projects-pages__links-title {
+    width: 100%;
+    transform: translate(0px);
+    text-align: center;
     position: relative;
-    right: 50px;
+    left: 38.5%;
   }
   .projects-page .projects-pages__links-img {
-    position: relative;
-    right: 50px;
+    position: absolute;
+    right: -15px;
+    bottom: -85px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0px);
   }
   .projects-page .project-pages-slider {
     width: 100%;
     position: relative;
-    top: 500px;
+    top: 110px;
     left: 0px;
   }
   .projects-page .project-pages-slider__slider-body {
@@ -567,9 +583,25 @@
     width: 100%;
   }
   .projects-page .project-pages-slider__navigation {
-    position: absolute;
-    left: -220px;
-    bottom: 16px;
+    width: 100%;
+    transform: translate(0px, 0px);
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 350px;
+    left: 0%;
+    width: 100%;
+    background: none;
+  }
+  .projects-page .project-pages-slider__bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 0;
+    top: 0;
   }
   .contacts .contact-us__body {
     transform: translate(0px, 380px);

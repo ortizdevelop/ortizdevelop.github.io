@@ -607,13 +607,18 @@ $bd1: 1px solid $color1;
             &__title{
                 width: 100%;
                 position: relative;
-                left: 22px;
+                left: 0;
+                top: 0;
+                align-items: center;
             }
 
             &__text{
                 width: 100%;
                 position: relative;
-                left: 22px;
+                left: 0;
+                top: 0;
+                
+                margin: 0;
 
                 p, a{
                     width: 100%;
@@ -674,20 +679,24 @@ $bd1: 1px solid $color1;
 
             &__title{
                 width: 100%;
-                margin: 0;
+                margin: 0px 0px 56px 0px;
                 position: relative;
-                left: 20px;
+                text-align: center;
+                left: 0;
+                top: 0;
             }
 
             &__text{
                 width: 100%;
-                position: absolute;
-                left: 20px;
-                top: 96px;
+                position: relative;
+                top: 0;
+                left: 0;
             }
 
             &__tools-and-links{
                 width: 100%;
+                text-align: center;
+                align-items: center;
             }
 
             &__tools-title{
@@ -701,20 +710,28 @@ $bd1: 1px solid $color1;
             }
 
             &__links-title{
+                width: 100%;
+                transform: translate(0px);
+                text-align: center;
                 position: relative;
-                right: 50px;
+                left: 38.5%;
             }
 
             &__links-img{
-                position: relative;
-                right: 50px;
+                position: absolute;
+                right: -15px;
+                bottom: -85px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                transform: translate(0px);
             }
         }
 
         .project-pages-slider{
             width: 100%;
             position: relative;
-            top: 500px;
+            top: 110px;
             left: 0px;
             
             &__slider-body{
@@ -725,9 +742,26 @@ $bd1: 1px solid $color1;
             }
 
             &__navigation{
-                position: absolute;
-                left: -220px;
-                bottom: 16px;
+                width: 100%;
+                transform: translate(0px,0px);
+                display: flex;
+                position: relative;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                top: 350px;
+                left: 0%;
+                width: 100%;
+                background: none;   
+            }
+
+            &__bar{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                left: 0;
+                top: 0;
             }
         }
     }

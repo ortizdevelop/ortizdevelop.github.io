@@ -147,7 +147,7 @@ $bd1: 1px solid $color1;
         .projects-page{
             .footer{
                 position: absolute;
-                top: 1880px;
+                top: 2180px;
             }
         }
 
@@ -225,8 +225,19 @@ $bd1: 1px solid $color1;
                         li{
                             text-align: center;
                             width: 100%;
+                            
+                            &:nth-child(1){
+                                position: relative;
+                                left: 5 5px;
+                            }
+
+                            &:nth-child(4){
+                                position: relative;
+                                right: 5    5px;
+                            }
 
                             a{
+
                                 &:hover{
                                     img{
                                         transform: translateY(-5px);
@@ -479,10 +490,12 @@ $bd1: 1px solid $color1;
 
                     img{
                         position: relative;
-                        left: 70%;
-                        top: 20px;
+                        left: 74%;
+                        top: 30px;
                         width: 30px;
                         height: 30px;
+                        text-align: center;
+                        align-items: center;
                     }
 
                     .list-line1{
@@ -646,11 +659,14 @@ $bd1: 1px solid $color1;
             &__navigation{
                 transform: translate(0px,0px);
                 display: flex;
-                position: absolute;
+                position: relative;
                 text-align: center;
-                bottom: -80px;
+                justify-content: center;
+                align-items: center;
+                bottom: -55px;
                 left: 0%;
                 width: 100%;
+                margin: 0;
                 background: none;
             }
 
@@ -659,8 +675,9 @@ $bd1: 1px solid $color1;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                left: 15%;
-                right: 15%;
+                flex-wrap: nowrap;
+                padding: 0; 
+                left: 0;
                 top: 0;
             }
         }
@@ -672,41 +689,90 @@ $bd1: 1px solid $color1;
         .projects-pages{
             
             &__body {
-                transform: translate(0px,450px);
+                position: relative;
+                left: 0;
+                top: 450px;
+                transform: translate(0px);
                 width: 100%;
                 margin: 0;
             }
 
             &__title{
                 width: 100%;
+<<<<<<< HEAD
                 margin: 0px 0px 56px 0px;
                 position: relative;
                 text-align: center;
                 left: 0;
                 top: 0;
+=======
+                margin: 0px 0px 66px 0px;
+                position: relative;
+                left: 0;
+                transform: translate(0px);
+>>>>>>> 0862c7cbd09824867b6c31595a51c86e70c56d5e
             }
 
             &__text{
                 width: 100%;
                 position: relative;
+<<<<<<< HEAD
                 top: 0;
                 left: 0;
+=======
+                left: 0;
+                top: 0;
+                transform: translate(0);
+                margin: 0;
+>>>>>>> 0862c7cbd09824867b6c31595a51c86e70c56d5e
             }
 
             &__tools-and-links{
+                position: relative;
                 width: 100%;
+<<<<<<< HEAD
                 text-align: center;
                 align-items: center;
+=======
+                left: 0;
+                right: 0;
+                top: 0;
+                margin: 55px 0px 0px 0px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                flex-direction: column;
+
+                p{
+                    width: 100%;
+                    transform: translate(0);
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                ul{
+                    width: 100%;
+                    position: relative;
+                    margin: 0;
+
+                }
+>>>>>>> 0862c7cbd09824867b6c31595a51c86e70c56d5e
             }
 
             &__tools-title{
+                width: 100%;
                 position: relative;
-                left: 30px;
             }
 
             &__tools-img{
                 position: relative;
-                right: 10px;
+                width: 100%;
+                margin: 0;
+                transform: translate(0);
+                top: 50px;
             }
 
             &__links-title{
@@ -714,6 +780,7 @@ $bd1: 1px solid $color1;
                 transform: translate(0px);
                 text-align: center;
                 position: relative;
+<<<<<<< HEAD
                 left: 38.5%;
             }
 
@@ -725,14 +792,37 @@ $bd1: 1px solid $color1;
                 align-items: center;
                 justify-content: center;
                 transform: translate(0px);
+=======
+                width: 100%;
+                top: 15px;
+            }
+
+            &__links-img{
+                position: relative;
+                width: 100%;
+                margin: 0;
+                transform: translate(0);
+                top: 70px;  
+>>>>>>> 0862c7cbd09824867b6c31595a51c86e70c56d5e
             }
         }
 
         .project-pages-slider{
             width: 100%;
+<<<<<<< HEAD
             position: relative;
             top: 110px;
             left: 0px;
+=======
+            margin: 0;
+            left: 0;
+            top: 960px;
+            transform: translate(0);
+            
+            &__body{
+                height: 1px;
+            }
+>>>>>>> 0862c7cbd09824867b6c31595a51c86e70c56d5e
             
             &__slider-body{
                 position: relative;
@@ -742,6 +832,7 @@ $bd1: 1px solid $color1;
             }
 
             &__navigation{
+<<<<<<< HEAD
                 width: 100%;
                 transform: translate(0px,0px);
                 display: flex;
@@ -753,6 +844,18 @@ $bd1: 1px solid $color1;
                 left: 0%;
                 width: 100%;
                 background: none;   
+=======
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: 450px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                margin: 0;
+                transform: translate(0);
+                background: none;
+>>>>>>> 0862c7cbd09824867b6c31595a51c86e70c56d5e
             }
 
             &__bar{
@@ -760,6 +863,11 @@ $bd1: 1px solid $color1;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+<<<<<<< HEAD
+=======
+                flex-wrap: nowrap;
+                padding: 0; 
+>>>>>>> 0862c7cbd09824867b6c31595a51c86e70c56d5e
                 left: 0;
                 top: 0;
             }
@@ -815,6 +923,11 @@ $bd1: 1px solid $color1;
                         li{
                             width: 100%;
                             display: inline;
+
+                            img{
+                                width: 52px;
+                                height: 52px;
+                            }
 
                             &:nth-child(2){
                                 margin-left: 45px;
